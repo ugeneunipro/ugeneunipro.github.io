@@ -1,0 +1,44 @@
+.documentation-page {
+  .header_link {
+    font-family: sans-serif, verdana, arial, helvetica;
+    font-size: 18px;
+    color: red;
+  }
+
+  a.header_link {
+    text-decoration: none;
+  }
+
+  a.header_link:link {
+    color: #255060;
+  }
+
+  a.header_link:visited {
+    color: #255060;
+  }
+
+  a.header_link:hover {
+    color: #4080A0;
+    text-decoration: underline;
+  }
+
+  a.subheader_link {
+    font-family: sans-serif, verdana, arial, helvetica;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  a.subheader_link:link {
+    color: #255060;
+  }
+
+  a.subheader_link:visited {
+    color: #255060;
+  }
+
+  a.subheader_link:hover {
+    color: #4080A0;
+    text-decoration: underline;
+  }
+
+}

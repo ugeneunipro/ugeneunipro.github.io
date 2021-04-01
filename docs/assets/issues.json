@@ -1,0 +1,54 @@
+{
+  "expand": "schema,names",
+  "startAt": 0,
+  "maxResults": 2,
+  "total": 6973,
+  "issues": [
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "26260",
+      "self": "https://ugene.dev/tracker/rest/api/2/issue/26260",
+      "key": "UGENE-7148",
+      "fields": {
+        "summary": "\"Recent files\" list has been cleaned after update",
+        "status": {
+          "self": "https://ugene.dev/tracker/rest/api/2/status/1",
+          "description": "The issue is open and ready for the assignee to start work on it.",
+          "iconUrl": "https://ugene.dev/tracker/images/icons/statuses/open.png",
+          "name": "Open",
+          "id": "1",
+          "statusCategory": {
+            "self": "https://ugene.dev/tracker/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "26036",
+      "self": "https://ugene.dev/tracker/rest/api/2/issue/26036",
+      "key": "UGENE-7137",
+      "fields": {
+        "summary": "Remove compiler warnings suppression from build",
+        "status": {
+          "self": "https://ugene.dev/tracker/rest/api/2/status/1",
+          "description": "The issue is open and ready for the assignee to start work on it.",
+          "iconUrl": "https://ugene.dev/tracker/images/icons/statuses/open.png",
+          "name": "Open",
+          "id": "1",
+          "statusCategory": {
+            "self": "https://ugene.dev/tracker/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      }
+    }
+  ]
+}

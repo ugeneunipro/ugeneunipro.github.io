@@ -1,0 +1,42 @@
+.download-page {
+  a {
+    color: #003953;
+  }
+
+  .downloads_button {
+    display: inline-block;
+    margin: 0;
+    min-width: 360px;
+    text-align: center;
+  }
+
+  .downloads_button_main {
+    border: solid 1px #5a829c;
+    background-color: #a0bacb;
+    padding: 6px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  .downloads_button_comment {
+    color: #777777;
+    font-size: 90%;
+  }
+
+  h3.general_content {
+    margin-top: 32px;
+  }
+
+  h4.general_content {
+    margin-top: 28px;
+  }
+
+  div.general_content {
+    margin-bottom: 12px;
+  }
+
+  ul.general_content {
+    line-height: 150%;
+  }
+}

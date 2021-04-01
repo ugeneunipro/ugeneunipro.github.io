@@ -1,0 +1,35 @@
+.footer-block {
+  text-align: center;
+  font-size: 13px;
+
+  .language-block {
+    display: inline-block;
+
+    a {
+      color: gray;
+      text-decoration: none;
+
+      &:hover, &:active {
+        color: gray;
+      }
+
+      img {
+        margin-right: 3px;
+      }
+    }
+  }
+
+  .copyright-block {
+    margin-top: 15px;
+    background: url(/assets/images/footer_line.png);
+
+    a {
+      color: white;
+      text-decoration: none;
+
+      &:hover, &:active {
+        color: white;
+      }
+    }
+  }
+}

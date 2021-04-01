@@ -1,0 +1,19 @@
+---
+layout: page_en
+title: Download UGENE - Unipro UGENE
+---
+
+<div class="download-page">
+    <p><span id="download_body_content_span"></span><br/>
+        <script src="/assets/js/ugene-load-script.js"></script>
+        <br/>
+        <script>
+          loadUgeneScript('/assets/js/platform.js', 'en', function (args) {
+            loadUgeneScript('/assets/js/ugene-download-page.js', args, function () {
+              document.getElementById('download_body_content_span').innerHTML = download_body_content;
+            });
+          });
+        </script>
+    </p>
+</div>
+

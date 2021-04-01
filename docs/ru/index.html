@@ -1,0 +1,459 @@
+---
+layout: page_ru
+title: Unipro UGENE - Интегрированные инструменты биолога
+---
+
+<div class="index-page">
+    <table width="100%">
+        <tr>
+            <td width="40%" height="300" style="font-family: Verdana; vertical-align: top;">
+                <div style="margin-top: 10px;" align="center">
+                    <div style="font-size: 28px; color: #1f4351;">
+                        <div>
+                            Unipro UGENE
+                        </div>
+                        <table align="center">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    &nbsp;&nbsp;вер.&nbsp;38
+                                </td>
+                                <td style="font-size: 12px;text-decoration: underline;" valign="top">
+                                    Март, 2021
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div style="color: rgb(0, 35, 49); font-size: 14px; text-align: center;">
+
+                    UGENE - это свободное ПО для работы
+
+                    молекулярного биолога
+
+                    UGENE отлично работает на Windows, macOS, Linux
+
+                    и очень прост в установке и использовании.
+
+                </div>
+                <div style="text-align: center;"></div>
+                <div class="download-button-block">
+                    <a href="/download.html">
+                        <img alt="Загрузить UGENE" src="/assets/images/download_ugene_button.jpg" style="width: 149px; height: 40px;">
+                    </a>
+                </div>
+            </td>
+            <td style="vertical-align: top; width: 380px;">
+                <script type="text/javascript">
+                  $(document).ready(function () {
+                    $().piroBox({
+                      my_speed: 300, //animation speed
+                      bg_alpha: 0.5, //background opacity
+                      slideShow: 'true', // true == slideshow on, false == slideshow off
+                      slideSpeed: 3, //slideshow
+                      close_all: '.piro_close' // add class .piro_overlay(with comma)if you want overlay click close piroBox
+                    });
+                    $('#first_image').fadeIn(3500);
+                    $('#container').fadeIn(3500);
+                    $.getJSON('/assets/issues.json', function (data) {
+                      $('#issues').replaceWith('<tr id="issues2"><td colspan="2"><div class="vertical_menu_text_block">' +
+                          '<a href="https://ugene.unipro.ru/tracker/browse/' + data['issues'][0]['key'] + '">' +
+                          '<b>' + data['issues'][0]['fields']['status']['name'] + ':</b> ' + data['issues'][0]['fields']['summary'] + '<small> [' + data['issues'][0]['key'] + ']</small>' +
+                          '</a></div></td></tr>' +
+                          '<tr><td colspan="2"><div class="vertical_menu_text_block">' +
+                          '<a href="https://ugene.unipro.ru/tracker/browse/' + data['issues'][1]['key'] + '">' +
+                          '<b>' + data['issues'][1]['fields']['status']['name'] + ':</b> ' + data['issues'][1]['fields']['summary'] + '<small> [' + data['issues'][1]['key'] + ']</small>' +
+                          '</a></div></td></tr>');
+                    });
+                  });
+
+                </script>
+
+                <div style="width: 330px;">
+
+
+                    <a href="/assets/images/3dstruct.png" title="UGENE 3D Protein Structure Viewer. OS: Mac OS X"
+                       rel="lightbox[set_1]">
+
+                        <div style="position: relative">
+                            <div id="container" style="z-index: 1; position: absolute; display: none;"></div>
+                            <!-- START ripple-->
+                            <script type="text/javascript" src="/assets/js/ripple.js"></script>
+                            <script type="text/javascript">
+                              ripple('/assets/images/3dstruct_small.png', document.getElementById('container'));
+                            </script>
+                            <!-- END ripple -->
+                            <img id="first_image" src="/assets/images/3dstruct_small.png"
+                                 style="display:none; z-index: 0; position: absolute;"/>
+                        </div>
+                    </a>
+
+
+                    <div id="ngg-image-2" class="ngg-gallery-thumbnail-box">
+                        <div class="ngg-gallery-thumbnail">
+                            <a href="/assets/images/project_and_sequence_view.png"
+                               title="A nucleotide sequence is opened. The BLAST NCBI and Short Tandem Repeats Finder tasks are launched in the background. OS: Windows 7"
+                               rel="lightbox[set_1]">
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div id="ngg-image-3" class="ngg-gallery-thumbnail-box">
+                        <div class="ngg-gallery-thumbnail">
+                            <a href="/assets/images/wd_filter_by_length.png"
+                               title="A sample workflow schema of the Workflow Designer. The schema filters each input gene sequence by its length. OS: Windows 7"
+                               rel="lightbox[set_1]">
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div id="ngg-image-4" class="ngg-gallery-thumbnail-box">
+                        <div class="ngg-gallery-thumbnail">
+                            <a href="/assets/images/ass_br.png"
+                               title="A BAM file is opened in the Assembly Browser. OS: Mac OS X" rel="lightbox[set_1]">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="ngg-image-5" class="ngg-gallery-thumbnail-box">
+                        <div class="ngg-gallery-thumbnail">
+                            <a href="/assets/images/ass_br_diff_mode.png"
+                               title="The 'Difference' highlighting mode to display genetic mutations has been enabled in the Assembly Browser. OS: Mac OS X"
+                               rel="lightbox[set_1]">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </td>
+
+
+            <td colspan="2" rowspan="2" style="vertical-align: top;">
+                <table cellpadding="0" cellspacing="0">
+                    <!--    NEWS     -->
+                    <tr>
+                        <td width="40" class="vertical_menu_image ">
+                            <a href="news.html"><img src="/assets/images/news.png" alt="News" border=0></a>
+                        </td>
+                        <td>
+                            <div class="vertical_menu_block">
+                                <a href="news.html" style="color: #ab4e4e;text-decoration: none;"><span class="vertical_menu_header_font">Новости</span></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+
+                            <div class="vertical_menu_text_block">
+                                <a href="news.html#260321"><b>26 марта 2021</b></a>
+                                <br>
+                                <div class="offset-vm1">
+                                    Выпущен UGENE 38.1
+                                </div>
+                            </div>
+
+                            <div class="vertical_menu_text_block">
+                                <a href="news.html#170619"><b>17 июня 2019</b></a>
+                                <br>
+                                <div class="offset-vm1">
+                                    Сегодня проекту исполнилось 11 лет
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+
+
+                        </td>
+
+                    </tr>
+
+                    <!--    PODCASTS      -->
+                    <tr>
+                        <td class="vertical_menu_image ">
+                            <a href="podcast.html"><img src="/assets/images/podcast.png" alt="Podcast" border=0></a>
+                        </td>
+                        <td>
+                            <div class="vertical_menu_block">
+                                <a href="podcast.html" style="color: #542510;text-decoration: none;"><span class="vertical_menu_header_font">Видео уроки</span></a>
+                            </div>
+                        </td>
+                    </tr>
+
+
+                    <div class="post-4433 post type-post status-publish format-standard hentry category-podcast" id="post-4433">
+                        <tr>
+                            <td colspan="2">
+                                <div class="vertical_menu_text_block">
+                                    <a href="podcast.html#220321">Ep58: Что нового в UGENE 36, 37 и 38.</a>
+
+                                    <br>
+
+                                </div>
+                            </td>
+                        </tr>
+                    </div>
+
+
+                    <div class="post-4379 post type-post status-publish format-standard hentry category-podcast" id="post-4379">
+                        <tr>
+                            <td colspan="2">
+                                <div class="vertical_menu_text_block">
+                                    <a href="podcast.html#161220">Ep57: Что нового в UGENE 33, 34 и 35, часть 2.</a>
+
+                                    <br>
+
+                                </div>
+                            </td>
+                        </tr>
+                    </div>
+
+
+                    <tr>
+                        <td colspan="2">
+
+
+                        </td>
+
+                    </tr>
+
+                    <!--    BOARD    -->
+                    <tr>
+                        <td class="vertical_menu_image ">
+                            <a href="http://ugene.unipro.ru/forum"><img src="/assets/images/board.png" alt="Discussion Board" border=0></a>
+                        </td>
+                        <td>
+                            <div class="vertical_menu_block">
+                                <a href="http://ugene.unipro.ru/forum" style="color: #5b5209;text-decoration: none;"><span
+                                        class="vertical_menu_header_font">Форум</span></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- board list start ---> <!-- don`t remove this comment -->
+
+                    <tr>
+                        <td colspan="2">
+                            <div class="vertical_menu_text_block"><a href="http://ugene.unipro.ru/forum/YaBB.pl?board=feature"><b>&gt;Feature Requests: </b></a><a
+                                    href="http://ugene.unipro.ru/forum/YaBB.pl?num=1436221012">Donate a little bit</a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="vertical_menu_text_block"><a href="http://ugene.unipro.ru/forum/YaBB.pl?board=feature"><b>&gt;Feature Requests: </b></a><a
+                                    href="http://ugene.unipro.ru/forum/YaBB.pl?num=1435921091">Re: DNA-Star file conversion</a></div>
+                        </td>
+                    </tr>
+                    <!-- board list end ---> <!-- don`t remove this comment -->
+
+                    <!--    BUGS    -->
+                    <tr>
+                        <td class="vertical_menu_image ">
+                            <a href="http://ugene.dev/tracker"><img src="/assets/images/bugs.png" alt="Issues" border=0></a>
+                        </td>
+                        <td>
+                            <div class="vertical_menu_block">
+                                <a href="http://ugene.dev/tracker" style="color: #1c414f;text-decoration: none;"><span
+                                        class="vertical_menu_header_font">Задачи</span></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- bug list start --->
+                    <tr id="issues"></tr>
+                    <!-- bug list end --->
+
+
+                    <!--    STAY CONNECTED    -->
+                    <tr>
+                        <td colspan="2">
+                            <div style="margin-left: 30px;">
+                                <table cellspacing="10px" align="center">
+                                    <tr>
+                                        <td align="center">
+                                            <div style="margin-top: 10px;">
+                                                <a href="http://www.jetbrains.com/teamcity/" title="JetBrains TeamCity" target="blank"
+                                                   style="text-decoration: none;">
+                                                    <img border=0 height=24 src="/assets/images/logo_teamcity.png"
+                                                         style="filter: grayscale(100%);">
+                                                </a>
+                                            </div>
+                                            <div style="margin-top: 10px;">
+                                                <a href="https://github.com/ugeneunipro/ugene" alt="GitHub Logo" title="UGENE on GitHub">
+                                                    <img border=0 height=40 src="/assets/images/GitHub.png"
+                                                         style="filter: grayscale(100%);"/>
+                                                </a>
+                                                <div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        <td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+
+            <td style="vertical-align: top;">
+
+
+                <div style="margin-left: 55px; margin-right: 50px;">
+                    <div class="block-header">
+                        Ссылки на статьи
+                    </div>
+
+                    <div class="ann_first_line">
+                        <div class="ann_content" style="line-height: 18px;">
+                            <p>
+                                Okonechnikov K,&nbsp;Golosova O,&nbsp;Fursov M,&nbsp;the UGENE team.&nbsp;<span style="color:#255060;"><b><a
+                                    href="http://bioinformatics.oxfordjournals.org/content/28/8/1166" target="_blank">Unipro UGENE: a unified bioinformatics toolkit</a></b>. <i><a
+                                    href="http://bioinformatics.oxfordjournals.org/"><span style="color:#255060;">Bioinformatics</span></a></i>&nbsp;</span>2012&nbsp;28:&nbsp;1166-1167.
+                                doi:10.1093/bioinformatics/bts091
+                            </p>
+
+                            <p>
+                                <span style="color:#255060;"><i><o:p></o:p></i> </span>
+                            </p>
+
+                            <p>
+                                &nbsp;
+                            </p>
+
+                            <p>
+                                Golosova&nbsp;O, Henderson&nbsp;R, Vaskin&nbsp;Y, Gabrielian&nbsp;A, Grekhov&nbsp;G, Nagarajan&nbsp;V, Oler&nbsp;AJ, Qui&ntilde;ones&nbsp;M,
+                                Hurt&nbsp;D, Fursov&nbsp;M, Huyen&nbsp;Y. <span style="color:#255060;"><a href="https://peerj.com/articles/644/"
+                                                                                                          target="_blank"><b>Unipro UGENE NGS pipelines and components for variant calling, RNA-seq and ChIP-seq data analyses</b></a></span>.
+                                <i><a href="https://peerj.com"><span style="color:#255060;">PeerJ</span></a>&nbsp;2014&nbsp;</i>2:e644. doi:10.7717/peerj.644
+                            </p>
+                            <p>&nbsp;</p>
+                            <p>Rose&nbsp;R, Golosova&nbsp;O, Sukhomlinov&nbsp;D, Tiunov&nbsp;A, Prosperi&nbsp;M. <span style="color:#255060;"><a
+                                    href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty901/5144668?guestAccessKey=f3c08511-c32d-43ad-b9cf-daeb772b1c0e"
+                                    target="_blank"><b>Flexible design of multiple metagenomics classification pipelines with UGENE</b></a></span>. <i><a
+                                    href="https://academic.oup.com/bioinformatics"><span style="color:#255060;">Bioinformatics</span></a></i>, bty901,
+                                2018/10/25. doi:10.1093/bioinformatics/bty901
+                            </p>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="block-header">
+                        Присоединяйтесь к нам
+                    </div>
+
+                    <div style="margin-top: 5px;">
+                        <table align="center" cellpadding="0" cellspacing="0px" class="social-icons" valign="top">
+                            <tbody>
+                            <tr>
+                                <td align="center" colspan="8">
+                                    <a class="content" href="mailto:ugene-news-subscribe@unipro.ru?Subject=Подписаться на рассылку UGENE">Подписаться на
+                                        рассылку</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>
+                                        <a href="http://vk.com/uniprougene" target="blank" title="Follow us on VKontakte"><img
+                                                src="/assets/images/vk.png"/></a>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <a href="https://www.facebook.com/groups/ugene/" target="blank" title="Follow us on Facebook"><img
+                                                src="/assets/images//fb.jpg"/></a>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <a href="http://twitter.com/uniprougene" target="blank" title="Follow us on Twitter"><img
+                                                src="/assets/images//tw.png"/></a>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <a href="https://www.linkedin.com/profile/view?id=200543736&amp;trk=nav_responsive_tab_profile" target="blank"
+                                           title="Follow us on LinkedIn"><img src="/assets/images//ld.png"/></a>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <a href="http://feeds2.feedburner.com/NewsOfUgeneProject" target="blank" title="Subscribe to RSS feeds"><img
+                                                src="/assets/images/rss.png"/></a>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <a href="https://www.youtube.com/user/UniproUGENE" target="blank" title="Follow us on YouTube"><img
+                                                src="/assets/images/yt1.png"/></a>
+                                    </p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </td>
+
+            <td style="vertical-align: top;">
+                <div>
+                    <div class="block-header">
+                        <span class="short_text" id="result_box" lang="ru"><span class="hps">Поддержка и услуги</span></span>
+                    </div>
+
+                    <div>
+                        <div class="sup_content">
+                            <p>
+                                Не стесняйтесь обращаться к нам, если вам нужна <a class="content" href="ru/support.html">техническая поддержка</a>.
+                            </p>
+
+                            <div class="sup_header">
+                                Cвободные ресурсы
+                            </div>
+
+                            <ul>
+                                <li>
+                                    Просмотр <a class="content" href="/ru/podcast.html">обучающих видео</a>
+                                </li>
+                                <li>
+                                    Обсуждение UGENE на <a class="content" href="http://ugene.unipro.ru/forum/">общественном форуме</a>
+                                </li>
+                                <li>
+                                    Сообщайте о дефектах в <a class="content" href="https://ugene.unipro.ru/tracker/secure/Dashboard.jspa">баг-трекинговой
+                                    системе</a>
+                                </li>
+                                <li>
+                                    <script>hide_email_from_robots('Напишите нам ');</script>&mdash; любая обратная связь важна
+                                </li>
+                            </ul>
+
+                            <div class="sup_header">
+                                Коммерческая поддержка
+                            </div>
+
+                            <div style="margin-left: 20px; margin-top: 10px;">
+                                Мы предоставляем следующие платные услуги:
+                            </div>
+
+                            <ul>
+                                <li>Исправление дефектов или добавление новой функции в UGENE, в самом скором времени</li>
+                                <li>Автоматизация ваших вычислительных задач</li>
+                                <li>Создание личной пользовательской версии UGENE или расширения для решения конкретных задач</li>
+                                <li>Настройка облака или кластера для установки UGENE</li>
+                                <li>Создание новых биоинформатических приложений</li>
+                                <li>Установка какого-либо биоинформатического программного обеспечения на удаленный сервер или облако</li>
+                                <li>Использование опыта команды UGENE любым другим способом</li>
+                            </ul>
+
+                            <div style="margin-left: 20px; margin-top: 10px;">
+                                <script>hide_email_from_robots3('Напишите нам');</script>&nbsp; чтобы получить больше информации.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+
+        </tr>
+    </table>
+</div>
