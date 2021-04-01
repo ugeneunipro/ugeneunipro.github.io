@@ -1,0 +1,70 @@
+---
+layout: page_en
+title: HPC - Unipro UGENE
+---
+
+<div class="hpc-page">
+    <h2>
+        High Performance Computing in UGENE<br/>
+    </h2>
+    <p>
+        One of the UGENE main goals is to provide the users with maximum possible performance of their computational tasks. In order to achieve this goal UGENE
+        focuses on integration of highly optimized versions of the most popular bioinformatics algorithms (Smith Waterman, HMMER, MUSCLE etc). UGENE team
+        members have background in bioinformatics and computer science and are also capable to provide custom optimizations to the algorithms.
+    </p>
+    <p>
+        On this page you can find information about various algorithmic optimizations applied in UGENE.
+    </p>
+    <h3>
+        Smith-Waterman algorithm<br/>
+    </h3>
+    <p>
+        UGENE includes several optimized versions of the Smith-Waterman algorithm:
+    </p>
+    <ul>
+        <li>
+            parallel implementation optimized for multicore systems;
+        </li>
+        <li>
+            SSE-optimized;
+        </li>
+        <li>
+            GPU-optimized with <a class="content" href="http://www.nvidia.com/object/cuda_home_new.html">NVIDIA CUDA</a>;
+        </li>
+        <li>
+            GPU-optimized with OpenCL.
+        </li>
+    </ul>
+    <p>
+        Below you can find comparison of various implementations of Smith-Waterman algorithm.
+    </p>
+    <p>
+        <img alt="Smith Waterman benchmark chart" src="/assets/images/sw_benchmark.png"/>
+    </p>
+    <p>
+        Benchmark data can be downloaded from <a class="content" href="http://ugene.net/benchmarks/smith_waterman_benchmark.zip">here</a>.
+    </p>
+    <h3>
+        UGENE Genome Aligner<br/>
+    </h3>
+    <p>
+        UGENE Genome Aligner is an efficient GPU-accelerated tool for fast short DNA reads alignment to reference genome. It is rather similar to such popular
+        tools as <a class="content" href="http://bowtie-bio.sourceforge.net/index.shtml">Bowtie</a>, however instead of Burrows-Wheeler transform it uses rather
+        simple alignment algorithm based on <a class="content" href="http://en.wikipedia.org/wiki/Suffix_array">suffix arrays</a>.
+    </p>
+    <p>
+        We tested the accuracy and performance of the Genome Aligner against Bowtie (Table 1). In this test we aligned approximately 2 million randomly selected
+        short reads with size of 76 bp (experiment ERR008366 from <a class="content" href="http://www.ncbi.nlm.nih.gov/sra">NCBI Sequence Read Archive</a>) to
+        the mouse genome chromosome 1 (GenbankID:AC157543.8).
+    </p>
+    <p>
+        <img alt="Genome Aligner vs Bowtie" src="/assets/images/genome_aligner_perf.png"/>
+    </p>
+    <p>
+        In result a performance boost was demonstrated by the Genome Aligner in the case of 2 and 3 mismatches. Both tools demonstrated equal accuracy.
+    </p>
+    <p>
+        You can find more details on the Genome Aligner in a draft paper available from <a class="content"
+                                                                                           href="http://ugene.net/benchmarks/UGENE_Genome_Aligner_SPO_2011.pdf">here</a>.
+    </p>
+</div>

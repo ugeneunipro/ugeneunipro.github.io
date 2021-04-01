@@ -1,0 +1,65 @@
+---
+layout: page_en
+title: Public Databases - Unipro UGENE
+---
+
+<div class="all_content">
+    <div class="post-main">
+        <div class="entry">
+            <h1>
+                UGENE Tips: Public Databases<br/>
+            </h1>
+            <h3>
+                UGENE&nbsp;Public Database<br/>
+            </h3>
+            <p>
+                <a href="http://ugene.unipro.ru/wp-content/uploads/2015/04/21.jpg" data-ob="lightbox[3068]"><img loading="lazy" alt="UGENE Public Database"
+                                                                                                                 class="aligncenter size-full wp-image-3069"
+                                                                                                                 height="838"
+                                                                                                                 src="http://ugene.unipro.ru/wp-content/uploads/2015/04/21.jpg"
+                                                                                                                 width="1600"/></a></p>
+            <p> Next time you need mouse, drosophila or arabidopsis chromosome sequences don&#39;t be in a hurry to go to the NCBI site since UGENE has embedded
+                access to annotated sequences of often used genomes including human, HIV, zebrafish and a few others. Almost a year ago we created a public
+                database of biological sequences accessible to every UGENE user via the Internet. The interaction with its content is done seamlessly by the
+                conventional UGENE sequence viewer. It looks like you work with files located on your local computer. One of the main advantages of this
+                database is that you don&#39;t have to wait for needed files to be downloaded completely over the network. Instead UGENE downloads only a piece
+                of a sequence that is to be displayed on your screen which is pretty fast. However you can still download the files from the database to
+                continue working with them offline.</p>
+            <p> Besides chromosome sequences our storage also contains the NCBI UniVec vector database.</p>
+            <p> On the attached screenshots you can see how to connect to the public database.</p>
+            <p> Leave your comments about which other sequences you&#39;d like to see in the nucleotide sequence database and we&#39;ll add them.
+            </p>
+            <h3>
+                Your Own&nbsp;Public Database<br/>
+            </h3>
+            <p>
+                <a href="http://ugene.unipro.ru/wp-content/uploads/2015/04/22.jpg" data-ob="lightbox[3068]"><img loading="lazy" alt="Your Own Public Database"
+                                                                                                                 class="aligncenter size-full wp-image-3070"
+                                                                                                                 height="838"
+                                                                                                                 src="http://ugene.unipro.ru/wp-content/uploads/2015/04/22.jpg"
+                                                                                                                 width="1600"/></a></p>
+            <p> UGENE tips: 5 steps to the creation of your own bioinformatics nucleotide sequence database.</p>
+            <p> Last week we told (http://on.fb.me/1EwgIZ1) about the public database embedded into UGENE that contains frequently used sequences of chromosomes
+                and plasmids. And today you&#39;re going to know how to create a similar database for your lab or institute. After this any UGENE user having
+                access to it will be able to upload to it files with sequences, multiple alignments, genome assemblies, in short, all the data you analyze in
+                UGENE. Besides, users will be able to work the the information located in the database without downloading it completely on their
+                workstations.</p>
+            <p> 1. So first of all, you have to decide on which computer you&#39;d like to deploy the database and find out its IP-address. Then you have to
+                install the MySQL database server which can be found on the official site: http://bit.ly/1CBCsHU. Pay attention to your OS version when choosing
+                MySQL package for downloading.</p>
+            <p> 2. After this you have to launch database server. This can be done in terminal/command line by instructions different for various operating
+                systems. For example, in Windows this is &quot;C:\Program Files\MySQL\MySQL Server 5.7\bin\mysqld&quot;, in Linux &#8211; &ldquo;sudo
+                /etc/init.d/mysql start&rdquo;, in OS X &ndash; &ldquo;sudo /usr/local/mysql/support-files/mysql.server start&rdquo;. Note that default paths to
+                MySQL executable files are used in the examples above. In your case they may differ.</p>
+            <p> 3. After this it&#39;s only left to create an empty database that will be used by UGENE subsequently. To do this you have to launch the SQL
+                interpreter. Again, this is done differently on various systems. Windows &#8211; &ldquo;C:\Program Files\MySQL\MySQL Server 5.7\bin\mysql -u
+                root -p&rdquo;, Linux and OS X &ndash; &ldquo;mysql -u root -p&rdquo;. After you&#39;ve run this command, a password is asked. Just press &quot;Enter&quot;.</p>
+            <p> 4. Finally, to create an empty database you have to execute the following command: &quot;create database `my database`; exit;&quot;, where you
+                may use whatever database name you want instead of &quot;my database&quot;.</p>
+            <p> 5. Then you have to run UGENE on the same workstation or another one located in the same local network and follow the attached screenshots.</p>
+            <p> After you&#39;ve created your own bioinformatics database, you can learn how to work with it in our documentation: http://bit.ly/1xCTEFq. Leave
+                your comments if you have any questions, and we&#39;ll help you.</p>
+        </div>
+
+    </div>
+</div>

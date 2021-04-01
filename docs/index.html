@@ -1,0 +1,415 @@
+---
+layout: page_en
+title: Unipro UGENE2 - Integrated Bioinformatics Tools
+---
+
+<div class="index-page">
+    <table width="100%">
+        <tr>
+            <td class="head-line-block">
+                <div style="margin-top: 10px;" align="center">
+                    <div style="font-size: 28px; color: #1f4351;">
+                        <div>
+                            Unipro UGENE
+                        </div>
+                        <table align="center">
+                            <tr>
+                                <td>&nbsp;&nbsp;v.&nbsp;38</td>
+                                <td style="font-size: 12px;text-decoration: underline;" valign="top">March, 2021</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div style="color: rgb(0, 35, 49); font-size: 14px; text-align: center;">
+
+                    UGENE is free open-source cross-platform
+
+                    bioinformatics software
+
+                    It works perfectly on Windows, macOS and Linux
+
+                    and requires only a few clicks to install
+
+                </div>
+                <div style="text-align: center;"></div>
+                <div class="download-button-block">
+                    <a href="/download.html">
+                        <img alt="Download UGENE" src="/assets/images/download_ugene_button.jpg" style="width: 149px; height: 40px;">
+                    </a>
+                </div>
+            </td>
+            <td style="vertical-align: top; width: 380px;">
+                <script type="text/javascript">
+                  $(document).ready(function () {
+                    $().piroBox({
+                      my_speed: 300, //animation speed
+                      bg_alpha: 0.5, //background opacity
+                      slideShow: 'true', // true == slideshow on, false == slideshow off
+                      slideSpeed: 3, //slideshow
+                      close_all: '.piro_close' // add class .piro_overlay(with comma)if you want overlay click close piroBox
+                    });
+                    $('#first_image').fadeIn(3500);
+                    $('#container').fadeIn(3500);
+                    $.getJSON('/assets/issues.json', function (data) {
+                      $('#issues').replaceWith('<tr id="issues2"><td colspan="2"><div class="vertical_menu_text_block">' +
+                          '<a href="https://ugene.dev/tracker/browse/' + data['issues'][0]['key'] + '">' +
+                          '<b>' + data['issues'][0]['fields']['status']['name'] + ':</b> ' + data['issues'][0]['fields']['summary'] + '<small> [' + data['issues'][0]['key'] + ']</small>' +
+                          '</a></div></td></tr>' +
+                          '<tr><td colspan="2"><div class="vertical_menu_text_block">' +
+                          '<a href="https://ugene.dev/tracker/browse/' + data['issues'][1]['key'] + '">' +
+                          '<b>' + data['issues'][1]['fields']['status']['name'] + ':</b> ' + data['issues'][1]['fields']['summary'] + '<small> [' + data['issues'][1]['key'] + ']</small>' +
+                          '</a></div></td></tr>');
+                    });
+                  });
+                </script>
+
+                <div style="width: 330px;">
+                    <a href="/assets/images/3dstruct.png" title="UGENE 3D Protein Structure Viewer. OS: Mac OS X" rel="lightbox[set_1]">
+                        <div style="position: relative">
+                            <div id="container" style="z-index: 1; position: absolute; display: none;"></div>
+                            <!-- START ripple-->
+                            <script type="text/javascript" src="/assets/js/ripple.js"></script>
+                            <script type="text/javascript">
+                              ripple('/assets/images/3dstruct_small.png', document.getElementById('container'));
+                            </script>
+                            <!-- END ripple -->
+                            <img id="first_image" src="/assets/images/3dstruct_small.png" style="display:none; z-index: 0; position: absolute;"/>
+                        </div>
+                    </a>
+
+
+                    <div id="ngg-image-2" class="ngg-gallery-thumbnail-box">
+                        <div class="ngg-gallery-thumbnail">
+                            <a href="/assets/images/project_and_sequence_view.png"
+                               title="A nucleotide sequence is opened. The BLAST NCBI and Short Tandem Repeats Finder tasks are launched in the background. OS: Windows 7"
+                               rel="lightbox[set_1]">
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div id="ngg-image-3" class="ngg-gallery-thumbnail-box">
+                        <div class="ngg-gallery-thumbnail">
+                            <a href="/assets/images/wd_filter_by_length.png"
+                               title="A sample workflow schema of the Workflow Designer. The schema filters each input gene sequence by its length. OS: Windows 7"
+                               rel="lightbox[set_1]">
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div id="ngg-image-4" class="ngg-gallery-thumbnail-box">
+                        <div class="ngg-gallery-thumbnail">
+                            <a href="/assets/images/ass_br.png"
+                               title="A BAM file is opened in the Assembly Browser. OS: Mac OS X" rel="lightbox[set_1]">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="ngg-image-5" class="ngg-gallery-thumbnail-box">
+                        <div class="ngg-gallery-thumbnail">
+                            <a href="/assets/images/ass_br_diff_mode.png"
+                               title="The 'Difference' highlighting mode to display genetic mutations has been enabled in the Assembly Browser. OS: Mac OS X"
+                               rel="lightbox[set_1]">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </td>
+
+            <td colspan="2" rowspan="2" style="vertical-align: top;">
+                <table>
+                    <!--    NEWS     -->
+                    <tr>
+                        <td width="40" class="vertical_menu_image ">
+                            <a href="/news.html"><img src="/assets/images/news.png" alt="News"></a>
+                        </td>
+                        <td>
+                            <div class="vertical_menu_block">
+                                <a href="/news.html" style="color: #ab4e4e;text-decoration: none;"><span class="vertical_menu_header_font">News</span></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="vertical_menu_text_block">
+                                <a href="/news.html#260321"><b>March 26th, 2021</b></a>
+                                <br>
+                                <div class="offset-vm1">
+                                    UGENE 38.1 has been released
+                                </div>
+                            </div>
+
+                            <div class="vertical_menu_text_block">
+                                <a href="/news.html#170619"><b>June 17th, 2019</b></a>
+                                <br>
+                                <div class="offset-vm1">
+                                    UGENE&#8217;s 11th anniversary
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+
+
+                        </td>
+
+                    </tr>
+
+                    <!--    PODCASTS      -->
+                    <tr>
+                        <td class="vertical_menu_image ">
+                            <a href="/podcast.html"><img src="/assets/images/podcast.png" alt="Podcast"></a>
+                        </td>
+                        <td>
+                            <div class="vertical_menu_block">
+                                <a href="/podcast.html" style="color: #542510;text-decoration: none;"><span class="vertical_menu_header_font">Podcast</span></a>
+                            </div>
+                        </td>
+                    </tr>
+
+
+                    <div class="post-4433 post type-post status-publish format-standard hentry category-podcast" id="post-4433">
+                        <tr>
+                            <td colspan="2">
+                                <div class="vertical_menu_text_block">
+                                    <a href="/podcast.html#220321">Ep58: What&#8217;s new in UGENE 36, 37 and 38.</a>
+
+                                    <br>
+
+                                </div>
+                            </td>
+                        </tr>
+                    </div>
+
+
+                    <div class="post-4379 post type-post status-publish format-standard hentry category-podcast" id="post-4379">
+                        <tr>
+                            <td colspan="2">
+                                <div class="vertical_menu_text_block">
+                                    <a href="/podcast.html#161220">Ep57: What&#8217;s new in UGENE 33, 34 and 35, part 2.</a>
+
+                                    <br>
+
+                                </div>
+                            </td>
+                        </tr>
+                    </div>
+
+
+                    <tr>
+                        <td colspan="2">
+
+
+                        </td>
+
+                    </tr>
+
+                    <!--    BOARD    -->
+                    <tr>
+                        <td class="vertical_menu_image ">
+                            <a href="/forum"><img src="/assets/images/board.png" alt="Discussion Board"></a>
+                        </td>
+                        <td>
+                            <div class="vertical_menu_block">
+                                <a href="/forum" style="color: #5b5209;text-decoration: none;"><span class="vertical_menu_header_font">Board</span></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- board list start ---> <!-- don`t remove this comment -->
+
+                    <tr>
+                        <td colspan="2">
+                            <div class="vertical_menu_text_block"><a href="http://ugene.unipro.ru/forum/YaBB.pl?board=feature"><b>&gt;Feature Requests: </b></a><a
+                                    href="http://ugene.unipro.ru/forum/YaBB.pl?num=1436221012">Donate a little bit</a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="vertical_menu_text_block"><a href="http://ugene.unipro.ru/forum/YaBB.pl?board=feature"><b>&gt;Feature Requests: </b></a><a
+                                    href="http://ugene.unipro.ru/forum/YaBB.pl?num=1435921091">Re: DNA-Star file conversion</a></div>
+                        </td>
+                    </tr>
+                    <!-- board list end ---> <!-- don`t remove this comment -->
+
+                    <!--    BUGS    -->
+                    <tr>
+                        <td class="vertical_menu_image ">
+                            <a href="/tracker"><img src="/assets/images/bugs.png" alt="Issues"></a>
+                        </td>
+                        <td>
+                            <div class="vertical_menu_block">
+                                <a href="/tracker" style="color: #1c414f;text-decoration: none;"><span class="vertical_menu_header_font">Issues</span></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- bug list start --->
+                    <tr id="issues"></tr>
+                    <!-- bug list end --->
+
+
+                    <!--    STAY CONNECTED    -->
+                    <tr>
+                        <td colspan="2">
+                            <div style="margin-left: 30px;">
+                                <table cellspacing="10px" align="center">
+                                    <tr>
+                                        <td align="center">
+                                            <div style="margin-top: 10px;">
+                                                <a href="http://www.jetbrains.com/teamcity/" title="JetBrains TeamCity" target="blank"
+                                                   style="text-decoration: none;">
+                                                    <img height=24 src="/assets/images/logo_teamcity.png"
+                                                         style="filter: grayscale(100%);">
+                                                </a>
+                                            </div>
+                                            <div style="margin-top: 10px;">
+                                                <a href="https://github.com/ugeneunipro/ugene" alt="GitHub Logo" title="UGENE on GitHub">
+                                                    <img height=40 src="/assets/images/GitHub.png" style="filter: grayscale(100%);"/>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        <td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="vertical-align: top;">
+                <div style="margin-left: 55px; margin-right: 50px;">
+                    <div class="block-header"> Cite Us</div>
+
+                    <div class="ann_first_line">
+                        <div class="ann_content" style="line-height: 18px;">
+                            <p>
+                                Okonechnikov K,&nbsp;Golosova O,&nbsp;Fursov M,&nbsp;the UGENE team.&nbsp;<span style="color:#255060;"><b><a
+                                    href="http://bioinformatics.oxfordjournals.org/content/28/8/1166" target="_blank">Unipro UGENE: a unified bioinformatics toolkit</a></b>. <i><a
+                                    href="http://bioinformatics.oxfordjournals.org/"><span style="color:#255060;">Bioinformatics</span></a></i>&nbsp;</span>2012&nbsp;28:&nbsp;1166-1167.
+                                doi:10.1093/bioinformatics/bts091
+                            </p>
+                            <p>&nbsp;</p>
+                            <p>
+                                Golosova&nbsp;O, Henderson&nbsp;R, Vaskin&nbsp;Y, Gabrielian&nbsp;A, Grekhov&nbsp;G, Nagarajan&nbsp;V, Oler&nbsp;AJ, Qui&ntilde;ones&nbsp;M,
+                                Hurt&nbsp;D, Fursov&nbsp;M, Huyen&nbsp;Y. <span style="color:#255060;"><a href="https://peerj.com/articles/644/"
+                                                                                                          target="_blank"><b>Unipro UGENE NGS pipelines and components for variant calling, RNA-seq and ChIP-seq data analyses</b></a></span>.
+                                <i><a href="https://peerj.com"><span style="color:#255060;">PeerJ</span></a>&nbsp;2014&nbsp;</i>2:e644.
+                                doi:10.7717/peerj.644
+                            </p>
+                            <p>&nbsp;</p>
+                            <p>
+                                Rose&nbsp;R, Golosova&nbsp;O, Sukhomlinov&nbsp;D, Tiunov&nbsp;A, Prosperi&nbsp;M. <span style="color:#255060;"><a
+                                    href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty901/5144668?guestAccessKey=f3c08511-c32d-43ad-b9cf-daeb772b1c0e"
+                                    target="_blank"><b>Flexible design of multiple metagenomics classification pipelines with UGENE</b></a></span>. <i><a
+                                    href="https://academic.oup.com/bioinformatics"><span style="color:#255060;">Bioinformatics</span></a></i>, bty901,
+                                2018/10/25. doi:10.1093/bioinformatics/bty901
+                            </p>
+                        </div>
+
+                        <div class="ann_content" style="line-height: 18px;">&nbsp;</div>
+                    </div>
+
+                    <div class="block-header">Follow Us</div>
+
+                    <div style="margin-top: 5px;">
+                        <table align="center" cellpadding="0" cellspacing="0" class="social-icons" valign="top">
+                            <tbody>
+                            <tr>
+                                <td align="center" colspan="8">
+                                    <a class="subscribe-link" href="mailto:ugene-news-subscribe@unipro.ru?Subject=Subscribe to UGENE mailing list">
+                                        Subscribe to mailing list
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="social-links-row">
+                                <td>
+                                    <a href="http://vk.com/uniprougene" target="blank" title="Follow us on VKontakte">
+                                        <img src="/assets/images/vk.png"/>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="https://www.facebook.com/groups/ugene/" target="blank" title="Follow us on Facebook">
+                                        <img src="/assets/images/fb.jpg"/>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="http://twitter.com/uniprougene" target="blank" title="Follow us on Twitter">
+                                        <img src="/assets/images/tw.png"/>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="https://www.linkedin.com/profile/view?id=200543736&amp;trk=nav_responsive_tab_profile" target="blank"
+                                       title="Follow us on LinkedIn">
+                                        <img src="/assets/images/ld.png"/>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="http://feeds2.feedburner.com/NewsOfUgeneProject" target="blank" title="Subscribe to RSS feeds">
+                                        <img src="/assets/images/rss.png"/>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="https://www.youtube.com/user/UniproUGENE" target="blank" title="Follow us on YouTube">
+                                        <img src="/assets/images/yt1.png"/>
+                                    </a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </td>
+
+            <td style="vertical-align: top;">
+                <div>
+                    <div class="block-header"> Support and Services</div>
+
+                    <div>
+                        <div class="sup_content">
+                            <p>
+                                Feel free to contact us if you need <a href="/support.html">technical support</a>.
+                            </p>
+
+                            <div class="sup_header">Free Resources</div>
+
+                            <ul>
+                                <li>Browse the <a href="/documentation.html">documentation</a></li>
+                                <li>Watch <a href="/podcast.html">instructional videos</a></li>
+                                <li>Discuss UGENE on the <a href="http://ugene.unipro.ru/forum/">public forum</a></li>
+                                <li>Report issues to the <a href="https://ugene.unipro.ru/tracker/">bug-tracking system</a></li>
+                                <li>
+                                    <script>hide_email_from_robots('Write us');</script>&mdash; any feedback is appreciated
+                                </li>
+                            </ul>
+
+                            <div class="sup_header">Commercial Support</div>
+
+                            <div style="margin-left: 20px; margin-top: 10px;">We provide the following fee-based services:</div>
+
+                            <ul>
+                                <li>Fix a defect or add a new feature into UGENE at the earliest possible date</li>
+                                <li>Automate your computational tasks</li>
+                                <li>Create a private custom UGENE version or extension for solving specific tasks</li>
+                                <li>Set up a cloud or cluster installation of UGENE</li>
+                                <li>Create a brand new bioinformatics application</li>
+                                <li>Set up any kind of bioinformatics software on a remote server or a cloud</li>
+                                <li>Use UGENE team expertise in any other way</li>
+                            </ul>
+
+                            <div style="margin-left: 20px; margin-top: 10px;">
+                                <script>hide_email_from_robots3('Write us');</script>&nbsp; to get more information.
+                            </div>
+
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

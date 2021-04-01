@@ -1,0 +1,1194 @@
+---
+layout: page_en
+title: Release Notes - Unipro UGENE
+---
+
+<div class="changelist-page">
+    <h2>Release Notes</h2>
+    <p><!----------38.0-en----------></p>
+    <div class="release_notes_version_header">Version 38</div>
+    <div class="release_notes_version_descr">
+        <p>The new version includes the following improvements:</p>
+        <ul>
+            <li><strong>Export amino acid representation:</strong>&nbsp;<br/>
+                The «Export Amino Acid Translation» dialog has been improved. Now it&#8217;s possible to choose whether you need to export gaps or not and if
+                yes it&#8217;s possible to export them as «X» or «-» symbols. Also, it&#8217;s possible to choose the translation frame.
+                <p><img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Sorting sequences"
+                        src="/assets/images/release_notes/38-export-amino-transl.png"></p>
+                <p>&nbsp;</li>
+            <li><strong>Sorting features:</strong>&nbsp;<br/>
+                «Sort by leading gaps» is available now! Also, all sorting functions work not only for the whole alignment, but for selected reads too.<br/>
+                <img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
+                     src="/assets/images/release_notes/38-leading-sort.png"></li>
+            <li><strong>The «Cut» function:</strong><br/>
+                Now it&#8217;s possible to cut the selected part of the alignment. Find the corresponding item in the context menu or use the following
+                shortcut: «Ctrl+X».<br/>
+                <img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
+                     src="/assets/images/release_notes/38-cut.png"></li>
+            <li><strong> Other changes:</strong>
+                <ul>
+                    <li>Minimum font size has been decreased in &nbsp;<u>Alignment Editor</u>.</li>
+                    <li>Double-click on a read name moves the screen to the meaningful symbols in &nbsp;<u>Sanger Reads Editor</u>.</li>
+                    <li>Other bug fixes and improvements.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>You may see the full list of improvements&nbsp;<a class="content"
+                                                             href="https://ugene.dev/tracker/issues/?jql=project%20%3D%20UGENE%20AND%20fixVersion%20%3D%2038%20AND%20resolution%20in%20(Fixed%2C%20%22Won't%20Fix%22%2C%20Duplicate%2C%20Incomplete%2C%20%22Cannot%20Reproduce%22)">here</a>.
+        </p>
+    </div>
+    <p><!----------37.0-en----------></p>
+    <div class="release_notes_version_header">Version 37</div>
+    <div class="release_notes_version_descr">
+        The new version includes the following improvements:
+        <ul>
+            <li><strong>Alphabetical order of External Tools:</strong>&nbsp;<br/>
+                Pay attention that the list of the «External Tools» in the «Application Settings» dialog has become sorted alphabetically.
+                <p><img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Sorting sequences"
+                        src="/assets/images/release_notes/37-et-order.png"></p>
+                <p>&nbsp;</li>
+            <li><strong>The copy/paste and naming mechanism in the Alignment Editor has been improved:</strong><br/>
+                The copy/paste function saves the name of the copied sequence now and also roll this name to make it unique. Besides, the possibility to insert
+                sequence to a certain place (near the current selection) has appeared.<br/>
+                <img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
+                     src="/assets/images/release_notes/37-copy-paste.png"></li>
+            <li><strong>Naming in the «Bookmarks» tab has been improved:</strong><br/>
+                File and object names writing has become more convenient in the «Bookmarks» window.<br/>
+                <img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
+                     src="/assets/images/release_notes/37-bookmarks.png"></li>
+            <li><strong> Other changes:</strong>
+                <ul>
+                    <li>The validation process of External Tools has been improveds.</li>
+                    <li>Trimmomatic, BWA, and Bowtie2 have been updated.</li>
+                    <li>A large number of bugs and errors, related to working with the database, external tools, and other scripts, have been fixed.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>You may see the full list of improvements&nbsp;<a class="content"
+                                                             href="https://ugene.dev/tracker/issues/?jql=project%20%3D%20UGENE%20AND%20fixVersion%20%3D%2037%20AND%20resolution%20in%20(Fixed%2C%20%22Won't%20Fix%22%2C%20Duplicate%2C%20Incomplete%2C%20%22Cannot%20Reproduce%22)">here</a>.
+        </p>
+    </div>
+    <p><!----------36.0-en----------></p>
+    <div class="release_notes_version_header">Version 36</div>
+    <div class="release_notes_version_descr">
+        <p>The new version includes the following improvements:</p>
+        <ul>
+            <li><strong>Adding the UGENE launch shortcut on the Desktop:</strong>&nbsp;<br/>
+                Pay attention to the appeared «Create desktop shortcut» button in the «Help» menu.
+                <p><img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Sorting sequences"
+                        src="/assets/images/release_notes/36-shortcut.png"></p>
+                <p>&nbsp;</li>
+            <li><strong>The «Copy annotations» function is improved in the <u>sequence view</u>:</strong><br/>
+                Copying of selected annotated sequences is tied to the strand of the sequence the current annotation is located on. If there are several
+                annotations on both direct and complementary strands are selected, clicking the&nbsp;«Copy» button causes the copying of sequences from the
+                corresponding strands.<br/>
+                <img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
+                     src="/assets/images/release_notes/36-copy-annotations.png"></li>
+            <li><strong> Other improvements:</strong>
+                <ul>
+                    <li>MySQL 8 is supported.</li>
+                    <li>Phylogenetic trees visualization is improved.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>The full list of changes can be found&nbsp;<a class="content"
+                                                         href="https://ugene.dev/tracker/issues/?jql=project%20%3D%20UGENE%20AND%20fixVersion%20%3D%2036%20AND%20resolution%20in%20(Fixed%2C%20%22Won't%20Fix%22%2C%20Duplicate%2C%20Incomplete%2C%20%22Cannot%20Reproduce%22)">here</a>.
+        </p>
+    </div>
+    <div class="release_notes_version_header">Version 35</div>
+    <div class="release_notes_version_descr">
+        <p>The new version includes a bunch of improvements in <b><u>Alignment Editor:</u></b></p>
+        <ul>
+            <li>
+                <b>Sorting sequences in alignment by name and by length:</b> You can sort sequences in alignment using<br/>
+                the Sort submenu in the Actions main menu or from the context menu.
+                <p>Also, you can use the General Options Panel tab:</p>
+                <p><img src="/assets/images/release_notes/35-sorting.png" style="margin-top: 10px; margin-bottom: 10px; width: 800px"
+                        title="Sorting sequences"></p>
+                <p>There are four ways to sort sequences:</p>
+                <ul>
+                    <li> By name, ascending</li>
+                    <li> By name, descending</li>
+                    <li> By length, ascending</li>
+                    <li> By length, descending</li>
+                </ul>
+            </li>
+            <li>
+                <b>Grouping sequences in alignment by sequence names:</b> To search for a pattern(s) in alignment go to<br/>
+                the &#8220;Search in Alignment&#8221; tab of the Options Panel.
+                <p>To group results press the Group button. The results will be selected and grouped to the top after the first<br/>
+                    click or to the bottom after the second click to the button.</p>
+                <p><img src="/assets/images/release_notes/35-grouping.png" style="margin-top: 10px; margin-bottom: 10px; width: 800px"
+                        title="Search in an alignment"></li>
+            <li>
+                <b>Search by sequence names in alignment:</b><br/>
+                To search by sequence names use the Search in Alignment Options Panel tab with the &#8220;Sequence Names&#8221; search context.<br/>
+                <img src="/assets/images/release_notes/35-search-in-seq-names.png" style="margin-top: 10px; margin-bottom: 10px; width: 800px"
+                     title="Search in an alignment"></li>
+            <li>
+                <b>&#8220;Weak Similarities&#8221; color scheme:</b> When there is a choice between two characters and it is not<br/>
+                specified by other rules which character to color, following priorities: T&gt;U&gt;G&gt;C&gt;A&gt;B&gt;D&gt;H&gt;K&gt;M&gt;R&gt;S&gt;V&gt;W&gt;Y&gt;N.
+                <p>Coloring rules:</p>
+                <ul>
+                    <li> Do not color gaps (&#8220;-&#8220;), i.e. use a black font and white background.</li>
+                    <li> Residues should be colored according to their percentage number in the column (use the priorities,<br/>
+                        described above, in case of equal percentage numbers).
+                    </li>
+                    <li> Residues with the most frequency/priority in the column.</li>
+                </ul>
+                <p><img src="/assets/images/release_notes/35-weak-similarities.png" style="margin-top: 10px; margin-bottom: 10px; width: 800px"
+                        title="Search in an alignment"></li>
+            <li>
+                <b> Other modifications include:</b>
+                <ul>
+                    <li> The ClustalO tool is updated to the latest version.</li>
+                    <li> &#8220;Navigation&#8221; and &#8220;Appearance&#8221; menus in Alignment Editor were restructured for better usability.</li>
+                    <li> &#8220;Edit&#8221; menu in Sequence View got a new structure.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 34</div>
+    <div class="release_notes_version_descr">
+        <p>The new version includes a lot of useful features in the <b><u>Alignment Editor</u></b> (AE):</p>
+        <ul>
+            <li>
+                <b>Realigning sequence to other sequence in an alignment:</b> select one or several sequences in an alignment and click <img
+                    src="/assets/images/release_notes/34-realign-in-alignment-editor.png" style="width: 30px;"
+                    title="'Realign sequence(s) to other sequence' button on the AE toolbar"> on the AE toolbar. The selected sequence will be re-aligned to the
+                other sequences in the alignment.
+            </li>
+            <li>
+                <b>Advanced search options:</b> <a class="content" href="http://doc.ugene.net/wiki/display/UUOUMF34/Searching+in+Alignment">a bunch of
+                features</a>
+                for searching in an alignment was added: search of several patterns at once, usage of different algorithms besides the exact pattern match,
+                search in particular columns. Similarly to the Sequence View, the options are now located on the options panel tab.<br/>
+                <img src="/assets/images/release_notes/34-search-in-alignment.png" style="margin-top: 10px; margin-bottom: 10px; width: 800px"
+                     title="Search in an alignment"></li>
+            <li>
+                <b>Appearance of a selected region was improved:</b> the selected region is more colorful, the dashed border is wide.
+            </li>
+            <li>
+                <b>Selection of the same region in other sequence:</b> if a region is selected in an alignment and it is required to select the same region in
+                another sequence in the alignment, use the Ctrl (or Cmd on macOS) key and click on the required sequence name.
+            </li>
+            <li>
+                <b>Collapsing mode bug-fixing:</b> a few issues with alignments in <a class="content"
+                                                                                      href="http://doc.ugene.net/wiki/display/UUOUMF34/Collapsing+Rows">collapsing
+                mode</a> were fixed.
+            </li>
+        </ul>
+        <p>Modification in the <b><u>Sequence View</u></b> (SV) include:</p>
+        <ul>
+            <li>
+                <b>State of the SV components is saved:</b> appearance configuration of different SV components is now saved between different UGENE
+                sessions.<br/>
+                For example, if you hide the Zoom View or show all translation frames, this will be applied to the next opened SV window even after the program
+                re-start.
+            </li>
+            <li>
+                <b>Sequence statistics:</b> the statistics calculation for a nucleotide sequence was corrected, info for double-stranded molecules was added,
+                see <a class="content" href="http://doc/ugene.net/wiki/display/UUOUMF34/Information+about+Sequence">documentation</a>.<br/>
+                <img src="/assets/images/release_notes/34-statistics-about-nucleotide-sequence.png"
+                     style="margin-top: 10px; margin-bottom: 10px; width: 600px" title="Statistics about a nucleotide sequence"></li>
+            <li>
+                <b>Copy/paste of annotations:</b> several copy/paste options were added for a selected annotation (similarly to a selected sequence region).
+            </li>
+            <li>
+                <b>Circular sequence analysis bug-fixing:</b> a few issues with analysis of a circular sequence were fixed.
+            </li>
+        </ul>
+        <p>Other modifications include:</p>
+        <ul>
+            <li>New version of the SWISS-PROT format is supported.</li>
+            <li>BLAST+ and remote NCBI BLAST are only supported now, the obsolete BLAST was removed.</li>
+            <li>The number of UGENE packages was decreased, 32-bit operating systems are no more supported. The old packages are available <a class="content"
+                                                                                                                                              href="/download-all.html">here</a>.
+            </li>
+            <li>Three UGENE manuals (the main one, the Workflow Designer manual and the Query Designer manual) were merged into one <a class="content"
+                                                                                                                                       href="http://doc.ugene.net/wiki/display/UUOUMF34/Unipro+UGENE+User+Manual">common
+                manual</a>.
+            </li>
+            <li>The Windows packages are now digitally signed by Unipro.</li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 33</div>
+    <div class="release_notes_version_descr">
+        <p>The new version introduces a bunch of improvements for adding a custom tool into UGENE, in particular:</p>
+        <ul>
+            <li><b>Import of your tool into UGENE external tools:</b> the list of <a class="content"
+                                                                                     href="http://doc.ugene.net/wiki/display/UUOUM33/Data+Analysis+Tools">external
+                tools</a> is available in the UGENE <a class="content" href="http://doc.ugene.net/wiki/display/UUOUM33/UGENE+Application+Settings">Application
+                Settings</a> dialog. Here for each tool you can provide a path to the tool executable file. Since UGENE version 33 you can also specify your own
+                tools. See <a class="content" href="http://doc.ugene.net/wiki/display/UUOUM33/Custom+External+Tools">documentation</a> for details.
+            </li>
+            <li><b>Enhanced wizard for creating a workflow element for the tool:</b> to use a custom tool in the UGENE Workflow Designer graphical interface,
+                create a workflow element that specifies the tool input/output, parameters, and the command. To start the wizard click <img
+                        src="/assets/images/release_notes/33_open_wizard_button.png" style="width: 20px;"
+                        title="'Create element with external tool' button on the WD toolbar"> on the WD toolbar. See details <a class="content"
+                                                                                                                                href="http://doc.ugene.net/wiki/display/WDD33/Creating+Element">here</a>.<img
+                        src="/assets/images/release_notes/33_element_with_ext_tool_wizard_1st_page.png"
+                        style="margin-top: 10px; margin-bottom: 10px; width: 700px" title="The first page of the 'Configure Element with External Tool' wizard">
+            </li>
+            <li><b>Tighter integration with the WD dashboard:</b> a file or a folder, produced by a parameter of type &#8220;Output file URL&#8221; or &#8220;Output
+                folder URL&#8221;, automatically appears on the dashboard.<img src="/assets/images/release_notes/33_result_on_dashboard.png"
+                                                                               style="margin-top: 10px; margin-bottom: 10px; width: 700px"
+                                                                               title="Result on the WD dashboard"></li>
+        </ul>
+        <p style="margin-top:30px;">Another improvement in UGENE version 33 is a new color scheme &#8220;Percentage Identity (colored)&#8221; in the Alignment
+            Editor, see description in the <a href="http://doc.ugene.net/wiki/display/UUOUM33/Coloring+Schemes" class="content">documentation</a>.</p>
+        <p><img src="/assets/images/release_notes/33_percentage_identity_colored.png"
+                style="margin-top: 10px; margin-bottom: 10px; margin-left: 40px; width: 500px"
+                title="'Percentage Identity (colored)' color scheme in the Alignment Editor"></p>
+    </div>
+    <div class="release_notes_version_header">Version 1.32</div>
+    <div class="release_notes_version_descr">
+        <p>The new version includes an update of the <b><u>NGS data analysis</u></b> framework: MetaPhlAn2 tool and other minor improvements.</p>
+        <p>MetaPhlAn2 (METAgenomic PHyLogenetic ANalysis) is a tool for profiling the composition of microbial communities (bacteria, archaea, eukaryotes, and
+            viruses) from whole-metagenome shotgun sequencing data. The tool relies on ~1M unique clade &#8211; specific marker genes identified from ~17,000
+            reference genomes (~13,500 bacterial and archaeal, ~3,500 viral, and ~110 eukaryotic).</p>
+        <p>Into the UGENE GUI the tool is integrated as a workflow element. It is included to the &#8220;Parallel NGS reads classification&#8221; sample
+            workflow:</p>
+        <p><img src="/assets/images/release_notes/1.32_parallel_classification_workflow.png"
+                style="margin-top: 10px; margin-bottom: 10px; width: 1000px;" title="Parallel classification workflow in UGENE 1.32"></p>
+        <p>See also:</p>
+        <ul>
+            <li><a href="http://ugene.net/tutorial-video-unipro-ugene-1.32-metagenomic-workflows.html" class="content">Video</a> about metagenomic workflows in
+                UGENE 1.31-1.32 versions
+            </li>
+            <li><a href="http://ugene.net/metagenomic-classification-with-kraken/" class="content">Tutorial</a> about metagenomic classification with Kraken
+            </li>
+            <li>If you use metagenomic workflows in UGENE please cite <a
+                    href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty901/5144668?guestAccessKey=f3c08511-c32d-43ad-b9cf-daeb772b1c0e"
+                    class="content">this publication</a>.
+            </li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.31.1</div>
+    <div class="release_notes_version_descr">
+        <p>This is a patch release that fixes a critical issue on <a class="content" href="https://www.apple.com/lae/macos/mojave/">macOS Mojave</a> that have
+            recently come out.</p>
+        <p>Also, the update includes bug fixes for:</p>
+        <ul>
+            <li>exporting consensus in the Sanger Reads Editor</li>
+            <li>downloading a sequence from the Ensembl database</li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.31</div>
+    <div class="release_notes_version_descr">
+        The new version introduces a lot of major features for <b><u>NGS data analysis</u></b>:</p>
+        <ul>
+            <li><b>Quality control:</b> a new tool Trimmomatic was integrated for quality control of NGS reads. It allows one to cut Illumina adapters, trim
+                reads ends by quality, trim reads by length, etc.<img src="/assets/images/release_notes/1.31_trimmomatic_steps.png"
+                                                                      style="margin-top: 10px; margin-bottom: 10px; border: 1px solid #bbbbbb;"
+                                                                      title="Trimmomatic steps">The tool is available as a <a class="content"
+                                                                                                                              href="http://doc.ugene.net/wiki/display/WDD31/Improve+Reads+with+Trimmomatic+Element">workflow
+                    element</a> and included into several sample workflows (see below, for example).Trimmomatic is a java application. Install <a
+                        class="content" href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">Java Runtime Environment</a>
+                and configure it in the UGENE Application Settings to use the tool.
+            </li>
+            <li><b>De novo assembly:</b> SPAdes was updated to version 3.12.0. Graphical interface for the tool in UGENE was updated. It is now possible to
+                input hybrid data, for example, assemble Illumina and Oxford Nanopore reads.Begin with sample workflows available from &#8220;Tools &gt; NGS
+                data analysis &gt; Reads de novo assembly (with SPAdes)&#8221; item in the UGENE main menu.<img
+                        src="/assets/images/release_notes/1.31_spades_workflow.png" style="margin-top: 10px; margin-bottom: 10px;"
+                        title="SPAdes workflow">Modify the SPAdes input type, if required. SPAdes requires at least one library of the following types:
+                <ul>
+                    <li>Illumina paired-end/high-quality mate-pairs/unpaired reads</li>
+                    <li>IonTorrent paired-end/high-quality mate-pairs/unpaired reads</li>
+                    <li>PacBio CCS reads</li>
+                </ul>
+                <p>Additionally, one can provide PacBio CLR, Oxford Nanopore, Sanger reads or contigs.</p>
+                <p>See &#8220;Input data&#8221; parameter of the <a class="content"
+                                                                    href="http://doc.ugene.net/wiki/display/WDD31/Assemble+Reads+with+SPAdes+Element">SPAdes
+                    workflow element</a>.</p>
+                <p><u>Hint:</u> hold <i>Alt</i> key and use mouse cursor to move a port on a workflow element.</p>
+                <p>Note that SPAdes is available on macOS and 64-bit Linux only.</li>
+            <li><b>Metagenomics:</b> a new infrastructure for taxonomy classification of whole-genome shotgun sequencing data was developed. This includes tools
+                Kraken, CLARK, DIAMOND, WEVOTE and other. Reference data for the tools are also provided: NCBI taxonomy information; RefSeq data for viruses,
+                bacteria, human; etc. It is recommended to use the Online Installer UGENE package to install and configure the data, check required items in the
+                &#8220;NGS additions: metagenomics classification&#8221; item:<img src="/assets/images/release_notes/1.31_wizard.png"
+                                                                                   style="margin-top: 10px; margin-bottom: 10px; border: 1px solid #bbbbbb;"
+                                                                                   title="Components in the Online Installer">Several sample workflows with the
+                tools are available from &#8220;Tools &gt; NGS data analysis &gt; Metagenomics classification&#8221; item in the main menu. In particular, the
+                following <a class="content" href="http://doc.ugene.net/wiki/display/WDD31/Parallel+NGS+Reads+Classification">workflow</a> executes Kraken,
+                CLARK,
+                and DIAMOND tools in parallel. After that, the results are merged by WEVOTE.<img
+                        src="/assets/images/release_notes/1.31_parallel_classification_workflow.png" style="margin-top: 10px; margin-bottom: 10px;"
+                        title="Parallel classification workflow in UGENE 1.31">Besides classification, building of a custom database is supported for each tool
+                (see, for example, &#8220;<a class="content" href="http://doc.ugene.net/wiki/display/WDD31/Build+Kraken+Database">Build Kraken Database</a>&#8221;
+                workflow element).Note that the computer should be powerful enough to run the workflows (at least 8Gb of RAM is required). The whole package
+                requires about 230-240 Gb of disk space (see details <a class="content"
+                                                                        href="http://doc.ugene.net/wiki/display/UUOUM31/Configure+Data+for+Metagenomics+Classification">here</a>).
+                Trimmomatic and FastQC tools, included into the sample workflows, require <a class="content"
+                                                                                             href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">Java
+                    Runtime Environment</a> to be installed and configured in the UGENE Application Settings. The other tools are provided for macOS and 64-bit
+                Linux operating systems only.
+            </li>
+            <li><b>Transcriptomics:</b> a new tool StringTie for transcript assembly was integrated as a <a class="content"
+                                                                                                            href="http://doc.ugene.net/wiki/display/WDD31/Assemble+Transcripts+with+StringTie+Element">workflow
+                element</a>. Also, another element &#8220;<a class="content"
+                                                             href="http://doc.ugene.net/wiki/display/WDD31/StringTie+Gene+Abudance+Report+Element">StringTie
+                Gene Abundance Report</a>&#8221; was implemented. It allows one to get a common report for several input samples.A sample workflow with the
+                elements is available from the main menu &#8220;Tools &gt; NGS data analysis &gt; RNA-Seq data analysis&#8221;:<img
+                        src="/assets/images/release_notes/1.31_tophat_stringtie_workflow.png" style="margin-top: 10px; margin-bottom: 10px;"
+                        title="Tophat &amp; StringTie workflow">Create a new dataset for each sample (a sample here may be a pair of FASTQ files, for
+                example)!Note that StringTie and TopHat tools are available on macOS and 64-bit Linux operating systems only. Trimmomatic and FastQC tools,
+                included into the sample workflow, require <a class="content"
+                                                              href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">Java
+                    Runtime Environment</a> to be installed and configured in the UGENE Application Settings.
+            </li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.30</div>
+    <div class="release_notes_version_descr">
+        The new version is majorly a bug-fix release.</p>
+        <p>However, an approach for selection in the Sequence View was also modified. Selection of an annotation was detached from selection of a sequence
+            region. Thus, one mouse click on an annotation selects the annotation only. To select both the annotation and the corresponding sequence region
+            double-click on the annotation.</p>
+        <p>The selection appearance was also improved:</p>
+        <p><img src="/assets/images/release_notes/1.30_eng_ru_selection_appearance.png"
+                style="margin-top: 10px; margin-bottom: 10px; margin-left: 45px; width: 297px; height:79px;" title="Selection appearance in UGENE 1.30"></p>
+        <p>Check the <a class="content"
+                        href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.30%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+            tracker</a> for technical details.</p>
+    </div>
+    <div class="release_notes_version_header">Version 1.29</div>
+    <div class="release_notes_version_descr">
+        This version includes:</p>
+        <ul>
+            <li>A new mode for a sequence editing appeared in the Sequence View. To switch on the editing mode click the <i>Edit sequence</i> button on the left
+                toolbar of the <i>Details View</i>. Settings for handling the corresponding annotations are available through <i>Actions&nbsp;&#8211;&nbsp;&gt;&nbsp;Edit&nbsp;&#8211;&nbsp;&gt;&nbsp;Annotations
+                    settings on sequence editing</i> item in the main menu.<br/>
+                <img src="/assets/images/release_notes/1.29_eng_ru_editing.png" style="margin-top: 10px; margin-bottom: 10px"
+                     title="Editing in the Sequence View"></li>
+            <li>A new mode for amino acid translations visualization in the Sequence View.<br/>
+                <img src="/assets/images/release_notes/1.29_eng_translate_selection.png" style="margin-top: 10px; margin-bottom: 10px"
+                     title="Translating selected region of a nucleotide sequence"></li>
+            <li>Handy resizing of a selected region in the Sequence View and the Alignment Editor<br/>
+                <img src="/assets/images/release_notes/1.29_eng_ru_modify_msa_selection.png" style="margin-top: 10px; margin-bottom: 10px"
+                     title="Resizing of an alignment region"></li>
+            <li>The default appearance of a sequence in the Details View has changed: translation frames are hidden.</li>
+            <li>Possibility to decrease the Detail View vertical size has been added.</li>
+            <li>Highlighting of the extended alphabet characters in the Sanger Reads Editor has been corrected.</li>
+            <li>Other bug fixes.</li>
+        </ul>
+        <p>See also the following documentation chapters:</p>
+        <ul>
+            <li><a class="content" href="http://doc.ugene.net/wiki/display/UUOUM29/Editing+Sequence">Editing Sequence</a></li>
+            <li><a class="content" href="http://doc.ugene.net/wiki/display/UUOUM29/Translating+Nucleotide+Sequence">Translating Nucleotide Sequence</a></li>
+            <li><a class="content" href="http://doc.ugene.net/wiki/display/UUOUM29/Selecting+Sequence+Region">Selecting Sequence Region</a></li>
+            <li><a class="content" href="http://doc.ugene.net/wiki/display/UUOUM29/Selecting+Alignment+Region">Selecting Alignment Region</a></li>
+        </ul>
+        <p>Check the <a class="content"
+                        href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.29%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+            tracker</a> for technical details.</p>
+    </div>
+    <div class="release_notes_version_header">Version 1.28.1</div>
+    <div class="release_notes_version_descr">
+        This version includes:</p>
+        <ul>
+            <li>Tweaking of the Sanger reads mapping feature, based on feedback received.<br/>
+                <img src="/assets/images/release_notes/1.28.1_eng_sanger_mapping_dialog.png" style="margin-top: 10px;margin-bottom: 10px"
+                     title="Sanger Reads Mapping Dialog">
+            </li>
+            <li>Fix of a critical issue of searching in amino acid translations of a nucleotide sequence.</li>
+            <li>Other minor bug fixes and improvements.</li>
+        </ul>
+        <p>Check the <a class="content"
+                        href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.28.1%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+            tracker</a> for details.</p>
+    </div>
+    <div class="release_notes_version_header">Version 1.28.0</div>
+    <div class="release_notes_version_descr">
+        This version includes:
+        <ul>
+            <li>Support of Vector NTI/AlignX format.</li>
+            <li>Improvement of the Sanger reads mapping algorithm.</li>
+            <li>Bug fixes and minor improvements.</li>
+        </ul>
+        <p>Check the <a class="content"
+                        href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.28%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+            tracker</a> for details.</p>
+    </div>
+    <div class="release_notes_version_header">Version 1.27.0</div>
+    <div class="release_notes_version_descr">
+        This version includes:
+        <ul>
+            <li>
+                Sanger Reads Editor &#8211; a brand new framework for analysis of Sanger sequencing results. The main features are:
+                <ul>
+                    <li>Reads mapping to a reference sequence.</li>
+                    <li>Browsing of the result alignment with trace chromatograms.</li>
+                    <li>Reads editing.</li>
+                    <li>Exporting of the results.</li>
+                </ul>
+                <p>See <a class="content" href="https://www.youtube.com/watch?v=lDovNM1oZEw&amp;feature=youtu.be" data-ob="lightbox[683]">this introductory
+                    video</a> for the quick start.<br/>
+                    <img src="/assets/images/release_notes/1.27_eng_sanger_reads_editor.png" style="margin-top: 10px" title="Sanger Reads Editor"></li>
+            <li>Bug fixes and minor improvements.</li>
+        </ul>
+        <p>Check the <a class="content"
+                        href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.27%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+            tracker</a> for details.</p>
+    </div>
+    <div class="release_notes_version_header">Version 1.26.3</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.26.3%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.26.2</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.26.2%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.26.1</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.26.1%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.26.0</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.26%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.25.0</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.25%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.24.0</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.24%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.23.0</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.23%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.22.0</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.22%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.21.0</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.21%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.20.0</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.20%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.19.0</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.19%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.18.0</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.18%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.17.0</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.17%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.16.2</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.16.2%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.16.1</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.16.1%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.16.0</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.16%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.15.1</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.15.1%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.15.0</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.15%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.14.2</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.14.2%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.14.1</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.14.1%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.14.0</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.14%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.13.3</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.13.3%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.13.2</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.13.2%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.13.1</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.13.1%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.13.0</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.13%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.12.3</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.12.3%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.12.2</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.12.2%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.12.1</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.12.1%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.12.0</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.12%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.11.5</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.11.5%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.11.4</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.11.4%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.11.3</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.11.3%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.11.2</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.11.2%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.11.1</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.11.1%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.11.0</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.11%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.10.4</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.10.4%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.10.3</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.10.3%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.10.2</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.10.2%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.10.1</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.10.1%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.10</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.10%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.9.8</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.9.8%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.9.7</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.9.7%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.9.6</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.9.6%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.9.5</div>
+    <div class="release_notes_version_descr">Check the <a class="content"
+                                                          href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.9.5%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+        tracker</a> for details.
+    </div>
+    <div class="release_notes_version_header">Version 1.9.4</div>
+    <div class="release_notes_version_descr">
+        <p><b>New features, improvements, bug fixes</b></p>
+        <ul>
+            <li>Fixed reported crashes with ORF auto-annotations</li>
+            <li>Assembly Browser: better &amp; faster coverage</li>
+            <li>Integrated new tool: CAP3</li>
+            <li>New plugin: DNA flexibility</li>
+            <li>Check the <a class="content"
+                             href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.9.4%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+                tracker</a> for details.
+            </li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.9.3</div>
+    <div class="release_notes_version_descr">
+        <p><b>New features, improvements, bug fixes</b></p>
+        <ul>
+            <li>New plugin: Assembly Browser</li>
+            <li>Sequence View: added functionality to manage number of visible rows in Zoom View</li>
+            <li>Circular View: added map of restriction sites</li>
+            <li>Phylip plugin: added tree bootstrap support</li>
+            <li>Biostruct3D viewer: introduced structural alignment visualization</li>
+            <li>Automatic annotation highlighting is provided for ORFs</li>
+            <li>Check the <a class="content"
+                             href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.9.3%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+                tracker</a> for details.
+            </li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.9.2</div>
+    <div class="release_notes_version_descr">
+        <p><b>New features, improvements, bug fixes</b></p>
+        <ul>
+            <li>Added auto-annotation high-lighting capabilities</li>
+            <li>Added support of export annottions in GFF format</li>
+            <li>Added support of lauching workflows in separte processes</li>
+            <li>Added multiple optimizations to Genome Aligner</li>
+            <li>Fixed problem with project export</li>
+            <li>Fixed bug with remote requests to NCBI CDD</li>
+            <li>Workflow Designer: added support of FASTA files as queries for Smith-Waterman search</li>
+            <li>Workflow Designer: added export/merge annotations workers</li>
+            <li>Workflow Designer: fixed bug with iterations (append and rename)</li>
+            <li>Added version string and estimated size to uninstall info in Windows &#8220;Add/Remove programs&#8221;</li>
+            <li>and more minor bugfixes&#8230; Check the <a class="content"
+                                                            href="http://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.9.2%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
+                tracker</a> for details.
+            </li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.9.1</div>
+    <div class="release_notes_version_descr">
+        <p><b>New features, improvements, bug fixes</b></p>
+        <ul>
+            <li>Circular view: zooming added</li>
+            <li>Export of rev-comple annotations fixed</li>
+            <li>MSA dialogs: GUI fixes</li>
+            <li>Enzymes: fixed search in range option</li>
+            <li>Workflow Designer: fixed workers promts</li>
+            <li>Workflow Designer: openning schema with no meta info fixed</li>
+            <li>Worfklow Designer: added ordering to element options</li>
+            <li>Workflow Designer: added element &#8220;Retrive data from remote DB&#8221;</li>
+            <li>Query Designer: added strand direction parameter to queries</li>
+            <li>Supported pDRAW document format</li>
+            <li>Added option to export group of annotations or annotation table to CSV</li>
+            <li>KAlign crash fixed on amino MSA</li>
+            <li>Cloning in silico: added option to edit fragments</li>
+            <li>Cloning in silico: added option to annotate new fragments</li>
+            <li>Cloning in silico: fixed incorrect ligation</li>
+            <li>and more minor bugfixes&#8230;</li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.9.0</div>
+    <div class="release_notes_version_descr">
+        <p><b>New features, improvements, bug fixes</b></p>
+        <ul>
+            <li>Cloning in silico: digest into fragments</li>
+            <li>Cloning in silico: construct molecule</li>
+            <li>Query Designer tool introduced</li>
+            <li>External tool support: BLAST+</li>
+            <li>External tool support: TCoffee</li>
+            <li>OpenCL support added on Linux and Windows</li>
+            <li>Logging system improvements</li>
+            <li>Popup notification system added</li>
+            <li>Fixed several &#8220;Export from annotation features&#8221;</li>
+            <li>&#8220;Fetch by ID from Annotation&#8221; feature added</li>
+            <li>Fixed sequence viewer behavior</li>
+            <li>Improved circular sequence detection</li>
+            <li>&#8220;Replace sequence&#8221; feature added</li>
+            <li>MSAEditor: export to aminoacids</li>
+            <li>MSAEditor: reverse-complement sequence</li>
+            <li>Genome Aligner: save index in external file</li>
+            <li>Workflow editor: new human-readable schema format</li>
+            <li>Dotplot plugin: zooming options added</li>
+            <li>Dotplot plugin: selection improvements</li>
+            <li>Crash handler improvements</li>
+            <li>Project view: active document is highlighted</li>
+            <li>Fixed 3&#8242;-5&#8242; annotations export</li>
+            <li>Fixed BLAST annotation result reporting</li>
+            <li>Fixed external tools managment issues</li>
+            <li>and much more bugfixes&#8230;</li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.8.0</div>
+    <div class="release_notes_version_descr">
+        <p><b>New features &amp; plugins:</b></p>
+        <ul>
+            <li>Support for external Blast: build and search</li>
+            <li>New format is supported: MEGA</li>
+            <li>New improved plugin system</li>
+            <li>Support for large (over 1 GB) files analisys in DNA Assembly</li>
+        </ul>
+        <p><b>Improvements:</b></p>
+        <ul>
+            <li>Crash handler is improved: now you can send us report is something unexpected happend</li>
+            <li>Command line interface improvements: comprehensive help-system and verbose error diagnostics</li>
+            <li>Editing script workers in workflow designer</li>
+            <li>Deleting and hiding script workers</li>
+            <li>Drag and drop from Project View</li>
+            <li>Task report in Primer 3</li>
+            <li>Application supressed exit</li>
+            <li>Disabling of unused ports in Workflow Designer</li>
+        </ul>
+        <p><b>Bugfixes:</b></p>
+        <ul>
+            <li>Fixed crash when calculating surface for large proteins</li>
+            <li>Workflow designer fixes in GUI and usability</li>
+            <li>Fixed crash while opening project</li>
+            <li>Fixed crash with alignments consisting only of gaps</li>
+            <li>Fixed crash with MUSCLE region alignment</li>
+            <li>Fixed data formats: srfasta, sam</li>
+            <li>Multiple designer workers fixed</li>
+            <li>Remote tasks in Muscle and HMM are converted to Workflow schemas</li>
+            <li>and much more&#8230;</li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.7.2</div>
+    <div class="release_notes_version_descr">
+        <p><b>New features &amp; plugins:</b></p>
+        <ul>
+            <li>New plugin: cloud support. Running computational workflow on Amazon EC2;</li>
+            <li>New plugin: external tool support. Multiple alignment with Mafft and clustal;</li>
+            <li>New format supported: Nexus (read &amp; write);</li>
+            <li>Advanced scripting capabilities in Workflow Designer;</li>
+        </ul>
+        <p><b>Minor improvements:</b></p>
+        <ul>
+            <li>Added capability to change name of sequence and set name when creating new sequence from text</li>
+            <li>Added capability to cancel the insertion of workflow sample</li>
+            <li>Items &#8220;Lock document for editing&#8221; and &#8220;Unlock document for editing&#8221; are not shown for documents wich can&#8217;t be
+                changed
+            </li>
+            <li>Documents with unknown type (i.e. workflow schema) are not loaded in project</li>
+            <li>If during loading of document error occures, document is deleted from project</li>
+            <li>Added capability to export sequence with annotations</li>
+            <li>Added capability to open several files</li>
+            <li>Added capability to remove columns with certain amount of gaps(absolute or relative) in alignment editor</li>
+            <li>When annotations are imported from CSV file, they are automatically added to active sequence view (if possible)</li>
+            <li>When creating connection between blocks in workflow, to port by default added data from nearest block</li>
+            <li>Automatic creation of the new project before the construction of the new Dotplot</li>
+            <li>Added feature to search inverted repeats, search simultaneously both types of repeats</li>
+            <li>Added feature &#8220;Lock dotplots&#8221; for simultaneous viewing several dotplots built on the same sequences</li>
+            <li>Synchronization with PanViews of the sequences</li>
+        </ul>
+        <p><b>Bugfixes:</b></p>
+        <ul>
+            <li>Annotations highlight enable/disabled fixed</li>
+            <li>Incorrect sequence reading in Find repeats in Workflow</li>
+            <li>Issue with saving a copy of document</li>
+            <li>Crash when deleting three ot more documents from project</li>
+            <li>Incorrect search in Alignment Editor</li>
+            <li>Crash when opening incorrect file to build HMM2 profile</li>
+            <li>Issue with creating new annotation when selected nonexistent document for storage of annotations</li>
+            <li>Bug when call &#8211;help for nonexistent parameter in command line</li>
+            <li>Reading alignment file with non-alignment extention for build weight matrix</li>
+            <li>Incorrect removing of region in alignment</li>
+            <li>Incorrect offset values in alignment editor</li>
+            <li>Issue with reading alignment with gaps in SAM format</li>
+            <li>Incorrect adding gaps to alignment</li>
+            <li>Counter for annotations in annotation group</li>
+            <li>Wrong behavior of &#8220;zoom to range&#8221;</li>
+            <li>Toolbar disappearance after removal of the document</li>
+            <li>Creation of cyclic schemas in workflow designer</li>
+            <li>Fixed a bug related to incorrect positioning of the cursor</li>
+            <li>Crash after deleting sequences from the project with opened circular view bug fixed</li>
+            <li>Crash after selecting sequences in the locked mode with builded circular view</li>
+            <li>Resizing circular view bug fixed</li>
+            <li>Hidden sequence view bug fixed</li>
+            <li>Exporting circular view as image bug fixed</li>
+            <li>Anaglyph view option is disabled if the rendering device doesn’t support it.</li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.7.1</div>
+    <div class="release_notes_version_descr">
+        <p><b>New features &amp; plugins:</b></p>
+        <ul>
+            <li>Dot plot view: effective sequence visual comparison method;</li>
+            <li>SAM format support and PHRED quality scores import;</li>
+            <li>Advanced chromatogram analysis. Find out details in the tutorial;</li>
+            <li>BowTie assembly options integration, new modes for UGENE Genome Aligner. Now available from Workflow Designer!</li>
+            <li>Weight matrix based analysis improvements;</li>
+            <li>New Workflow Designer samples and built-in command line schemas;</li>
+            <li>Circular view: support for annotations with virtual gap.</li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.7.0</div>
+    <div class="release_notes_version_descr">
+        <p><b>New features &amp; plugins:</b></p>
+        <ul>
+            <li>Major renaming: congene -&gt; ugene, ugene -&gt; ugeneui</li>
+            <li>New plugin: genome aligner;</li>
+            <li>New plugin: bowtie;</li>
+            <li>Dna assembly to reference functionality added;</li>
+            <li>Poistion-weight matrix advanced support added;</li>
+            <li>MSAEditor: new zooming mode added;</li>
+            <li>Circular view improved.</li>
+            <li>Overview added to Sequence View;</li>
+            <li>Integration with JASPAR and UniProbe.</li>
+            <li>Alignment logo added.</li>
+            <li>Command line interface improved.</li>
+            <li>Command line version Workflow designer support added.</li>
+            <li>Remote request re-worked.</li>
+            <li>Scripting framework introduced in CSV import.</li>
+            <li>Tree viewer re-worked, new modes added.</li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.6.2</div>
+    <div class="release_notes_version_descr">
+        <p><b>New features &amp; plugins:</b></p>
+        <ul>
+            <li>New plugin: Circular view;</li>
+            <li>Export plugin: back translation feature added;</li>
+            <li>Importing annotation tables from CSV has been implemented;</li>
+            <li>MSA Editor: consensus mode added, usability improvements;</li>
+            <li>Phylogenetic tree view improvements;</li>
+            <li>Workflow designer: added support for launching tasks remotely;</li>
+            <li>Enzymes plugin: added support for creating custom enzyme databases in BAIROCH format;</li>
+            <li>Binary Linux distribution is available for download;</li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.6.1</div>
+    <div class="release_notes_version_descr">
+        <p><b>New features &amp; plugins:</b></p>
+        <ul>
+            <li>KAlign: new plugin for multiple alignment based on <a class="content" href="http://msa.sbc.su.se/">popular tool</a>;</li>
+            <li>New format support: GFF;</li>
+            <li>Phylogenetic tree viewer improvements: support for Newick format;</li>
+            <li>Phylip plugin: distance matrix models added;</li>
+            <li>Proxy authentification added.</li>
+        </ul>
+        <p><b>Bug fixes:</b></p>
+        <ul>
+            <li>Smith-Waterman algorithm runs now properly from GUI;</li>
+            <li>Fixed memory managment in Muscle plugin;</li>
+            <li>Document deletion from Project View issue solved;</li>
+            <li>Document format detection improved;</li>
+            <li>MacOS version is distributed now as DMG image.</li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.6.0</div>
+    <div class="release_notes_version_descr">
+        <p><b>New plugins:</b></p>
+        <ul>
+            <li>Phylip plugin for building phylogenetic trees. Based on original <a href="http://evolution.genetics.washington.edu/phylip.html">Phylip 3.6</a>
+                package.
+                <ul>
+                    <li>Neighbor Joining algorithm;</li>
+                    <li>Phylogenetic trees visualization;</li>
+                    <li>Integration with Multiple Alignment Editor.</li>
+                </ul>
+            </li>
+            <li>Distributed computing in UGENE
+                <ul>
+                    <li>Support for launching HMMER 3, Smith-Waterman, MUSCLE tasks on remote machines.</li>
+                    <li>Remote tasks support;</li>
+                </ul>
+            </li>
+        </ul>
+        <p><b>New features and bug fixes:</b></p>
+        <ul>
+            <li>Search for tandem repeats added introduced in <a href="http://ugene.unipro.ru/plugin_repeat_finder.html">Repeat Finder plugin</a>;</li>
+            <li>Project files transferability support;</li>
+            <li>&#8220;Export project&#8221; feature;</li>
+            <li>Remote databases interaction: NCBI, PDB, Swiss Prot;</li>
+            <li>BioStruct3D plugin: anaglyph stereo mode;</li>
+            <li>Sequence editor: several minor improvements and bugfixes;</li>
+            <li>Lots of minor stability and usability fixes.</li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.5.2</div>
+    <div class="release_notes_version_descr">
+        <p><b>New plugins:</b></p>
+        <ul>
+            <li>MUSCLE 4 &#8211; a port of the newest tool for multiple sequence alignment <a class="content" href="http://drive5.com/muscle"> by Robert C.
+                Edgar</a>;
+            </li>
+            <li>CUDA Support &#8211; an utility plugin which makes possible using NVIDIA graphical processing units for accelerating computational algorithms
+                (Windows only).
+            </li>
+        </ul>
+        <p><b>New features and bug fixes:</b></p>
+        <ul>
+            <li>CUDA-accelerated Smith-Waterman algorithm is ready to use for Windows users;</li>
+            <li>The one of the most awaited features: sequence editing has been added;</li>
+            <li>Primer 3 integration has been finished &#8211; a complete set of preferences is available now;</li>
+            <li>Exporting annotation tables to CSV has been provided;</li>
+            <li>New workers have been added to Workflow Designer: Sequence splitter and Remote request;</li>
+            <li>Collecting statistical reports feature has been added. See the dialog on the first launch of v1.5.2;</li>
+            <li>HMM2 models support has been added to HMM3;</li>
+            <li>Filtering by hits number has been added to enzymes search;</li>
+            <li>Now UGENE drops &#8216;fantom&#8217; documents on project closing;</li>
+            <li>Bug with incorrect handling of sequence range selectors has been fixed in SSP dialog;</li>
+            <li>SSP algorithms, Primer3 and PDB parser now work correctly when launched in parallel;</li>
+            <li>A serious bug affecting Fedora users has been fixed in PSIPRED.</li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.5.1</div>
+    <div class="release_notes_version_descr">
+        <p><b>New plugins:</b></p>
+        <ul>
+            <li>BALL &#8211; adds new types of molecular surfaces to UGENE 3D viewer</li>
+        </ul>
+        <p><b>New features and bug fixes: </b></p>
+        <ul>
+            <li>New feature: sequence line view and MSA editor now support saving fancy screenshots</li>
+            <li>Congene crash on windows has been fixed</li>
+            <li>HMM3 crash with malformed models has been fixed</li>
+            <li>Crash with simultaneous primer3 tasks has been fixed</li>
+            <li>Remote request is now stable when launched on Linux systems</li>
+            <li>Missing Smith-Waterman search is restored</li>
+            <li>Primer3 tasks now support cancelling</li>
+            <li>Choosing selection color has been added to 3D viewer</li>
+            <li>Sequence selection in Detailed View has been fixed a bit</li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.5.0</div>
+    <div class="release_notes_version_descr">
+        <p><b>New plugins:</b></p>
+        <ul>
+            <li>HMM3 &#8211; modern set of tools for HMM profiles build and search, based on HMMER 3.0b2</li>
+            <li>Primer3 &#8211; integration of the primer3 tool for PCR primers design</li>
+            <li>GOR IV and PSIPRED &#8211; protein secondary structure prediction tools</li>
+            <li><b>congene</b> &#8211; command-line version of UGENE which allows user to launch workflows from the command-line</li>
+        </ul>
+        <p><b>New features and bug fixes:</b></p>
+        <ul>
+            <li>BioStruct3D viewer: molecular surface visualization</li>
+            <li>Loading remote documents from PDB, Uniprot, Swissprot</li>
+            <li>&#8216;Create document from text&#8217; feature</li>
+            <li>Annotations editing significantly improved</li>
+            <li>Some critical bugs in Qt 4.5.0 are workarounded</li>
+            <li>Stability fixes for parallel MUSCLE: deadlock prevention</li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.4.2</div>
+    <div class="release_notes_version_descr">
+        <p><b>Improvements and bugfixes:</b></p>
+        <ul>
+            <li>Introduced Undo/Redo support for MSA Editor</li>
+            <li>Search in MSA Editor now works more accurate with different case of pattern</li>
+            <li>Extra filters for SITECON search procedure added</li>
+            <li>Now UGENE is capable of reading CLUSTAL X files</li>
+            <li>Smith-Waterman plugin became more accurate</li>
+            <li>Some concurrent-related bugs in MUSCLE fixed</li>
+            <li>Some Qt 4.5 compatibility issues fixed</li>
+            <li>Lots of minor stability fixes</li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.4.1</div>
+    <div class="release_notes_version_descr">
+        <p><b>Improvements and bugfixes:</b></p>
+        <ul>
+            <li>Color schemes support in Alignment editor</li>
+            <li>A camera lock option for multiple 3D protein models</li>
+            <li>Sequence viewer optimized to be used with large amount of annotations (up to 1 million)</li>
+            <li>Sequence viewer can show qualifier values instead of annotation names now</li>
+            <li>Chromatogram viewer: quality values are now shown by default for ABIF files</li>
+            <li>Several stability and compatibility issues fixed in BLAST, MUSCLE and HMMER modules</li>
+            <li>A number of minor stability fixes</li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.4.0</div>
+    <div class="release_notes_version_descr">
+        <p><b>New features:</b></p>
+        <ul>
+            <li>New plugin: Smith-Waterman. A complete implementation of Smith-Waterman algorithm</li>
+            <li>New plugin: Restriction Enzymes. Marks restriction enzymes in a sequence. Supports &#8216;bairoch&#8217; file format provided by REBASE
+                database
+            </li>
+            <li>New plugin: Repeats Finder. Searches direct and invert repeats in DNA sequences. Optimized for huge sequences</li>
+            <li>New plugin: DNA Statistics. Exportable statistical reports</li>
+            <li>Workflow Designer: runtime state visualization of executed schema</li>
+            <li>Workflow Designer: integrated support of workflow samples</li>
+            <li>Workflow Designer: resizable items + snap to grid, customizable colors and fonts.</li>
+            <li>MSA Editor: show non-gapped offsets for each sequence in alignment</li>
+            <li>MSA Editor: a tool to search patterns in alignment</li>
+            <li>Sequence view: support scale locks and synchronization for different sequences</li>
+            <li>Sequence view: support for arbitrary number of rulers created by user</li>
+            <li>BioStruct3D viewer: export of 3D PDB and MMDB models into 2D vector format (SVG)</li>
+            <li>BioStruct3D viewer: a fast and extensible way to link active 3D model to Web resources</li>
+            <li>Project view: supports 3 different view mode: grouping data objects by type, by document and flat view</li>
+            <li>Project view: list of data objects for unloaded documents is shown</li>
+            <li>Performance: UGENE now allows to specify ideal count of CPUs, threads and memory to be used</li>
+            <li>DNA Export plugin: export of arbitrary multiple sequence alignments to FASTA format</li>
+            <li>New file formats supported: FASTQ, MMDB (plain text ASN)</li>
+            <li>Support for large (&gt; 10Gb) files indexing for a fast data access</li>
+            <li>Custom application GUI themes supported. Windows version of UGENE uses Office GUI theme by default.</li>
+        </ul>
+        <p><b>Improvements &amp; bugfixes:</b></p>
+        <ul>
+            <li>MUSCLE plugin: part of the original algorithm was optimized to utilize multicore CPUs.</li>
+            <li>HMMER plugin: SSE2 implementation of the algorithm was added;</li>
+            <li>HMMER plugin: hmmsearch now works in parallel mode for a single sequence by default (gives &gt;30x boost for quad-core CPU when used with
+                SSE2)
+            </li>
+            <li>SITECON plugin: &gt;50 new prokaryotic profiles to recognize transcription factor binding sites added</li>
+            <li>Most the views and dialogs got performance and usability improvements</li>
+            <li>Workflow Designer: now preserves additional info of processed data (like accessions, source etc) throughout overall computation.</li>
+            <li>Workflow Designer: write tasks now provide controls to override existing target file (either overwrite, append or rename).</li>
+            <li>Project view: supports relocation and copying of documents.</li>
+            <li>Annotation creation: new annotations now can be added to an unloaded annotation table object. The object is automatically loaded in this case.
+            </li>
+            <li>MSA Editor: allows to change fonts, initial and limited support for zooming operations</li>
+            <li>BioStruct3D viewer: support for single structure with multiple 3d models</li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.3.3</div>
+    <div class="release_notes_version_descr">
+        <p><b>Improvements and bugfixes:</b></p>
+        <ul>
+            <li>A QT4.4 bug that prevents correct rendering of OpenGL widgets on some Linux platforms is work-arounded.</li>
+            <li>Group naming erorrs when nested groups used is fixed.</li>
+            <li>A new and more complete implementations for ABIF and SCF formats added.</li>
+            <li>Fixed bug that prevented &#8216;z&#8217; char to be used in annotation names.</li>
+            <li>Annotations tree widget performance improved.</li>
+            <li>Sitecon plugin now processes custom regions correctly.</li>
+            <li>Workflow Designer crash when multiple iterations are used is fixed</li>
+            <li>For very short DNA sequences without &#8216;U&#8217; and &#8216;T&#8217; letters DNA genetic code is used now by default instead of RNA.</li>
+            <li>&#8216;Tab&#8217; characters in FASTA and Genbank plain text formats do not produce error messages anymore.</li>
+            <li>Ubuntu package of UGENE was split into 2 packages (data and gui) to satisfy Ubuntu packaging rules.</li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.3.2</div>
+    <div class="release_notes_version_descr">
+        <p><b>Improvements and bugfixes:</b></p>
+        <ul>
+            <li>Fixed issue that can disallow to open more that 1 view on some 64-bit systems.</li>
+            <li>Fixed crashes when several PDB models are opened side by side in a single 3D-viewer window.</li>
+            <li>Fixed crash when opening ABI file with a very short sample name.</li>
+            <li>Added &#8220;Check For Updates&#8221; menu.</li>
+            <li>Fixed crash in &#8220;Find pattern&#8221; dialog when complement strand is selected for amino sequences.</li>
+            <li>Fixed chromatogram objects association for ABIF and SCF files.</li>
+            <li>Fixed genetic code autodetection for PDB file format.</li>
+            <li>Improved docked labels appearance for Linux and Mac OS X platforms.</li>
+            <li>Improved &#8216;Add object to view&#8217; menu logic.</li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.3</div>
+    <div class="release_notes_version_descr">
+        <p><b>New features:</b></p>
+        <ul>
+            <li>Linux support. Packages for Fedora and Ubuntu</li>
+            <li>New plugin! Workflow Designer: allows to design custom computational workflows</li>
+            <li>New plugin! SITECON: search for Transcription Factor Binding Sites (TFBS) in DNA sequences</li>
+            <li>New plugin! BioStruct3D: 3D molecular protein and DNA structure viewer for PDB format</li>
+            <li>Stockholm and PDB formats support</li>
+            <li>Browsing multiple sequences side by side in a single sequence view window</li>
+            <li>Sorting by annotation qualifier values</li>
+            <li>&#8216;db_xref&#8217; qualifiers made interactive and are linked to corresponding web databases</li>
+            <li>Translation and complement strands can be hidden in sequence view</li>
+            <li>Support for localization. English and Russian translations are included into the default distribution</li>
+            <li>Tasks can generate detailed reports now</li>
+        </ul>
+        <p><b>Improvements &amp; bugfixes:</b></p>
+        <ul>
+            <li>Task progress is now shown in status bar</li>
+            <li>Critical fix: Memory leaks and crashes fixed in code that integrates MUSCLE package into UGENE</li>
+            <li>Critical fix: Default parameters of HMMER-related dialogs are now the same as in original HMMER</li>
+            <li>Logs view now do not show traces by default</li>
+            <li>Drag&amp;drop support for all file types supported by UGENE</li>
+            <li>&gt;100 other minor fixes, usablity and performance improvements !</li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.2</div>
+    <div class="release_notes_version_descr">
+        <p><b>New features:</b></p>
+        <ul>
+            <li>MacOS v10.4 and v10.5 support.</li>
+            <li>Multiple sequence alignment editor. MUSCLE alignment algorithm integrated as a separate plugin.</li>
+            <li>New plugin! ORF Marker: Searches for ORFs in DNA-sequences.</li>
+            <li>New plugin! ChromaView: The plugin integrates chromatogram viewer into &#8216;Annotated DNA View&#8217;</li>
+            <li>New plugin! Remote request: Annotates selected DNA-sequence regions by sending requests to BLASTn, BLASTp and CDD servers. Can be extended to
+                use other servers with scripts.
+            </li>
+            <li>New plugin! UMUSCLE: Adds <a class="content" href="http://www.drive5.com/muscle/">MUSCLE alignment algorithm</a> to the system.</li>
+            <li>Files located on remote servers can be added to project by HTTP protocol</li>
+            <li>Scripting support for custom WEB-based BLAST/CDD-like queries. Binding for all GUI/Utility classes and ability to create any algorithms using
+                script.
+            </li>
+            <li>DNAGraphPack plugin supports 4 new graph types: GC &amp; AT deviations, Karlin Signature Difference and Informational Entropy</li>
+            <li>All genetic translation tables of Genbank database are supported and can be selected by user.</li>
+            <li>SCF format support added.</li>
+            <li>Support for unloading documents without removal them from a project.</li>
+        </ul>
+        <p><b>Improvements &amp; bugfixes:</b></p>
+        <ul>
+            <li>UGENE can be associated to open all file types it supports from command line. File binding comes by default with Windows installer.</li>
+            <li>Better integration of uHMMER plugin with Annotated DNA View and MSA Editor</li>
+            <li>DNAGraphPack plugin now shows interval based graphs for large zooms to keep min/max information precise.</li>
+            <li>Drag&amp;Drop functionality between &#8216;Project View&#8217; and &#8216;Annotated DNA View&#8217;</li>
+            <li>Dozens of GUI, performace and compatibility improvements and bug fixes.</li>
+        </ul>
+    </div>
+    <div class="release_notes_version_header">Version 1.1</div>
+    <div class="release_notes_version_descr">
+        <p><b>New features:</b></p>
+        <ul>
+            <li>EMBL, ABI, CLUSTALW and raw sequence file formats supported.</li>
+            <li>Custom document format settings option added when adding documents to project. Use this option if you need to merge all DNA sequences found in
+                document into a single sequence.
+            </li>
+            <li>New plugin: uHMMER . This is a port for hmmbuild, hmmcalibrate and hmmsearch tools from <a class="content" href="http://hmmer.janelia.org/">HMMER2.3.2</a>
+                package
+            </li>
+            <li>New plugin: DNA Export. This plugin adds functionality to export various types of DNA sequence selection to FASTA file format.</li>
+            <li>Starting from this version UGENE works transparently with compressed documents in GZIP format. For example, compressed files can be added to
+                project.
+            </li>
+            <li>New plugin: DNA Annotator. This plugin adds annotation based searches to runtime. Current version allows to find regions that contain a
+                predefined set of annotations.
+            </li>
+        </ul>
+        <p><b>Improvements &amp; bugfixes:</b></p>
+        <ul>
+            <li>Multi-selection support added for annotations tree used in &#8216;Annotated DNA View&#8217;.</li>
+            <li>Annotations&#8217; colors, placement and visibility properties were made customizable.</li>
+            <li>&#8220;Find DNA sequence&#8221; algorithm was tuned. Several bugs fixed.</li>
+            <li>A lot of minor GUI and performance improvements.</li>
+        </ul>
+    </div>
+</div>

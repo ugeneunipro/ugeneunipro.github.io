@@ -1,0 +1,12 @@
+// Site global link styles (original class="content").
+a {
+  color: black;
+
+  &:visited {
+    color: gray;
+  }
+
+  &:hover {
+    color: #4080A0;
+  }
+}
