@@ -3,4 +3,17 @@ permalink: /404.html
 layout: page_en
 ---
 
-<h1>404: Page not found</h1>
+<div id="block-404" style="visibility: hidden;">
+    <h1>404: Page not found</h1>
+</div>
+
+<script>
+  // Using JS redirect today. This redirect will not be needed once we update links in UGENE to use doc.ugene.net directly.
+  // TODO: consider using 200.html instead of 400.html (GitHub does not support 200.html, but other sites do).
+  if (window.location.pathname.startsWith('/wiki/')) {
+    window.location = 'https://doc.ugene.net' + window.location.pathname;
+  } else {
+    // TODO: move ugene.net/forum to forum.ugene.net and add a redirect too.
+    document.getElementById('block-404').style.visibility = 'visible';
+  }
+</script>
