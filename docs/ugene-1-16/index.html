@@ -1,0 +1,103 @@
+---
+layout: page_en
+title: UGENE 1.16 List of Features
+---
+
+<div class="entry">
+    <h1> UGENE 1.16 List of Features <br/></h1>
+    <p>
+        <a href="/assets/images/learn/116.png" data-ob="lightbox[3025]"><img loading="lazy" alt="snpeff pipeline"
+                                                                             class="aligncenter size-full wp-image-3026"
+                                                                             height="171"
+                                                                             src="/assets/images/learn/116.png"
+                                                                             width="420"/></a>
+    </p>
+    <p>
+        This article is a brief overview of the UGENE 1.16 new features.
+    </p>
+    <p>
+        We made the data search in UGENE more comfortable. It is possible now to search different kinds of data in your project.
+    </p>
+
+    <h3>Generic Search <br/></h3>
+
+    <p>
+        Just write a string you want to search for and it will be found in all places of the project.
+    </p>
+    <p>
+        For example, you can search for a sequence that contains a gene with a special name or you can even write nucleotides that a sequence must
+        contain.
+    </p>
+    <h3>
+        Usability<br/>
+    </h3>
+    <p>
+        Several other usability improvements were added to UGENE.
+    </p>
+    <p>
+        First of all, resizing in the Sequence View became more flexible. The sequence details are now shown at the center of the window by default.
+        Also, it is possible to resize other sub-views inside the Sequence View. For example, you can resize the Chromatogram View by dragging its
+        border up or down.
+    </p>
+    <p>
+        Second, the Workflow Designer usability has been improved.
+    </p>
+    <p>
+        If you do not specify a name of an output file, then the name will be generated automatically based on the name of an input file or a dataset.
+    </p>
+    <p>
+        Finally, there is one more usability improvement that worth mentioning. The &ldquo;Tools&rdquo; main menu was reordered and majorly expanded.
+        Some of the menu items now directly open the Workflow Designer with a workflow that solves the task.
+    </p>
+    <h3>
+        Sequencing<br/>
+    </h3>
+    <p>
+        For example, let&rsquo;s open a newly added workflow that automates the Sanger sequencing data analysis.
+    </p>
+    <p>
+        Double-click on the sample description to load the workflow. A wizard to configure the workflow appears automatically. This particular workflow
+        <a class="content" href="/snp-search-and-snp-effect/">trims each Sanger read</a>, cutting off ends with bad quality, and
+        then aligns them to a reference sequence.
+    </p>
+    <p>
+        UGENE facilities for analysis of next-generation sequencing data were also expanded. Particularly, the FastQC tool for quality control of high
+        throughput sequence data were added into UGENE.
+    </p>
+    <p>
+        The tool was added to the raw NGS data analysis workflows as well. Another tool added to the workflows is &ldquo;cutadapt&rdquo; for cutting the
+        adapter sequences from the sequencing reads.
+    </p>
+    <p>
+        A tool for analysis of genome variations, <a class="content" href="/snp-search-and-snp-effect/">snpEff</a>, was embedded
+        into the variant calling pipeline of UGENE to annotate gene mutations and other variations. It filters input variations and creates a report
+        with the summary statistics about the set of variations. You can use this tool, for example, after running the variant calling pipeline in UGENE
+        to see different types of annotations (e.g. gene mutations).
+    </p>
+    <h3>
+        Conservation Highlighting<br/>
+    </h3>
+    <p>
+        A new modification in the Alignment Editor is a new type of highlighting based on the conservation level. If you choose this type of
+        highlighting, then nucleotides or amino-acids are highlighted only if their amount in a column is greater than the threshold.
+    </p>
+    <h3>
+        Vector NTI Format<br/>
+    </h3>
+    <p>
+        Finally, there is a couple of modifications in UGENE for people who consider moving to UGENE from Vector NTI plasmid design tool. The Vector NTI
+        sequence format (e.g. to store plasmid database) was fully supported in the current UGENE version. The format is similar to GenBank, but has an
+        extended list of feature types, so you can create you plasmid database in UGENE and use UGENE as a plasmid design tool.
+    </p>
+    <p>
+        The &ldquo;Create Annotation&rdquo; dialog in UGENE has changed. Particularly, now it has a separate field with the list of feature types. The
+        list of types is extended, if the opened file is in the Vector NTI format.
+    </p>
+    <h3>
+        Additional Materials<br/>
+    </h3>
+    <p>
+        <a class="content" href="https://www.youtube.com/watch?v=iLewA7TmdEQ" data-ob="lightbox[3025]">Youtube video</a>
+    </p>
+</div>
+
