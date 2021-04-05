@@ -1,0 +1,69 @@
+---
+layout: page_en
+title: Primer3 Primer Design Tool - Unipro UGENE
+---
+
+<div class="entry">
+    <h1>
+        Tutorial: How to Use Primer3 to Design Primers in UGENE<br/>
+    </h1>
+    <p>
+        <a href="/assets/images/learn/30.png" data-ob="lightbox[2984]"><img loading="lazy" alt="Design Primers with Primer3"
+                                                                            class="aligncenter size-full wp-image-2985"
+                                                                            height="616"
+                                                                            src="/assets/images/learn/30.png"
+                                                                            width="956"/></a></p>
+    <p> UGENE Primer3 primer design plugin allow designing primers. You can suggest Polymerase Chain Reaction primers to create sequence tagged sites for hybrid
+        mapping, or to amplify sequences for single nucleotide polymorphism discovery, and for other applications.
+    </p>
+    <p>
+        The Primer3 primer design plugin is based on the widely used open-source Primer3 tool (developed by Steve Rozen and Helen Skaletsky). Its interface is
+        similar to the web-interface of Primer3, therefore if you have used the WWW program version, it won&#39;t take much effort for you to use the UGENE
+        version.
+    </p>
+    <h3>
+        Setting Primer Design Parameters<br/>
+    </h3>
+    <p>
+        I have UGENE with an opened sequence. To invoke the plugin, click the &bdquo;Primer3&ldquo; button, or right-click on a sequence view and select &bdquo;Analyze
+        &rarr; Primer3&ldquo;. The &bdquo;Primer Design&ldquo; dialog will be opened to design primers. It has plenty of options, just like the web interface
+        does, but eventually it allows you to do sort of &quot;virtual PCR&quot;. Thus you can describe the variety of designing primers criteria, including
+        such factors as oligonucleotide melting temperature, size, GC content, PCR product size, positional constraints within the sourse sequence and many
+        more.
+    </p>
+    <p>
+        I, on the other hand, will run a very simple &quot;virtual PCR&quot; example, to show you how the plugin works. Most of the default settings of the
+        plugin are strict. So, I will specify a target. A Target might be a simple sequence repeat (microsatellite) site (for example a CA repeat) or a
+        single-base-pair polymorphism. I will specify it with the start value of 40 (which is the index of the first base of a Target), and of the length of 78.
+        A legal primer pair must flank this target since it&#39;s the only one specified.
+    </p>
+    <p>
+        I will also want Primer3 to pick internal oligo along with left and right primers.
+    </p>
+    <p>
+        The resulting primers are saved and shown as annotations. The &bdquo;Result Settings&ldquo; tab allows to specify the annotations table to contain the
+        results. I will call the results group &bdquo;primers. Now I press &bdquo;Pick Primers&ldquo;.
+    </p>
+    <h3>
+        Saving Primers<br/>
+    </h3>
+    <p>
+        The primers for the selected sequence are found. The results annotations group contains a subgroup for every found primer pair.
+        <opening a="" group="">. Left primers and internal oligonucleotides are located at the direct strand, and right primers are located at the complement
+            strand. Each primer is specified with a set of qualifiers, that contain values of such parameters as three prime end and any self complementarity
+            measures, the percent GC and the melting temperature.
+        </opening>
+    </p>
+    <p>
+        This is how you can design primers in UGENE.
+    </p>
+    <h3>
+        Additional Materials<br/>
+    </h3>
+    <p>
+        <a class="content" href="https://doc.ugene.net/wiki/display/UUOUM16/Primer3">Documentation page</a>
+    </p>
+    <p>
+        <a class="content" href="https://www.youtube.com/watch?v=CmQFO_E6xvY" data-ob="lightbox[2984]">Youtube video</a>
+    </p></p>
+</div>
