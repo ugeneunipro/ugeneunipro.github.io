@@ -2,186 +2,180 @@
 layout: page_en
 title: Metagenomic Classification with Kraken - Unipro UGENE
 ---
-<div class="all_content">
-    <div class="post-main">
 
-        <div class="entry">
-            <h1>Tutorial: Metagenomic Classification with Kraken</h1>
-            <p>In this tutorial we will learn how to classify our metagenomic reads obtained with Illumina sequencing platform with Kraken, a system for
-                assigning taxonomic labels to short DNA sequences.</p>
-            <p>You can find more information about Kraken here:</p>
-            <ul>
-                <li>Kraken website: <a class="content" href="https://ccb.jhu.edu/software/kraken/">https://ccb.jhu.edu/software/kraken/</a></li>
-                <li>Kraken manual: <a class="content" href="http://ccb.jhu.edu/software/kraken/MANUAL.html">http://ccb.jhu.edu/software/kraken/MANUAL.html</a>
-                </li>
-            </ul>
-            <p>We have collected field mosquitoes from different locations across Florida, United States, and we want to understand what is the composition of
-                their microbiome. We have extracted RNA and performed shotgun sequencing with Illumina. The reads are 2x150bp paired-end reads. Here we will
-                analyze one of the sites.</p>
-            <p>We have two datasets, lib3 and lib5. Let’s start with lib3.</p>
-            <p>This is the workflow that we will follow:</p>
-            <p>
-            <center><img alt="Main workflow" src="/assets/images/learn/metagenomic-classification-with-kraken/main_workflow.jpg"
-                         style="max-width: 600px;"/></center>
-            </p>
-            <p>
-                The workflow includes:</p>
-            <ol>
-                <li>quality check with FastQC,</li>
-                <li>trimming with Trimmomatic,</li>
-                <li>classification of reads with Kraken.</li>
-            </ol>
-            <h3 class="general_content">System requirements</h3>
-            <p>To follow this tutorial you need to have:</p>
-            <ul>
-                <li><b>Operating system:</b> 64-bit Linux or macOS</li>
-                <li><b>RAM:</b> at least 8 Gb</li>
-                <li><b>Disk space:</b> about 50 Gb of free disk space is required</li>
-                <li>Java Runtime Environment (JRE) 1.8 or higher should be installed.</li>
-                <li>To use the UGENE online installer (see below) you need to have administrative rights on the computer.</li>
-            </ul>
-            <h3 class="general_content">UGENE configuration</h3>
-            <p><a class="content" href="">Download</a> the UGENE online installer (version 1.31 or higher is required) and install it (see instructions for <a
-                    class="content" href="https://doc.ugene.net/wiki/display/UUOUM31/Installation+on+Linux">Linux</a> and <a class="content"
-                                                                                                                             href="https://doc.ugene.net/wiki/display/UUOUM31/Installation+on+macOS">macOS</a>).
-                On the &#8220;Select Components&#8221; page select &#8220;Taxonomy classification&#8221; and &#8220;Classification with Kraken&#8221; items
-                under &#8220;NGS additions: metagenomics classification&#8221;.</p>
-            <p>
-            <center><img alt="Main workflow" src="/assets/images/learn/metagenomic-classification-with-kraken/installer_with_kraken.jpg"
-                         style="border: 1px solid #bbbbbb;"/></center>
-            </p>
-            <h3 class="general_content">Sample data</h3>
-            <p>Download files &#8220;lib3.R1_001.fastq.gz&#8221; and &#8220;lib3.R2_001.fastq.gz&#8221; from <a class="content"
-                                                                                                                href="https://drive.google.com/drive/folders/1c2xbJzB3GmmAEax6u-bMwd4eVAWqCrVJ">here</a>
-                and unpack each file.</p>
-            <h3 class="general_content">Tutorial steps</h3>
-            <div class="tutorial_step">
-                <div class="tutorial_step_header">STEP1: let&#8217;s load the “De novo assembly and contigs classification” workflow</div>
-                <p>Select &#8220;Tools > Workflow Designer&#8221; in the UGENE main menu. In the appeared window search for NGS under the &#8220;Samples&#8221;
-                    tab and choose the &#8220;De novo assembly and contigs classification&#8221; sample.</p>
-                <p>
-                <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/select_sample_workflow.jpg"
-                             style="border: 1px solid #bbbbbb;"/></center>
-                </p>
-                <p>Once you double click on the window to start the analysis, a new window will open that will ask you whether your reads are single or
-                    paired.</p>
-            </div>
-            <div class="tutorial_step">
-                <div class="tutorial_step_header">STEP2: Select paired-end reads</div>
-                <p>
-                <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/configure_paired_reads.jpg"
-                             style="border: 1px solid #bbbbbb;"/></center>
-            </div>
-            <div class="tutorial_step">
-                <div class="tutorial_step_header">STEP3: load the reads: choose lib3 reads</div>
-                <p>
-                <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/fastq_files.jpg"
-                             style="border: 1px solid #bbbbbb;"/></center>
-            </div>
-            <div class="tutorial_step">
-                <div class="tutorial_step_header">STEP4: Trimmomatic configuration</div>
-                <p>
-                <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/trimmomatic.jpg"
-                             style="border: 1px solid #bbbbbb;"/></center>
-                </p>
-                <p>More information about Trimmomatic: <a class="content"
-                                                          href="More information about Trimmomatic: http://www.usadellab.org/cms/?page=trimmomatic">More
-                    information about Trimmomatic: http://www.usadellab.org/cms/?page=trimmomatic</a></p>
-                <p>For single-ended data, one input and one output file are specified, plus the processing steps. For paired-end data, two input files are
-                    specified, and 4 output files, 2 for the &#8216;paired&#8217; output where both reads survived the processing, and 2 for corresponding
-                    &#8216;unpaired&#8217; output where a read survived, but the paired read did not.</p>
-            </div>
-            <div class="tutorial_step">
-                <div class="tutorial_step_header">STEP5: let’s remove adapters: ILLUMINCLIP with default parameters</div>
-                <p>
-                <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/trimmomatic_steps.jpg"
-                             style="border: 1px solid #bbbbbb;"/></center>
-                <br/>
-                <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/illuminaclip.jpg"
-                             style="border: 1px solid #bbbbbb;"/></center>
-            </div>
-            <div class="tutorial_step">
-                <div class="tutorial_step_header">STEP6: make sure you choose the right adapter file</div>
-                <p>
-                <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/pe_adapters.jpg"
-                             style="border: 1px solid #bbbbbb;"/></center>
-            </div>
-            <div class="tutorial_step">
-                <div class="tutorial_step_header">STEP7: make sure the minikraken database is selected</div>
-                <p>
-                <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/kraken_settings.jpg"
-                             style="border: 1px solid #bbbbbb;"/></center>
-            </div>
-            <div class="tutorial_step">
-                <div class="tutorial_step_header">STEP8: output data wizard window click &#8220;Apply&#8221; (not &#8220;Run&#8221;)!</div>
-                <p>
-                <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/output_settings.jpg"
-                             style="border: 1px solid #bbbbbb;"/></center>
-            </div>
-            <div class="tutorial_step">
-                <div class="tutorial_step_header">STEP9: Remove SPAdes element from workflow</div>
-                <p>
-                <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/full_workflow.jpg"
-                             style="border: 1px solid #bbbbbb;"/></center>
-                </p>
-                <p>The workflow that you have generated contains SPAdes, but in this practical session we will not use SPAdes prior classification with
-                    Kraken.</p>
-                <p>Now we will remove SPAdes and connect the output of Trimmomatic directly to Kraken input.</p>
-                <p>To remove SPAdes click on the element and with the right click choose &#8220;Delete&#8221;.</p>
-                <p>
-                <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/delete_spades.jpg"
-                             style="border: 1px solid #bbbbbb;"/></center>
-            </div>
-            <div class="tutorial_step">
-                <div class="tutorial_step_header">STEP10: Connect Trimmomatic and Kraken elements</div>
-                <p>Select the Kraken input port, press <i>Alt</i> on the keyboard and move the port up. Then drag an arrow from Trimmomatic output port to
-                    Kraken input port. Clik on the Kraken element and configure the &#8220;Input data&#8221; parameter and input slots.</p>
-                <p>
-                <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/configure_kraken_input.jpg"
-                             style="border: 1px solid #bbbbbb;"/></center>
-            </div>
-            <div class="tutorial_step">
-                <div class="tutorial_step_header">STEP11: Run the workflow!</div>
-                <p>Click <img src="/assets/images/learn/metagenomic-classification-with-kraken/run_button.jpg"
-                              style="border: 1px solid #bbbbbb; width: 25px;"/> on the toolbar. </p>
-            </div>
-            <p>The workflow outputs two files:</p>
-            <ul>
-                <li><b>lib3.R1_001_Kraken_classification.txt:</b> output by Kraken contains classification of with each NGS read,</li>
-                <li><b>lib3.R1_001_Kraken_report.txt:</b> a report file, generated by UGENE, with general statistics per each taxID.</li>
-            </ul>
-            <p>The second file is a tab-delimited text file. Open it in a Excel-like application. For each taxID the file contains, in particular, the following
-                information:</p>
-            <ul>
-                <li><b>tax_name:</b> scientific name, associated with the taxID;</li>
-                <li><b>directly_num:</b> number of NGS reads, directly assigned to the taxID;</li>
-                <li><b>clade_num:</b> number of NGS reads, assigned to this taxID or one of the children in the taxonomy tree (e.g. &#8220;clade_num&#8221; for
-                    &#8220;tax_id = 2&#8221; will include the number of <u>all</u> bacterial reads).
-                </li>
-            </ul>
-            <p>
-            <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/report.jpg" style="border: 1px solid #bbbbbb;"/>
-            </center>
-            </p>
-            <h3 class="general_content">Exercises</h3>
-            <p><b>Exercise:</b> Repeat taxonomical classification workflow with lib5 data. Compare the results.</p>
-            <p><b>Exercise:</b> Classify reads with the default workflow using SPAdes and Kraken. Compare the results</p>
-            <h3 class="general_content">What&#8217;s next?</h3>
-            <p>MiniKraken is a rather small pre-build database. You can build a custom database with &#8220;<a class="content"
-                                                                                                               href="https://doc.ugene.net/wiki/display/WDD31/Build+Kraken+Database">Build
-                Kraken Database</a>&#8221; element and use this database instead of MiniKraken.</p>
-            <p>You can also use the parallel and serial taxonomical classification workflows with additional classifiers CLARK, DIAMOND and WEVOTE. Note that
-                this requires more disk space (full UGENE package with metagenomics data takes ~ 250Gb). More advanced computational resources (RAM etc.) are
-                also needed.</p>
-            <p>
-            <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/parallel_workflow.jpg"
-                         style="border: 1px solid #bbbbbb;"/></center>
-            </p>
-            <h3 class="general_content">Acknowledgement</h3>
-            <p>This tutorial is an adapted version of the tutorial by Carla Mavian, prepared for metagenomics practical session on <a class="content"
-                                                                                                                                      href="https://rega.kuleuven.be/cev/veme-workshop/2018">VEME
-                2018</a> (see <a class="content" href="https://drive.google.com/drive/u/1/folders/1c2xbJzB3GmmAEax6u-bMwd4eVAWqCrVJ">here</a>).</p>
-            <p>The metagenomics framework in UGENE was supported by the <a class="content" href="http://www.virogenesis.eu/">VIROGENESIS project</a>.</p>
-        </div>
-    </div>
+<h1>Tutorial: Metagenomic Classification with Kraken</h1>
+<p>In this tutorial we will learn how to classify our metagenomic reads obtained with Illumina sequencing platform with Kraken, a system for
+    assigning taxonomic labels to short DNA sequences.</p>
+<p>You can find more information about Kraken here:</p>
+<ul>
+    <li>Kraken website: <a class="content" href="https://ccb.jhu.edu/software/kraken/">https://ccb.jhu.edu/software/kraken/</a></li>
+    <li>Kraken manual: <a class="content" href="http://ccb.jhu.edu/software/kraken/MANUAL.html">http://ccb.jhu.edu/software/kraken/MANUAL.html</a>
+    </li>
+</ul>
+<p>We have collected field mosquitoes from different locations across Florida, United States, and we want to understand what is the composition of
+    their microbiome. We have extracted RNA and performed shotgun sequencing with Illumina. The reads are 2x150bp paired-end reads. Here we will
+    analyze one of the sites.</p>
+<p>We have two datasets, lib3 and lib5. Let’s start with lib3.</p>
+<p>This is the workflow that we will follow:</p>
+<p>
+<center><img alt="Main workflow" src="/assets/images/learn/metagenomic-classification-with-kraken/main_workflow.jpg"
+             style="max-width: 600px;"/></center>
+</p>
+<p>
+    The workflow includes:</p>
+<ol>
+    <li>quality check with FastQC,</li>
+    <li>trimming with Trimmomatic,</li>
+    <li>classification of reads with Kraken.</li>
+</ol>
+<h3 class="general_content">System requirements</h3>
+<p>To follow this tutorial you need to have:</p>
+<ul>
+    <li><b>Operating system:</b> 64-bit Linux or macOS</li>
+    <li><b>RAM:</b> at least 8 Gb</li>
+    <li><b>Disk space:</b> about 50 Gb of free disk space is required</li>
+    <li>Java Runtime Environment (JRE) 1.8 or higher should be installed.</li>
+    <li>To use the UGENE online installer (see below) you need to have administrative rights on the computer.</li>
+</ul>
+<h3 class="general_content">UGENE configuration</h3>
+<p><a class="content" href="">Download</a> the UGENE online installer (version 1.31 or higher is required) and install it (see instructions for <a
+        class="content" href="https://doc.ugene.net/wiki/display/UUOUM31/Installation+on+Linux">Linux</a> and <a class="content"
+                                                                                                                 href="https://doc.ugene.net/wiki/display/UUOUM31/Installation+on+macOS">macOS</a>).
+    On the &#8220;Select Components&#8221; page select &#8220;Taxonomy classification&#8221; and &#8220;Classification with Kraken&#8221; items
+    under &#8220;NGS additions: metagenomics classification&#8221;.</p>
+<p>
+<center><img alt="Main workflow" src="/assets/images/learn/metagenomic-classification-with-kraken/installer_with_kraken.jpg"
+             style="border: 1px solid #bbbbbb;"/></center>
+</p>
+<h3 class="general_content">Sample data</h3>
+<p>Download files &#8220;lib3.R1_001.fastq.gz&#8221; and &#8220;lib3.R2_001.fastq.gz&#8221; from <a class="content"
+                                                                                                    href="https://drive.google.com/drive/folders/1c2xbJzB3GmmAEax6u-bMwd4eVAWqCrVJ">here</a>
+    and unpack each file.</p>
+<h3 class="general_content">Tutorial steps</h3>
+<div class="tutorial_step">
+    <div class="tutorial_step_header">STEP1: let&#8217;s load the “De novo assembly and contigs classification” workflow</div>
+    <p>Select &#8220;Tools > Workflow Designer&#8221; in the UGENE main menu. In the appeared window search for NGS under the &#8220;Samples&#8221;
+        tab and choose the &#8220;De novo assembly and contigs classification&#8221; sample.</p>
+    <p>
+    <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/select_sample_workflow.jpg"
+                 style="border: 1px solid #bbbbbb;"/></center>
+    </p>
+    <p>Once you double click on the window to start the analysis, a new window will open that will ask you whether your reads are single or
+        paired.</p>
 </div>
+<div class="tutorial_step">
+    <div class="tutorial_step_header">STEP2: Select paired-end reads</div>
+    <p>
+    <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/configure_paired_reads.jpg"
+                 style="border: 1px solid #bbbbbb;"/></center>
+</div>
+<div class="tutorial_step">
+    <div class="tutorial_step_header">STEP3: load the reads: choose lib3 reads</div>
+    <p>
+    <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/fastq_files.jpg"
+                 style="border: 1px solid #bbbbbb;"/></center>
+</div>
+<div class="tutorial_step">
+    <div class="tutorial_step_header">STEP4: Trimmomatic configuration</div>
+    <p>
+    <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/trimmomatic.jpg"
+                 style="border: 1px solid #bbbbbb;"/></center>
+    </p>
+    <p>More information about Trimmomatic: <a class="content"
+                                              href="More information about Trimmomatic: http://www.usadellab.org/cms/?page=trimmomatic">More
+        information about Trimmomatic: http://www.usadellab.org/cms/?page=trimmomatic</a></p>
+    <p>For single-ended data, one input and one output file are specified, plus the processing steps. For paired-end data, two input files are
+        specified, and 4 output files, 2 for the &#8216;paired&#8217; output where both reads survived the processing, and 2 for corresponding
+        &#8216;unpaired&#8217; output where a read survived, but the paired read did not.</p>
+</div>
+<div class="tutorial_step">
+    <div class="tutorial_step_header">STEP5: let’s remove adapters: ILLUMINCLIP with default parameters</div>
+    <p>
+    <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/trimmomatic_steps.jpg"
+                 style="border: 1px solid #bbbbbb;"/></center>
+    <br/>
+    <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/illuminaclip.jpg"
+                 style="border: 1px solid #bbbbbb;"/></center>
+</div>
+<div class="tutorial_step">
+    <div class="tutorial_step_header">STEP6: make sure you choose the right adapter file</div>
+    <p>
+    <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/pe_adapters.jpg"
+                 style="border: 1px solid #bbbbbb;"/></center>
+</div>
+<div class="tutorial_step">
+    <div class="tutorial_step_header">STEP7: make sure the minikraken database is selected</div>
+    <p>
+    <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/kraken_settings.jpg"
+                 style="border: 1px solid #bbbbbb;"/></center>
+</div>
+<div class="tutorial_step">
+    <div class="tutorial_step_header">STEP8: output data wizard window click &#8220;Apply&#8221; (not &#8220;Run&#8221;)!</div>
+    <p>
+    <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/output_settings.jpg"
+                 style="border: 1px solid #bbbbbb;"/></center>
+</div>
+<div class="tutorial_step">
+    <div class="tutorial_step_header">STEP9: Remove SPAdes element from workflow</div>
+    <p>
+    <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/full_workflow.jpg"
+                 style="border: 1px solid #bbbbbb;"/></center>
+    </p>
+    <p>The workflow that you have generated contains SPAdes, but in this practical session we will not use SPAdes prior classification with
+        Kraken.</p>
+    <p>Now we will remove SPAdes and connect the output of Trimmomatic directly to Kraken input.</p>
+    <p>To remove SPAdes click on the element and with the right click choose &#8220;Delete&#8221;.</p>
+    <p>
+    <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/delete_spades.jpg"
+                 style="border: 1px solid #bbbbbb;"/></center>
+</div>
+<div class="tutorial_step">
+    <div class="tutorial_step_header">STEP10: Connect Trimmomatic and Kraken elements</div>
+    <p>Select the Kraken input port, press <i>Alt</i> on the keyboard and move the port up. Then drag an arrow from Trimmomatic output port to
+        Kraken input port. Clik on the Kraken element and configure the &#8220;Input data&#8221; parameter and input slots.</p>
+    <p>
+    <center><img src="/assets/images/learn/metagenomic-classification-with-kraken/configure_kraken_input.jpg"
+                 style="border: 1px solid #bbbbbb;"/></center>
+</div>
+<div class="tutorial_step">
+    <div class="tutorial_step_header">STEP11: Run the workflow!</div>
+    <p>Click <img src="/assets/images/learn/metagenomic-classification-with-kraken/run_button.jpg"
+                  style="border: 1px solid #bbbbbb; width: 25px;"/> on the toolbar. </p>
+</div>
+<p>The workflow outputs two files:</p>
+<ul>
+    <li><b>lib3.R1_001_Kraken_classification.txt:</b> output by Kraken contains classification of with each NGS read,</li>
+    <li><b>lib3.R1_001_Kraken_report.txt:</b> a report file, generated by UGENE, with general statistics per each taxID.</li>
+</ul>
+<p>The second file is a tab-delimited text file. Open it in a Excel-like application. For each taxID the file contains, in particular, the following
+    information:</p>
+<ul>
+    <li><b>tax_name:</b> scientific name, associated with the taxID;</li>
+    <li><b>directly_num:</b> number of NGS reads, directly assigned to the taxID;</li>
+    <li><b>clade_num:</b> number of NGS reads, assigned to this taxID or one of the children in the taxonomy tree (e.g. &#8220;clade_num&#8221; for
+        &#8220;tax_id = 2&#8221; will include the number of <u>all</u> bacterial reads).
+    </li>
+</ul>
+<p>
+<center><img src="/assets/images/learn/metagenomic-classification-with-kraken/report.jpg" style="border: 1px solid #bbbbbb;"/>
+</center>
+</p>
+<h3 class="general_content">Exercises</h3>
+<p><b>Exercise:</b> Repeat taxonomical classification workflow with lib5 data. Compare the results.</p>
+<p><b>Exercise:</b> Classify reads with the default workflow using SPAdes and Kraken. Compare the results</p>
+<h3 class="general_content">What&#8217;s next?</h3>
+<p>MiniKraken is a rather small pre-build database. You can build a custom database with &#8220;<a class="content"
+                                                                                                   href="https://doc.ugene.net/wiki/display/WDD31/Build+Kraken+Database">Build
+    Kraken Database</a>&#8221; element and use this database instead of MiniKraken.</p>
+<p>You can also use the parallel and serial taxonomical classification workflows with additional classifiers CLARK, DIAMOND and WEVOTE. Note that
+    this requires more disk space (full UGENE package with metagenomics data takes ~ 250Gb). More advanced computational resources (RAM etc.) are
+    also needed.</p>
+<p>
+<center><img src="/assets/images/learn/metagenomic-classification-with-kraken/parallel_workflow.jpg"
+             style="border: 1px solid #bbbbbb;"/></center>
+</p>
+<h3 class="general_content">Acknowledgement</h3>
+<p>This tutorial is an adapted version of the tutorial by Carla Mavian, prepared for metagenomics practical session on <a class="content"
+                                                                                                                          href="https://rega.kuleuven.be/cev/veme-workshop/2018">VEME
+    2018</a> (see <a class="content" href="https://drive.google.com/drive/u/1/folders/1c2xbJzB3GmmAEax6u-bMwd4eVAWqCrVJ">here</a>).</p>
+<p>The metagenomics framework in UGENE was supported by the <a class="content" href="http://www.virogenesis.eu/">VIROGENESIS project</a>.</p>

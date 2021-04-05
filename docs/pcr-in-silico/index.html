@@ -2,86 +2,78 @@
 layout: page_en
 title: PCR in silico - Unipro UGENE
 ---
-<div class="all_content">
-    <div class="post-main">
-
-        <div class="entry">
-            <h1>
-                Tutorial: UGENE PCR in silico<br/>
-            </h1>
-            <p>
-                <a href="/assets/images/learn/pcr.png" data-ob="lightbox[3004]"><img alt="pcr in silico"
-                                                                                     class="aligncenter size-full wp-image-3005"
-                                                                                     src="/assets/images/learn/pcr.png"
-                                                                                     width="100%"/></a>
-            </p>
-            <p>
-                PCR primer designing is a day to day lab activity. Also you might want to check if a designed primer that your lab uses is applicable to your
-                new sequence. By checking your primer (e.g. melting temperature of primers or primer hairpin) with in silico PCR features you can track some
-                parameters of your PCR experiment before it. It is extremely easy and a cheap way to not get into trouble.
-            </p>
-            <p>
-                This tutorial is about the In silico PCR primer design feature in UGENE.
-            </p>
-            <h3>
-                PCR Design Tools<br/>
-            </h3>
-            <p>
-                You can run the simulation of your PCR experiment for any nucleotide template. You might want to check <a class="content"
-                                                                                                                          href="/primer3-primer-design-tool/">primer
-                design tool Primer3</a>. For running In silico PCR open a DNA sequence which contains the target region you want to amplify; and activate the
-                PCR options panel by clicking its icon. You can find this icon on the right side of the UGENE Sequence View.
-            </p>
-            <p>
-                Enter two primers&rsquo; sequences for setting up the simulation. There are two ways to do it: to enter them manually or to find them in the <a
-                    class="content" href="/shared-databases-in-ugene/">primer library</a>. You can type the sequence or paste it
-                manually. The primer library allows you to reuse your sequences (even across a lab), but you need to populate it in advance.
-            </p>
-            <p>
-                If you need to reverse a primer, click the corresponding reverse-complement button.
-            </p>
-            <p>
-                UGENE automatically calculates the parameters of primers. You can see the values in the Primers Details dialog. There are GC content, melting
-                temperature of primers, self- and hetero-dimers (primer hairpin) and others parameters in the dialog.
-            </p>
-            <h3>
-                Primer Checking<br/>
-            </h3>
-            <p>
-                If a value of a parameter does not fit into the predefined boundaries then the value is colored with red. It means that you should pay attention
-                to it. Maybe, your primer pair is incompatible for In silico PCR and real PCR in turn and may result it no amplification. In addition, one of
-                the
-                warnings is shown in the options panel.
-            </p>
-            <p>
-                There is a couple of parameters in the options panel: the maximum size of the target amplicon and the amount of mismatches for binding of each
-                primer. Choose the parameters values and click the &ldquo;Find products&rdquo; button. It will just find the primer sequences that you enter in
-                a sequence opened.
-            </p>
-            <p>
-                After that, you can see the list of probable amplicons &#8211; the PCR products. Click a product for seeing its region in the sequence view.
-                Double click the product for exporting it to a file.
-            </p>
-            <h3>
-                Primer Database<br/>
-            </h3>
-            <p>
-                Primer designing ca be skipped by using old primers. If you have a set of pimers that you usually use you can add them into <a class="content"
-                                                                                                                                               href="http://ugene.unipro.ru/wp-admin/post.php?post=3094&amp;action=edit">the
-                UGENE primer library</a>. It will simplify your work with In silico PCR primer design. Just click the library button and double click the needed
-                primer for using it for PCR.
-            </p>
-            <p>
-                For managing the library, open it in the Tools menu. Here you can add a new primer manually or import a set of primers from a file. The added
-                primers are stored between UGENE runs. If you need to share your primers, for example, with your colleagues, you can export them into a file.
-            </p>
-            <h3>
-                Additional Materials<br/>
-            </h3>
-            <p>
-                <a class="content" href="https://ugene.unipro.ru/wiki/display/UUOUM15/In+Silico+PCR">Documentation page</a>
-            </p>
-        </div>
-    </div>
-
-</div>
+<h1>
+    Tutorial: UGENE PCR in silico<br/>
+</h1>
+<p>
+    <a href="/assets/images/learn/pcr.png" data-ob="lightbox[3004]"><img alt="pcr in silico"
+                                                                         class="aligncenter size-full wp-image-3005"
+                                                                         src="/assets/images/learn/pcr.png"
+                                                                         width="100%"/></a>
+</p>
+<p>
+    PCR primer designing is a day to day lab activity. Also you might want to check if a designed primer that your lab uses is applicable to your
+    new sequence. By checking your primer (e.g. melting temperature of primers or primer hairpin) with in silico PCR features you can track some
+    parameters of your PCR experiment before it. It is extremely easy and a cheap way to not get into trouble.
+</p>
+<p>
+    This tutorial is about the In silico PCR primer design feature in UGENE.
+</p>
+<h3>
+    PCR Design Tools<br/>
+</h3>
+<p>
+    You can run the simulation of your PCR experiment for any nucleotide template. You might want to check <a class="content"
+                                                                                                              href="/primer3-primer-design-tool/">primer
+    design tool Primer3</a>. For running In silico PCR open a DNA sequence which contains the target region you want to amplify; and activate the
+    PCR options panel by clicking its icon. You can find this icon on the right side of the UGENE Sequence View.
+</p>
+<p>
+    Enter two primers&rsquo; sequences for setting up the simulation. There are two ways to do it: to enter them manually or to find them in the <a
+        class="content" href="/shared-databases-in-ugene/">primer library</a>. You can type the sequence or paste it
+    manually. The primer library allows you to reuse your sequences (even across a lab), but you need to populate it in advance.
+</p>
+<p>
+    If you need to reverse a primer, click the corresponding reverse-complement button.
+</p>
+<p>
+    UGENE automatically calculates the parameters of primers. You can see the values in the Primers Details dialog. There are GC content, melting
+    temperature of primers, self- and hetero-dimers (primer hairpin) and others parameters in the dialog.
+</p>
+<h3>
+    Primer Checking<br/>
+</h3>
+<p>
+    If a value of a parameter does not fit into the predefined boundaries then the value is colored with red. It means that you should pay attention
+    to it. Maybe, your primer pair is incompatible for In silico PCR and real PCR in turn and may result it no amplification. In addition, one of
+    the
+    warnings is shown in the options panel.
+</p>
+<p>
+    There is a couple of parameters in the options panel: the maximum size of the target amplicon and the amount of mismatches for binding of each
+    primer. Choose the parameters values and click the &ldquo;Find products&rdquo; button. It will just find the primer sequences that you enter in
+    a sequence opened.
+</p>
+<p>
+    After that, you can see the list of probable amplicons &#8211; the PCR products. Click a product for seeing its region in the sequence view.
+    Double click the product for exporting it to a file.
+</p>
+<h3>
+    Primer Database<br/>
+</h3>
+<p>
+    Primer designing ca be skipped by using old primers. If you have a set of pimers that you usually use you can add them into <a class="content"
+                                                                                                                                   href="http://ugene.unipro.ru/wp-admin/post.php?post=3094&amp;action=edit">the
+    UGENE primer library</a>. It will simplify your work with In silico PCR primer design. Just click the library button and double click the needed
+    primer for using it for PCR.
+</p>
+<p>
+    For managing the library, open it in the Tools menu. Here you can add a new primer manually or import a set of primers from a file. The added
+    primers are stored between UGENE runs. If you need to share your primers, for example, with your colleagues, you can export them into a file.
+</p>
+<h3>
+    Additional Materials<br/>
+</h3>
+<p>
+    <a class="content" href="https://doc.ugene.net/wiki/display/UUOUM15/In+Silico+PCR">Documentation page</a>
+</p>

@@ -3,116 +3,108 @@ layout: page_en
 title: NGS Pipelines in UGENE - Unipro UGENE
 ---
 
-<div class="all_content">
-    <div class="post-main">
-
-        <div class="entry">
-            <h1>
-                Overview of NGS Pipelines in UGENE<br/>
-            </h1>
-            <p>
-                <a href="http://ugene.unipro.ru/wp-content/uploads/2015/03/ngs1.png" data-ob="lightbox[3007]"><img loading="lazy" alt="NGS pipeline in UGENE"
-                                                                                                                   class="aligncenter size-full wp-image-3008"
-                                                                                                                   height="738"
-                                                                                                                   src="http://ugene.unipro.ru/wp-content/uploads/2015/03/ngs1.png"
-                                                                                                                   width="1485"/></a>
-            </p>
-            <p>
-                UGENE is a free bioinformatics platform that integrates dozens of well-known biological tools and algorithms and provides both graphical and
-                command line interfaces for them. It is designed to solve various complex computational tasks in bioinformatics. One of the areas is analysis of
-                sequencing data produced by popular modern NGS technologies.
-            </p>
-            <p>
-                There are three basic pipelines integrated into UGENE for NGS data analysis: Variant Calling, RNA-sequencing data analysis and ChIP-sequencing
-                data analysis. The RNA-seq and ChIPseq (chromatin immunoprecipitation sequencing) pipelines have more than one possible configurations.
-            </p>
-            <h3>
-                Variant Calling with SAMtools<br/>
-            </h3>
-            <p>
-                The Variant Calling pipeline uses the SAMtools software to identify genomic variants in the assembled sequencing data by comparing them with a
-                reference sequence.
-            </p>
-            <h3>
-                Tuxedo &#8211; RNA sequencing protocol<br/>
-            </h3>
-            <p>
-                The RNA sequencing protocol is based on the Tuxedo toolkit and contains TopHat and the Cufflinks RNA tools. The pipeline helps to discover new
-                genes, new splice variants of known genes (Cufflinks RNA) and to compare genes and transcripts expression in RNA-seq experiments.
-            </p>
-            <h3>
-                Cistrome<br/>
-            </h3>
-            <p>
-                The ChIPseq pipeline is based on the tools from the Cistrome platform. The tools together provide a way of gene expression analysis and motif
-                discovery with preliminary peak calling in chromatin immunoprecipitation sequencing experiments.
-            </p>
-            <h3>
-                Workflow Designer<br/>
-            </h3>
-            <p>
-                All the pipelines can be used in the UGENE Worfklow Designer &#8211; the graphical system for construction of the computational workflows. A
-                user with a multi-stage computational task can use the Worfklow Designer and easily create a workflow that would solve the task. Once created,
-                the workflow can be used multiple times for performing calculations on different input data.
-            </p>
-            <p>
-                There are ready-to-use samples in the Workflow Designer. The NGS pipelines are located in the &ldquo;NGS&rdquo; section of the samples. By
-                double-clicking on a sample and supplying the input data you can run a pipeline with default parameters and outputs.
-            </p>
-            <p>
-                Using the NGS pipelines in UGENE a user have a set of advantages over using the original tools. Configurations of the Tuxedo and the Cistrome
-                pipelines can be selected in the special dialog before running the workflow.
-            </p>
-            <p>
-                Each NGS workflow is equipped with wizards. A wizard is a simplified visual interface used to set the workflows most important parameters. The
-                wizard is logically divided into pages and each page has its own set of settings. Going over the wizard a user sets the workflow parameters step
-                by step and has detailed explanation for all of them.
-            </p>
-            <p>
-                <a href="http://ugene.unipro.ru/wp-content/uploads/2015/03/ngs2.png" data-ob="lightbox[3007]"><img loading="lazy" alt="NGS workflow"
-                                                                                                                   class="aligncenter size-full wp-image-3009"
-                                                                                                                   height="736"
-                                                                                                                   src="http://ugene.unipro.ru/wp-content/uploads/2015/03/ngs2.png"
-                                                                                                                   width="1484"/></a>
-            </p>
-            <h3>
-                Handy monitoring<br/>
-            </h3>
-            <p>
-                After the workflow is configured and run a user is able to monitor the process using a dashboard. The dashboard provides the details about the
-                status of the running process, progress, files produced and so on. Advanced users can see logs of the external tools in a special section of the
-                dashboard.
-            </p>
-            <h3>
-                Results managing<br/>
-            </h3>
-            <p>
-                Dashboards persist between launches of the UGENE. So a user can see the information about previous runs, check &nbsp;parameters of a run and
-                open the produced files.
-            </p>
-            <p>
-                Even a closed dashboard could be restored using the Dashboards Manager. If a user does not want to keep a dashboard it can be removed it with
-                all data produced using the manager.
-            </p>
-            <h3>
-                Availability<br/>
-            </h3>
-            <p>
-                To run basic pipelines user should download UGENE NGS package from the UGENE web-site. The basic pipelines are available out-of-the box and do
-                not require additional configuration. These pipelines can work in offline mode using the Internet connection only for extra features.
-            </p>
-            <p>
-                UGENE makes NGS data analysis easier. Try it yourself!
-            </p>
-            <h3>
-                Additional Materials<br/>
-            </h3>
-            <p>
-                <a class="content" href="https://ugene.unipro.ru/wiki/display/UUOUM15/UGENE+Packages">Documentation page</a>
-            </p>
-            <p>
-                <a class="content" href="https://www.youtube.com/watch?v=nWS4zIICIAs" data-ob="lightbox[3007]">Youtube video</a></p>
-        </div>
-    </div>
-
-</div>
+<h1>
+    Overview of NGS Pipelines in UGENE<br/>
+</h1>
+<p>
+    <a href="http://ugene.unipro.ru/wp-content/uploads/2015/03/ngs1.png" data-ob="lightbox[3007]"><img loading="lazy" alt="NGS pipeline in UGENE"
+                                                                                                       class="aligncenter size-full wp-image-3008"
+                                                                                                       height="738"
+                                                                                                       src="http://ugene.unipro.ru/wp-content/uploads/2015/03/ngs1.png"
+                                                                                                       width="1485"/></a>
+</p>
+<p>
+    UGENE is a free bioinformatics platform that integrates dozens of well-known biological tools and algorithms and provides both graphical and
+    command line interfaces for them. It is designed to solve various complex computational tasks in bioinformatics. One of the areas is analysis of
+    sequencing data produced by popular modern NGS technologies.
+</p>
+<p>
+    There are three basic pipelines integrated into UGENE for NGS data analysis: Variant Calling, RNA-sequencing data analysis and ChIP-sequencing
+    data analysis. The RNA-seq and ChIPseq (chromatin immunoprecipitation sequencing) pipelines have more than one possible configurations.
+</p>
+<h3>
+    Variant Calling with SAMtools<br/>
+</h3>
+<p>
+    The Variant Calling pipeline uses the SAMtools software to identify genomic variants in the assembled sequencing data by comparing them with a
+    reference sequence.
+</p>
+<h3>
+    Tuxedo &#8211; RNA sequencing protocol<br/>
+</h3>
+<p>
+    The RNA sequencing protocol is based on the Tuxedo toolkit and contains TopHat and the Cufflinks RNA tools. The pipeline helps to discover new
+    genes, new splice variants of known genes (Cufflinks RNA) and to compare genes and transcripts expression in RNA-seq experiments.
+</p>
+<h3>
+    Cistrome<br/>
+</h3>
+<p>
+    The ChIPseq pipeline is based on the tools from the Cistrome platform. The tools together provide a way of gene expression analysis and motif
+    discovery with preliminary peak calling in chromatin immunoprecipitation sequencing experiments.
+</p>
+<h3>
+    Workflow Designer<br/>
+</h3>
+<p>
+    All the pipelines can be used in the UGENE Worfklow Designer &#8211; the graphical system for construction of the computational workflows. A
+    user with a multi-stage computational task can use the Worfklow Designer and easily create a workflow that would solve the task. Once created,
+    the workflow can be used multiple times for performing calculations on different input data.
+</p>
+<p>
+    There are ready-to-use samples in the Workflow Designer. The NGS pipelines are located in the &ldquo;NGS&rdquo; section of the samples. By
+    double-clicking on a sample and supplying the input data you can run a pipeline with default parameters and outputs.
+</p>
+<p>
+    Using the NGS pipelines in UGENE a user have a set of advantages over using the original tools. Configurations of the Tuxedo and the Cistrome
+    pipelines can be selected in the special dialog before running the workflow.
+</p>
+<p>
+    Each NGS workflow is equipped with wizards. A wizard is a simplified visual interface used to set the workflows most important parameters. The
+    wizard is logically divided into pages and each page has its own set of settings. Going over the wizard a user sets the workflow parameters step
+    by step and has detailed explanation for all of them.
+</p>
+<p>
+    <a href="http://ugene.unipro.ru/wp-content/uploads/2015/03/ngs2.png" data-ob="lightbox[3007]"><img loading="lazy" alt="NGS workflow"
+                                                                                                       class="aligncenter size-full wp-image-3009"
+                                                                                                       height="736"
+                                                                                                       src="http://ugene.unipro.ru/wp-content/uploads/2015/03/ngs2.png"
+                                                                                                       width="1484"/></a>
+</p>
+<h3>
+    Handy monitoring<br/>
+</h3>
+<p>
+    After the workflow is configured and run a user is able to monitor the process using a dashboard. The dashboard provides the details about the
+    status of the running process, progress, files produced and so on. Advanced users can see logs of the external tools in a special section of the
+    dashboard.
+</p>
+<h3>
+    Results managing<br/>
+</h3>
+<p>
+    Dashboards persist between launches of the UGENE. So a user can see the information about previous runs, check &nbsp;parameters of a run and
+    open the produced files.
+</p>
+<p>
+    Even a closed dashboard could be restored using the Dashboards Manager. If a user does not want to keep a dashboard it can be removed it with
+    all data produced using the manager.
+</p>
+<h3>
+    Availability<br/>
+</h3>
+<p>
+    To run basic pipelines user should download UGENE NGS package from the UGENE web-site. The basic pipelines are available out-of-the box and do
+    not require additional configuration. These pipelines can work in offline mode using the Internet connection only for extra features.
+</p>
+<p>
+    UGENE makes NGS data analysis easier. Try it yourself!
+</p>
+<h3>
+    Additional Materials<br/>
+</h3>
+<p>
+    <a class="content" href="https://doc.ugene.net/wiki/display/UUOUM15/UGENE+Packages">Documentation page</a>
+</p>
+<p>
+    <a class="content" href="https://www.youtube.com/watch?v=nWS4zIICIAs" data-ob="lightbox[3007]">Youtube video</a></p>
