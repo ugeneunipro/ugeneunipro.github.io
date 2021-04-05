@@ -2,248 +2,241 @@
 layout: page_en
 title: SNP Search and SNP Effect - Unipro UGENE
 ---
-
-<div class="all_content">
-    <div class="post-main">
-        <div class="entry">
-            <h1>
-                UGENE Mini-Tutorials: SNP Search,&nbsp;SNP Effect and More<br/>
-            </h1>
-            <h3>
-                UGENE Story<br/>
-            </h3>
-            <p>
-                <a href="http://ugene.unipro.ru/wp-content/uploads/2015/04/161.jpg" data-ob="lightbox[3099]"><img loading="lazy" alt="UGENE Story"
-                                                                                                                  class="aligncenter size-full wp-image-3100"
-                                                                                                                  height="755"
-                                                                                                                  src="http://ugene.unipro.ru/wp-content/uploads/2015/04/161.jpg"
-                                                                                                                  width="1245"/></a>
-            </p>
-            <p>
-                A story about how UGENE Workflow Designer and the team helped a user.
-            </p>
-            <p>
-                Last week a user sent us an e-mail to ugene@unipro.ru. He tried to solve a task with UGENE and he did not understand how to do it.
-            </p>
-            <p>
-                The task was the following:
-            </p>
-            <p>
-                The user had a set of short DNA sequences &ndash; the result of Sanger sequencing. Each sequence has the subsequence GCGGCCGCCACC that is the
-                beginning of translation. He wanted to translate each DNA sequence to the protein one starting from that translation beginning and create a
-                multiple alignment from the protein sequences.
-            </p>
-            <p>
-                If a user of UGENE wants to automate the routine actions on different input data, UGENE Workflow Designer could help with it.
-            </p>
-            <p>
-                We analyzed the task and decided that UGENE Workflow Designer is really suitable tool for solving it. We created the workflow that:
-            </p>
-            <p>
-                1) Reads a set of DNA sequences from an input file.
-            </p>
-            <p>
-                2) Searches for that subsequence in the sequences.
-            </p>
-            <p>
-                3) Cuts off the part of each sequence before the translation beginning.
-            </p>
-            <p>
-                4) Translates the cut sequences into the protein ones.
-            </p>
-            <p>
-                5) <a class="content" href="http://ugene.unipro.ru/muscle-multiple-alignment-tool/ ‎">Aligns</a> the protein sequences with the <a
-                    class="content" href="http://ugene.unipro.ru/multiple-sequence-alignment-with-muscle/">MUSCLE algorithm</a> and writes the alignment to a
-                file.
-            </p>
-            <p>
-                This solution works well for the user because it does exactly the things he wants. You can try the solution by yourself, because all the
-                required files and the test data are attached to this article.
-            </p>
-            <p>
-                This solution is based on the new element &ldquo; Trim Sequence &rdquo; for doing such a special translation. You need to add the file &ldquo;Trim
-                Sequence.usa&rdquo; to the directory &ldquo;data/workflow_samples/users/&rdquo; for making the element available in your UGENE copy. After that,
-                open the workflow file &ldquo;align trimmed sequences.uwl&rdquo; and open the settings wizard.
-            </p>
-            <h3>
-                SNP Search<br/>
-            </h3>
-            <p>
-                <a href="http://ugene.unipro.ru/wp-content/uploads/2015/04/171.jpg" data-ob="lightbox[3099]"><img loading="lazy" alt="SNP Search"
-                                                                                                                  class="aligncenter size-full wp-image-3101"
-                                                                                                                  height="755"
-                                                                                                                  src="http://ugene.unipro.ru/wp-content/uploads/2015/04/171.jpg"
-                                                                                                                  width="1296"/></a>
-            </p>
-            <p>
-                How to do SNP search in NGS data?
-            </p>
-            <p>
-                The latest piece of news of &ldquo;How-to in UGENE&rdquo; (https://www.facebook.com/groups/ugene/permalink/1547052062230702/) has shown you how
-                to get a good alignment from raw NGS data. In this one, you will see how to do the further analysis &ndash; to extract a genetic mutation from
-                the alignment.
-            </p>
-            <p>
-                UGENE Workflow Designer provides a sample workflow that extracts the variations. The <a class="content"
-                                                                                                        href="http://ugene.unipro.ru/create-and-run…onal-pipelines/">workflow</a>
-                is based on the SAMtools utilities.
-            </p>
-            <p>
-                For running the workflow:
-            </p>
-            <p>
-                1) Open Workflow Designer and double click the &ldquo;Call variants with SAMtools&rdquo; an SNP search sample of the &ldquo;NGS&rdquo; category
-                in the &ldquo;Samples&rdquo; tab.
-            </p>
-            <p>
-                2) Open the workflow wizard.
-            </p>
-            <p>
-                3) Choose a reference sequence file. Usually, this sequence has been used for the mapping (aligning) process.
-            </p>
-            <p>
-                4) Choose one or several files with alignments. The files must be of the BAM of SAM format.
-            </p>
-            <p>
-                5) Following the next several of the wizard, you can set up the parameters of the SAMtools utilities (samtools pileup, bcf view, etc.). Let&rsquo;s
-                just use their default values for the test run.
-            </p>
-            <p>
-                The result of the workflow is a file of the VCF format. This file contains the extracted genetic mutation.
-            </p>
-            <p>
-                Follow the updates! In future, we will show you how to do the further analysis of variations with UGENE.
-            </p>
-            <p>
-                You can find the documentation about this workflow and its <a class="content"
-                                                                              href="https://doc.ugene.net/wiki/display/UUOUM16/Variants+Calling">parameters
-                here</a>.
-            </p>
-            <p>
-                A little paper about additional adjusting of the SAMtools utilities (including samtools pileup) is here:
-                http://samtools.sourceforge.net/mpileup.shtml
-            </p>
-            <h3>
-                Sanger Sequencing<br/>
-            </h3>
-            <p>
-                <a href="http://ugene.unipro.ru/wp-content/uploads/2015/04/181.jpg" data-ob="lightbox[3099]"><img loading="lazy" alt="Sanger Sequencing"
-                                                                                                                  class="aligncenter size-full wp-image-3102"
-                                                                                                                  height="357"
-                                                                                                                  src="http://ugene.unipro.ru/wp-content/uploads/2015/04/181.jpg"
-                                                                                                                  width="620"/></a>
-            </p>
-            <p>
-                Pipeline for automated Sanger sequencing processing
-            </p>
-            <p>
-                The latest version of UGENE Workflow Designer provides a workflow for processing Sanger sequencing data. The input data of the workflow is a set
-                of files with sequences (reads) and their chromatograms. The workflow:
-            </p>
-            <p>
-                1) Trims the reads&rsquo; ends with the low quality of sequencing.
-            </p>
-            <p>
-                2) Filters the trimmed reads by minimal length.
-            </p>
-            <p>
-                3) Aligns the processed reads to a reference sequence.
-            </p>
-            <p>
-                4) Automatically detects if a sequence of a read should be replaced with reverse-complement one.
-            </p>
-            <p>
-                The workflow results are:
-            </p>
-            <p>
-                1) A file with an alignment of the reference sequence and aligned reads.
-            </p>
-            <p>
-                2) A file with a sequence file (GenBank) annotated by the regions of the aligned reads.
-            </p>
-            <p>
-                For using the solution:
-            </p>
-            <p>
-                1) Click the menu &ldquo;Tools -&gt; Sanger data analysis -&gt; Reads quality control and alignment&rdquo;.
-            </p>
-            <p>
-                2) Double click the sample description in the appeared Workflow Designer window.
-            </p>
-            <p>
-                3) Choose the input files: reference sequence and reads.
-            </p>
-            <p>
-                4) Set the quality threshold and minimal read length.
-            </p>
-            <p>
-                5) Run the workflow to initialize automated sanger sequencing processing.
-            </p>
-            <p>
-                The corresponding <a class="content" href="https://doc.ugene.net/wiki/display/WDD17/Trim+and+Align+Sanger+Reads">documentation page</a>.
-            </p>
-            <h3>
-                snpEff<br/>
-            </h3>
-            <p>
-                <a href="http://ugene.unipro.ru/wp-content/uploads/2015/04/191.jpg" data-ob="lightbox[3099]"><img loading="lazy" alt="snpEff"
-                                                                                                                  class="aligncenter size-full wp-image-3103"
-                                                                                                                  height="453"
-                                                                                                                  src="http://ugene.unipro.ru/wp-content/uploads/2015/04/191.jpg"
-                                                                                                                  width="685"/></a>
-            </p>
-            <p>
-                How to annotate variations and predict their effects?
-            </p>
-            <p>
-                The previous pieces of news of &ldquo;How-to in UGENE&rdquo; have shown you how to get a good alignment from raw NGS data
-                (https://www.facebook.com/groups/ugene/permalink/1547052062230702/) and extract variations from the alignment
-                (https://www.facebook.com/groups/ugene/permalink/1553715174897724/). In this one, you will see how to do the further analysis &ndash; annotation
-                of variations and effects prediction.
-            </p>
-            <p>
-                UGENE uses the external program SnpEff for solving this task (http://snpeff.sourceforge.net/SnpEff_manual.html). SnpEff lets you find out the
-                information about variations:
-            </p>
-            <p>
-                1. Is a variation in a gene, an exon?
-            </p>
-            <p>
-                2. Does it change the amino-acid of the variation&rsquo;s position?
-            </p>
-            <p>
-                3. Does it lead to the premature stop-codon?
-            </p>
-            <p>
-                4. etc.
-            </p>
-            <p>
-                For using the variation annotation in UGENE:
-            </p>
-            <p>
-                1. Click the menu &rdquo;Tools&rdquo; -&gt; &ldquo;NGS data analysis&rdquo; -&gt; &ldquo;Annotate variants and predict effects&rdquo;.
-            </p>
-            <p>
-                2. Double click the workflow preview.
-            </p>
-            <p>
-                3. Open the workflow wizard.
-            </p>
-            <p>
-                4. Add the input file with variations.
-            </p>
-            <p>
-                5. Choose one of the available genomes.
-            </p>
-            <p>
-                6. Run the workflow and open the report with your web-browser.
-            </p>
-            <p>
-                Another output file of the workflow is the file with variations (VCF) where each variation is supplemented with the found information.
-            </p>
-            <p>
-                See the <a class="content" href="https://doc.ugene.net/wiki/display/WDD17/Variation+Annotation+with+SnpEff">documentation here</a>.</p>
-        </div>
-    </div>
-
-</div>
+<h1>
+    UGENE Mini-Tutorials: SNP Search,&nbsp;SNP Effect and More<br/>
+</h1>
+<h3>
+    UGENE Story<br/>
+</h3>
+<p>
+    <a href="/assets/images/learn/161.jpg" data-ob="lightbox[3099]"><img loading="lazy" alt="UGENE Story"
+                                                                         class="aligncenter size-full wp-image-3100"
+                                                                         height="755"
+                                                                         src="/assets/images/learn/161.jpg"
+                                                                         width="1245"/></a>
+</p>
+<p>
+    A story about how UGENE Workflow Designer and the team helped a user.
+</p>
+<p>
+    Last week a user sent us an e-mail to ugene@unipro.ru. He tried to solve a task with UGENE and he did not understand how to do it.
+</p>
+<p>
+    The task was the following:
+</p>
+<p>
+    The user had a set of short DNA sequences &ndash; the result of Sanger sequencing. Each sequence has the subsequence GCGGCCGCCACC that is the
+    beginning of translation. He wanted to translate each DNA sequence to the protein one starting from that translation beginning and create a
+    multiple alignment from the protein sequences.
+</p>
+<p>
+    If a user of UGENE wants to automate the routine actions on different input data, UGENE Workflow Designer could help with it.
+</p>
+<p>
+    We analyzed the task and decided that UGENE Workflow Designer is really suitable tool for solving it. We created the workflow that:
+</p>
+<p>
+    1) Reads a set of DNA sequences from an input file.
+</p>
+<p>
+    2) Searches for that subsequence in the sequences.
+</p>
+<p>
+    3) Cuts off the part of each sequence before the translation beginning.
+</p>
+<p>
+    4) Translates the cut sequences into the protein ones.
+</p>
+<p>
+    5) <a class="content" href="http://ugene.unipro.ru/muscle-multiple-alignment-tool/">Aligns</a> the protein sequences with the <a
+        class="content" href="http://ugene.unipro.ru/multiple-sequence-alignment-with-muscle/">MUSCLE algorithm</a> and writes the alignment to a
+    file.
+</p>
+<p>
+    This solution works well for the user because it does exactly the things he wants. You can try the solution by yourself, because all the
+    required files and the test data are attached to this article.
+</p>
+<p>
+    This solution is based on the new element &ldquo; Trim Sequence &rdquo; for doing such a special translation. You need to add the file &ldquo;Trim
+    Sequence.usa&rdquo; to the directory &ldquo;data/workflow_samples/users/&rdquo; for making the element available in your UGENE copy. After that,
+    open the workflow file &ldquo;align trimmed sequences.uwl&rdquo; and open the settings wizard.
+</p>
+<h3>
+    SNP Search<br/>
+</h3>
+<p>
+    <a href="/assets/images/learn/171.jpg" data-ob="lightbox[3099]"><img loading="lazy" alt="SNP Search"
+                                                                         class="aligncenter size-full wp-image-3101"
+                                                                         height="755"
+                                                                         src="/assets/images/learn/171.jpg"
+                                                                         width="1296"/></a>
+</p>
+<p>
+    How to do SNP search in NGS data?
+</p>
+<p>
+    The latest piece of news of &ldquo;How-to in UGENE&rdquo; (https://www.facebook.com/groups/ugene/permalink/1547052062230702/) has shown you how
+    to get a good alignment from raw NGS data. In this one, you will see how to do the further analysis &ndash; to extract a genetic mutation from
+    the alignment.
+</p>
+<p>
+    UGENE Workflow Designer provides a sample workflow that extracts the variations. The <a class="content"
+                                                                                            href="http://ugene.unipro.ru/create-and-run…onal-pipelines/">workflow</a>
+    is based on the SAMtools utilities.
+</p>
+<p>
+    For running the workflow:
+</p>
+<p>
+    1) Open Workflow Designer and double click the &ldquo;Call variants with SAMtools&rdquo; an SNP search sample of the &ldquo;NGS&rdquo; category
+    in the &ldquo;Samples&rdquo; tab.
+</p>
+<p>
+    2) Open the workflow wizard.
+</p>
+<p>
+    3) Choose a reference sequence file. Usually, this sequence has been used for the mapping (aligning) process.
+</p>
+<p>
+    4) Choose one or several files with alignments. The files must be of the BAM of SAM format.
+</p>
+<p>
+    5) Following the next several of the wizard, you can set up the parameters of the SAMtools utilities (samtools pileup, bcf view, etc.). Let&rsquo;s
+    just use their default values for the test run.
+</p>
+<p>
+    The result of the workflow is a file of the VCF format. This file contains the extracted genetic mutation.
+</p>
+<p>
+    Follow the updates! In future, we will show you how to do the further analysis of variations with UGENE.
+</p>
+<p>
+    You can find the documentation about this workflow and its <a class="content"
+                                                                  href="https://doc.ugene.net/wiki/display/UUOUM16/Variants+Calling">parameters
+    here</a>.
+</p>
+<p>
+    A little paper about additional adjusting of the SAMtools utilities (including samtools pileup) is here:
+    http://samtools.sourceforge.net/mpileup.shtml
+</p>
+<h3>
+    Sanger Sequencing<br/>
+</h3>
+<p>
+    <a href="/assets/images/learn/181.jpg" data-ob="lightbox[3099]"><img loading="lazy" alt="Sanger Sequencing"
+                                                                         class="aligncenter size-full wp-image-3102"
+                                                                         height="357"
+                                                                         src="/assets/images/learn/181.jpg"
+                                                                         width="620"/></a>
+</p>
+<p>
+    Pipeline for automated Sanger sequencing processing
+</p>
+<p>
+    The latest version of UGENE Workflow Designer provides a workflow for processing Sanger sequencing data. The input data of the workflow is a set
+    of files with sequences (reads) and their chromatograms. The workflow:
+</p>
+<p>
+    1) Trims the reads&rsquo; ends with the low quality of sequencing.
+</p>
+<p>
+    2) Filters the trimmed reads by minimal length.
+</p>
+<p>
+    3) Aligns the processed reads to a reference sequence.
+</p>
+<p>
+    4) Automatically detects if a sequence of a read should be replaced with reverse-complement one.
+</p>
+<p>
+    The workflow results are:
+</p>
+<p>
+    1) A file with an alignment of the reference sequence and aligned reads.
+</p>
+<p>
+    2) A file with a sequence file (GenBank) annotated by the regions of the aligned reads.
+</p>
+<p>
+    For using the solution:
+</p>
+<p>
+    1) Click the menu &ldquo;Tools -&gt; Sanger data analysis -&gt; Reads quality control and alignment&rdquo;.
+</p>
+<p>
+    2) Double click the sample description in the appeared Workflow Designer window.
+</p>
+<p>
+    3) Choose the input files: reference sequence and reads.
+</p>
+<p>
+    4) Set the quality threshold and minimal read length.
+</p>
+<p>
+    5) Run the workflow to initialize automated sanger sequencing processing.
+</p>
+<p>
+    The corresponding <a class="content" href="https://doc.ugene.net/wiki/display/WDD17/Trim+and+Align+Sanger+Reads">documentation page</a>.
+</p>
+<h3>
+    snpEff<br/>
+</h3>
+<p>
+    <a href="/assets/images/learn/191.jpg" data-ob="lightbox[3099]"><img loading="lazy" alt="snpEff"
+                                                                         class="aligncenter size-full wp-image-3103"
+                                                                         height="453"
+                                                                         src="/assets/images/learn/191.jpg"
+                                                                         width="685"/></a>
+</p>
+<p>
+    How to annotate variations and predict their effects?
+</p>
+<p>
+    The previous pieces of news of &ldquo;How-to in UGENE&rdquo; have shown you how to get a good alignment from raw NGS data
+    (https://www.facebook.com/groups/ugene/permalink/1547052062230702/) and extract variations from the alignment
+    (https://www.facebook.com/groups/ugene/permalink/1553715174897724/). In this one, you will see how to do the further analysis &ndash; annotation
+    of variations and effects prediction.
+</p>
+<p>
+    UGENE uses the external program SnpEff for solving this task (http://snpeff.sourceforge.net/SnpEff_manual.html). SnpEff lets you find out the
+    information about variations:
+</p>
+<p>
+    1. Is a variation in a gene, an exon?
+</p>
+<p>
+    2. Does it change the amino-acid of the variation&rsquo;s position?
+</p>
+<p>
+    3. Does it lead to the premature stop-codon?
+</p>
+<p>
+    4. etc.
+</p>
+<p>
+    For using the variation annotation in UGENE:
+</p>
+<p>
+    1. Click the menu &rdquo;Tools&rdquo; -&gt; &ldquo;NGS data analysis&rdquo; -&gt; &ldquo;Annotate variants and predict effects&rdquo;.
+</p>
+<p>
+    2. Double click the workflow preview.
+</p>
+<p>
+    3. Open the workflow wizard.
+</p>
+<p>
+    4. Add the input file with variations.
+</p>
+<p>
+    5. Choose one of the available genomes.
+</p>
+<p>
+    6. Run the workflow and open the report with your web-browser.
+</p>
+<p>
+    Another output file of the workflow is the file with variations (VCF) where each variation is supplemented with the found information.
+</p>
+<p>
+    See the <a class="content" href="https://doc.ugene.net/wiki/display/WDD17/Variation+Annotation+with+SnpEff">documentation here</a>.
+</p>
