@@ -2,89 +2,81 @@
 layout: page_en
 title: Shared Databases in UGENE - Unipro UGENE
 ---
-
-<div class="all_content">
-    <div class="post-main">
-        <div class="entry">
-            <h1>
-                Tutorial: Shared Databases in UGENE<br/>
-            </h1>
-            <p>
-                <br/>
-                <a href="http://ugene.unipro.ru/wp-content/uploads/2015/03/shared1.png" data-ob="lightbox[2996]"><img loading="lazy"
-                                                                                                                      alt="Shared Database in UGENE"
-                                                                                                                      class="aligncenter size-full wp-image-2997"
-                                                                                                                      height="532"
-                                                                                                                      src="http://ugene.unipro.ru/wp-content/uploads/2015/03/shared1.png"
-                                                                                                                      width="999"/></a></p>
-            <p> Do you need to share data, such as sequences, with your colleagues in a lab? How to create a plasmid database, gene database or a genome
-                sequence database?</p>
-            <p> From this tutorial you will learn how you can easily do it with UGENE. You can easily share sequences, annotated sequence, multiple alignments
-                etc. It will create a storage that accessible only buy UGENE. With security provided by MySQL.
-            </p>
-            <h3>
-                Architecture<br/>
-            </h3>
-            <p>
-                One of the advantages of the UGENE approach to the shared storage implementation is that it is easy-to-install. All you need for using the
-                shared bioinformatics storage is to have a MySQL server installed and minimally configured.
-            </p>
-            <p>
-                After that, you run UGENE, connect to the server and initialize your storage with several mouse clicks making it ready to use. The storage is
-                displayed in the project in the same manner as local documents.
-            </p>
-            <p>
-                You can organize the data in your storage using the folders approach. Create the folders hierarchy for ordering your data and import new files
-                there.
-            </p>
-            <h3>
-                Tools<br/>
-            </h3>
-            <p>
-                There are flexible graphical tools for importing data into your genome database. For example, you can import a folder with all its gene files
-                into a gene database.</p>
-            <p> The folders hierarchy will be repeated in the storage in this case.
-            </p>
-            <p>
-                The folders and imported objects can always be renamed, removed or replaced using drag&rsquo;n&rsquo;drop.
-            </p>
-            <p>
-                If you want to work with the data locally, you can export the needed objects to a local drive. The data is stored in internal UGENE format. As
-                always you can eventually select the output format of your data among ~20 formats that UGENE supports.&nbsp;
-            </p>
-            <p>
-                It is possible to use the storage for keeping data of all types supported by UGENE.</p>
-            <p> Moreover, when UGENE remotely accesses big data, such as next-generation sequencing data, it loads only required part of the data. So you can
-                access huge genome assemblies with UGENE Assembly Browser and view them in a shared way. The Assembly Browser will load only a part of the
-                assembly in focus from the shared storage.
-            </p>
-            <p>
-                This opens another interesting application of the shared storage.</p>
-            <p> If imported NGS data are stored on a common server in a lab, researchers from the lab are able to work with the data, for example browse them in
-                the UGENE Assembly Browser, without the need to copy the data to their computers or laptops. Because of the special format used to store NGS
-                data in UGENE, it is possible to see the NGS data coverage and quickly navigate to the most covered regions without full downloading, export the
-                consensus sequence, and use other features of the assembly browser.
-            </p>
-            <h3>
-                Public Storage<br/>
-            </h3>
-            <p>
-                Based on the technology described in this episode we organized a public storage with commonly used data. The storage is opened for read-only
-                access only. For now it keeps DNA sequences in the genome sequence database of several popular genomes such as human, mouse, drosophila
-                melanogaster, etc. and hundreds of plasmid sequences in a plasmid database.
-            </p>
-            <p>
-                You can use this data from a UGENE instance. Use the connection manager dialog to connect to the storage.
-            </p>
-            <h3>
-                Additional Materials<br/>
-            </h3>
-            <p>
-                <a class="content" href="https://ugene.unipro.ru/wiki/display/UUOUM15/Shared+Database">Documentation page</a>
-            </p>
-            <p>
-                <a class="content" href="https://www.youtube.com/watch?v=KNDQGGx4-Cg" data-ob="lightbox[2996]">Youtube video</a></p>
-        </div>
-    </div>
-
-</div>
+<h1>
+    Tutorial: Shared Databases in UGENE<br/>
+</h1>
+<p>
+    <br/>
+    <a href="/assets/images/learn/shared1.png" data-ob="lightbox[2996]"><img loading="lazy"
+                                                                             alt="Shared Database in UGENE"
+                                                                             class="aligncenter size-full wp-image-2997"
+                                                                             height="532"
+                                                                             src="/assets/images/learn/shared1.png"
+                                                                             width="999"/></a></p>
+<p> Do you need to share data, such as sequences, with your colleagues in a lab? How to create a plasmid database, gene database or a genome
+    sequence database?</p>
+<p> From this tutorial you will learn how you can easily do it with UGENE. You can easily share sequences, annotated sequence, multiple alignments
+    etc. It will create a storage that accessible only buy UGENE. With security provided by MySQL.
+</p>
+<h3>
+    Architecture<br/>
+</h3>
+<p>
+    One of the advantages of the UGENE approach to the shared storage implementation is that it is easy-to-install. All you need for using the
+    shared bioinformatics storage is to have a MySQL server installed and minimally configured.
+</p>
+<p>
+    After that, you run UGENE, connect to the server and initialize your storage with several mouse clicks making it ready to use. The storage is
+    displayed in the project in the same manner as local documents.
+</p>
+<p>
+    You can organize the data in your storage using the folders approach. Create the folders hierarchy for ordering your data and import new files
+    there.
+</p>
+<h3>
+    Tools<br/>
+</h3>
+<p>
+    There are flexible graphical tools for importing data into your genome database. For example, you can import a folder with all its gene files
+    into a gene database.</p>
+<p> The folders hierarchy will be repeated in the storage in this case.
+</p>
+<p>
+    The folders and imported objects can always be renamed, removed or replaced using drag&rsquo;n&rsquo;drop.
+</p>
+<p>
+    If you want to work with the data locally, you can export the needed objects to a local drive. The data is stored in internal UGENE format. As
+    always you can eventually select the output format of your data among ~20 formats that UGENE supports.&nbsp;
+</p>
+<p>
+    It is possible to use the storage for keeping data of all types supported by UGENE.</p>
+<p> Moreover, when UGENE remotely accesses big data, such as next-generation sequencing data, it loads only required part of the data. So you can
+    access huge genome assemblies with UGENE Assembly Browser and view them in a shared way. The Assembly Browser will load only a part of the
+    assembly in focus from the shared storage.
+</p>
+<p>
+    This opens another interesting application of the shared storage.</p>
+<p> If imported NGS data are stored on a common server in a lab, researchers from the lab are able to work with the data, for example browse them in
+    the UGENE Assembly Browser, without the need to copy the data to their computers or laptops. Because of the special format used to store NGS
+    data in UGENE, it is possible to see the NGS data coverage and quickly navigate to the most covered regions without full downloading, export the
+    consensus sequence, and use other features of the assembly browser.
+</p>
+<h3>
+    Public Storage<br/>
+</h3>
+<p>
+    Based on the technology described in this episode we organized a public storage with commonly used data. The storage is opened for read-only
+    access only. For now it keeps DNA sequences in the genome sequence database of several popular genomes such as human, mouse, drosophila
+    melanogaster, etc. and hundreds of plasmid sequences in a plasmid database.
+</p>
+<p>
+    You can use this data from a UGENE instance. Use the connection manager dialog to connect to the storage.
+</p>
+<h3>
+    Additional Materials<br/>
+</h3>
+<p>
+    <a class="content" href="https://doc.ugene.net/wiki/display/UUOUM15/Shared+Database">Documentation page</a>
+</p>
+<p>
+    <a class="content" href="https://www.youtube.com/watch?v=KNDQGGx4-Cg" data-ob="lightbox[2996]">Youtube video</a></p>
