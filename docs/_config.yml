@@ -1,7 +1,9 @@
 baseurl: ""
 
 # Download links
-download_link_ugene_latest_win_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/38.1/ugene-38.1-win-x86-64-portable.zip"
+ugene:
+  doc_version: "38"
+  download_link_ugene_latest_win_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/38.1/ugene-38.1-win-x86-64-portable.zip"
 
 exclude:
   - .jekyll-cache/
