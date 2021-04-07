@@ -1,7 +1,7 @@
 # Branches
 
 * Development branch: master
-* Publishing branch: gh_pages
+* Publishing branch: gh-pages
 
 # To test locally
 
