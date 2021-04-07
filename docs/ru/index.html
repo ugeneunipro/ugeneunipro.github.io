@@ -58,11 +58,11 @@ title: Unipro UGENE - Интегрированные инструменты би
                     $('#container').fadeIn(3500);
                     $.getJSON('/assets/issues.json', function (data) {
                       $('#issues').replaceWith('<tr id="issues2"><td colspan="2"><div class="vertical_menu_text_block">' +
-                          '<a href="https://ugene.unipro.ru/tracker/browse/' + data['issues'][0]['key'] + '">' +
+                          '<a href=" https://ugene.dev/tracker/browse/' + data['issues'][0]['key'] + '">' +
                           '<b>' + data['issues'][0]['fields']['status']['name'] + ':</b> ' + data['issues'][0]['fields']['summary'] + '<small> [' + data['issues'][0]['key'] + ']</small>' +
                           '</a></div></td></tr>' +
                           '<tr><td colspan="2"><div class="vertical_menu_text_block">' +
-                          '<a href="https://ugene.unipro.ru/tracker/browse/' + data['issues'][1]['key'] + '">' +
+                          '<a href=" https://ugene.dev/tracker/browse/' + data['issues'][1]['key'] + '">' +
                           '<b>' + data['issues'][1]['fields']['status']['name'] + ':</b> ' + data['issues'][1]['fields']['summary'] + '<small> [' + data['issues'][1]['key'] + ']</small>' +
                           '</a></div></td></tr>');
                     });
