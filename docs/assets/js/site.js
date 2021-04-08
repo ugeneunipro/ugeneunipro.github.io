@@ -1,4 +1,4 @@
-function hide_email_from_robots(text) {
+function show_email_link(text) {
   let a = '<a href=\"mai';
   let b = 'ugene';
   let c = '\" class=\"content\">';
@@ -22,7 +22,7 @@ function hide_email_from_robots(text) {
   document.write(result);
 }
 
-function hide_email_from_robots3(text) {
+function show_support_email_link(text) {
   let a = '<a href=\"mai';
   let b = 'ugene-support';
   let c = '\" class=\"content\">';
@@ -38,7 +38,7 @@ function hide_email_from_robots3(text) {
   let o = 'body=Hello%20UGENE%20Team,';
   let k = 'subj';
   let n = '&';
-  let l = 'ect=Commercial%20support%20request';
+  let l = 'ect=Support%20request';
 
   m = j + k + l;
   p = m + n + o;
@@ -53,33 +53,3 @@ function hide_email_from_robots3(text) {
   document.write(result);
 }
 
-function hide_email_from_robots3_rus(text) {
-  var a, b, c, d, e, f, g, h, i;
-  a = '<a href=\"mai';
-  b = 'ugene-support';
-  c = '\" class=\"content\">';
-  a += 'lto:';
-  b += '@';
-  e = '</a>';
-  f = '';
-  b += 'unipro.ru';
-  g = '<img src=\"';
-  h = '';
-  i = '\" alt="Email us." border="0">';
-  j = '?';
-  k = 'subj';
-  n = '&';
-  l = 'ect=������%20��%20������������%20���������';
-
-  m = j + k + l;
-  p = m + n;
-
-  if (f) d = f;
-  else if (h) d = g + h + i;
-  else d = b;
-  let result = a + b + p + c + d + e;
-  if (text) {
-    result = a + b + p + c + text + e;
-  }
-  document.write(result);
-}
