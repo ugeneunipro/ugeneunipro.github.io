@@ -126,7 +126,7 @@
     /*************************** <!--:ru--> ***************************/
     download_body_content += '<h2>Скачать UGENE</h2>' +
         '<div class="download_page_main">' +
-        '  <div style="margin-bottom: 24px;">Текущая версия UGENE: <b>38.1</b> (Март, 2021). См. <a class="content" href="'
+        '  <div style="margin-bottom: 24px;">Текущая версия UGENE: <b>38.1</b> (Март, 2021). См. <a href="'
         + links.release_notes + '">краткое описание новой версии</a>.</div>';
 
     if (uos !== 'UNKNOWN') {
@@ -156,7 +156,7 @@
     }
 
     download_body_content +=
-        '  <div style="margin-bottom:42px;">Хотите скачать другой пакет? Перейдите по <a class="content" href="/ru/download-all.html">данной ссылке</a>.</div>' +
+        '  <div style="margin-bottom:42px;">Хотите скачать другой пакет? Перейдите по <a href="/ru/download-all.html">данной ссылке</a>.</div>' +
         '';
 
     if (ubit !== 32 && ubit !== 64 && uos === 'linux') {
@@ -174,7 +174,7 @@
     /*************************** <!--:en--> ***************************/
     download_body_content += '<h2>Download UGENE</h2>' +
         '<div class="download_page_main">' +
-        '  <div style="margin-bottom: 24px;">Current stable version is <b>38.1</b> (March, 2021). See <a class="content" href="'
+        '  <div style="margin-bottom: 24px;">Current stable version is <b>38.1</b> (March, 2021). See <a href="'
         + links.release_notes + '">release notes</a>.</div>';
 
     if (uos !== 'UNKNOWN') {
@@ -204,7 +204,7 @@
     }
 
     download_body_content +=
-        '  <div style="margin-bottom:42px;">Need another package? <a class="content" href="/download-all.html">View all options</a>.</div>' +
+        '  <div style="margin-bottom:42px;">Need another package? <a href="/download-all.html">View all options</a>.</div>' +
         '';
 
     if (ubit !== 32 && ubit !== 64 && uos === 'linux') {

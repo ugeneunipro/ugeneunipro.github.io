@@ -118,7 +118,7 @@
  <item>
       <title>UGENE 37 has been released</title>
    <link>http://ugene.net/news.html#141220</link>
-   <description><![CDATA[<div class="entry">
+   <description><![CDATA[<div >
 <div class="features_descr_text" lang="en">
 <p>New version improvements:</p>
 </div>
@@ -130,7 +130,7 @@
 <li>The objects naming has been improved in the Project View.</li>
 </ul>
 </div>
-<div class="features_descr_text" lang="en">A complete list of changes can be found&nbsp;<a class="content" href="http://ugene.net/changelist.html">here</a>.</div>
+<div class="features_descr_text" lang="en">A complete list of changes can be found&nbsp;<a href="http://ugene.net/changelist.html">here</a>.</div>
 <div class="features_descr_text" lang="en">See also <a href="https://youtu.be/0ciZr6bLdkM">the second video</a> about UGENE 33, 34, and 35 improvements.</div>
 <br/><br/>Read more here: <a href="http://ugene.net/news.html#141220">UGENE 37 has been released</a>]]></description>
    <pubDate>Mon, 14 Dec 2020 18:45:07 +0000</pubDate>
@@ -148,7 +148,7 @@
  <item>
       <title>UGENE 36 has been released</title>
    <link>http://ugene.net/news.html#210920</link>
-   <description><![CDATA[<div class="entry">
+   <description><![CDATA[<div >
 <div class="features_descr_text" lang="en">
 <p>Changes in the release include:</p>
 </div>
@@ -160,8 +160,8 @@
 <li>User interface: an option to add a Desktop icon from Help menu.</li>
 </ul>
 </div>
-<div class="features_descr_text" lang="en">A complete list of changes can be found&nbsp;<a class="content" href="http://ugene.net/changelist.html">here</a>.</div>
-<div class="features_descr_text" lang="en">See also a <a href="https://www.youtube.com/watch?v=tjV-Hv6BF9s&amp;feature=youtu.be" data-ob="lightbox[4328]">new video</a> about recent improvements in UGENE.</div>
+<div class="features_descr_text" lang="en">A complete list of changes can be found&nbsp;<a href="http://ugene.net/changelist.html">here</a>.</div>
+<div class="features_descr_text" lang="en">See also a <a href="https://www.youtube.com/watch?v=tjV-Hv6BF9s&amp;feature=youtu.be" >new video</a> about recent improvements in UGENE.</div>
 <br/><br/>Read more here: <a href="http://ugene.net/news.html#210920">UGENE 36 has been released</a>]]></description>
    <pubDate>Mon, 21 Sep 2020 19:17:45 +0000</pubDate>
    <guid>http://ugene.net/news.html#210920</guid>
