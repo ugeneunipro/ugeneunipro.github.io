@@ -39,4 +39,56 @@
   ul.general_content {
     line-height: 150%;
   }
+
+  table.general_content {
+    margin-left: 40px;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  table.general_content th {
+    border: 1px solid black;
+    font-weight: bold;
+    padding: 6px 12px 6px 12px;
+    text-align: center;
+    background-color: #a0bacb;
+  }
+
+  table.general_content th:first-child {
+    text-align: left;
+  }
+
+  table.general_content td {
+    border: 1px solid black;
+    font-weight: normal;
+    padding: 6px 12px 6px 12px;
+    text-align: center;
+  }
+
+  table.general_content td:first-child {
+    text-align: left;
+    background-color: #d5dfe6;
+  }
+
+  td.obsolete_data {
+    background-color: #cccccc;
+  }
+
+  div.tutorial_step {
+    margin-top: 40px;
+  }
+
+  div.tutorial_step_header {
+    font-weight: bold;
+  }
+
+
+  .download_page_main a {
+    color: #003953;
+  }
+
+  .emphasize_words {
+    font-weight: bold;
+    color: #395968;
+  }
 }

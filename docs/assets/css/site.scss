@@ -1,13 +1,42 @@
 ---
 ---
 
-@import 'body';
-@import 'header';
 @import 'footer';
+@import 'header';
 @import 'links';
+@import 'main';
 @import 'pages/changelist';
 @import 'pages/documentation';
 @import 'pages/download';
 @import 'pages/index';
 @import 'pages/podcast';
 @import 'pages/support';
+
+
+body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  img {
+    border: 0;
+  }
+
+  h1, h2, h3, h4, h5 {
+    color: #255060;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  table {
+    border: 0;
+
+    td {
+      padding: 0;
+    }
+  }
+}

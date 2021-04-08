@@ -101,6 +101,7 @@
 
       li {
         min-width: 150px;
+        width: calc(100% - 40px);
         padding-left: 10px;
         padding-right: 30px;
       }
