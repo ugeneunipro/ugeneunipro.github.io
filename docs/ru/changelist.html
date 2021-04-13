@@ -288,7 +288,7 @@ title: История изменений - Unipro UGENE
                 обрезать концы прочтений по качеству, обрезать прочтения по длине и др.<img
                         src="/assets/images/release_notes/1.31_trimmomatic_steps.png"
                         style="margin-top: 10px; margin-bottom: 10px; border: 1px solid #bbbbbb;" title="Настройка Trimmomatic">Инструмент встроен в виде <a
-                        href="https://doc.ugene.net/wiki/display/WDD31/Improve+Reads+with+Trimmomatic+Element">элемента вычислительных схем</a> и
+                        href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Improve+Reads+with+Trimmomatic+Element">элемента вычислительных схем</a> и
                 включен в несколько примеров схем (см. ниже, например).Для использования Trtimmomatic требуется установить <a
                         href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">Java
                     Runtime Environment</a> и сконфигурировать путь до &#171;java&#187; в настройках UGENE.
@@ -305,7 +305,7 @@ title: История изменений - Unipro UGENE
                 </ul>
                 <p>Дополнительно можно задать прочтения PacBio CLR, Oxford Nanopore, Sanger и/или контиги.</p>
                 <p>Подробнее см. параметр &#171;Input data&#187; у <a
-                        href="https://doc.ugene.net/wiki/display/WDD31/Assemble+Reads+with+SPAdes+Element">элемента
+                        href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Assemble+Reads+with+SPAdes+Element">элемента
                     SPAdes</a>.</p>
                 <p>Инструмент SPAdes доступен на операционных системах macOS и Linux 64-бит.</li>
             <li><b>Метагеномика:</b> добавлена новая инфраструктура для таксономической классификации NGS-данных, включающая в себя такие инструменты, как
@@ -314,12 +314,12 @@ title: История изменений - Unipro UGENE
                 онлайн-инсталлятор UGENE:<img src="/assets/images/release_notes/1.31_wizard.png"
                                               style="margin-top: 10px; margin-bottom: 10px; border: 1px solid #bbbbbb;" title="Компоненты в онлай-инсталляторе">Примеры
                 вычислительных схем доступны из главного меню &#171;Tools &gt; NGS data analysis &gt; Metagenomics classification&#187;. В частности, следующая
-                <a href="https://doc.ugene.net/wiki/display/WDD31/Parallel+NGS+Reads+Classification">вычислительная схема</a> включает в себя
+                <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Parallel+NGS+Reads+Classification">вычислительная схема</a> включает в себя
                 элементы Kraken, CLARK и DIAMOND. Еще один элемент WEVOTE объединяет результаты, полученные от этих инструментов.<img
                         src="/assets/images/release_notes/1.31_parallel_classification_workflow.png" style="margin-top: 10px; margin-bottom: 10px;"
                         title="Паралелльная вычислительная схема в UGENE 1.31">Помимо классификации, для каждого инструмента встроен элемент, позволяющий
                 генерировать соответствующую базу данных (см., например, элемент &#171;<a
-                        href="https://doc.ugene.net/wiki/display/WDD31/Build+Kraken+Database">Build
+                        href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Build+Kraken+Database">Build
                     Kraken Database</a>&#171;).Обратите внимание, что расчеты необходимо запускать на достаточно мощном компьютере с оперативной памятью по
                 крайней мере 8 Гб. Пакет, включающий все данные, займет на диске примерно 230-240 Гб (подробнее см. <a
                         href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Configure+Data+for+Metagenomics+Classification">данную
@@ -328,9 +328,9 @@ title: История изменений - Unipro UGENE
                 и сконфигурировать путь до &#171;java&#187; в настройках UGENE. Инструменты доступны на операционных системах macOS and Linux 64-бит.
             </li>
             <li><b>Транскриптомика:</b> добавлен новый инструмент StringTie для сборки транскриптов. Инструмент интегрирован, как <a
-                    href="https://doc.ugene.net/wiki/display/WDD31/Assemble+Transcripts+with+StringTie+Element">элемент
+                    href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Assemble+Transcripts+with+StringTie+Element">элемент
                 вычислительной схемы</a>. Еще один элемент &#171;<a
-                    href="https://doc.ugene.net/wiki/display/WDD31/StringTie+Gene+Abudance+Report+Element">StringTie
+                    href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/StringTie+Gene+Abudance+Report+Element">StringTie
                 Gene Abundance Report</a>&#187; позволяет генерировать общий отчет для нескольких входных NGS-библиотек.Следующая вычислительная схема доступна
                 из главного меню &#171;Tools &gt; NGS data analysis &gt; RNA-Seq data analysis&#187;:<img
                         src="/assets/images/release_notes/1.31_tophat_stringtie_workflow.png" style="margin-top: 10px; margin-bottom: 10px;"
