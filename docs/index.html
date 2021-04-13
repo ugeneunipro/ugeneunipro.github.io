@@ -39,17 +39,12 @@ title: Unipro UGENE - Integrated Bioinformatics Tools
                 </div>
             </td>
             <td style="vertical-align: top; width: 380px;">
+                <script type='text/javascript' src='/assets/js/orangebox.min.js'></script>
                 <script type="text/javascript">
+                  window['orangebox_vars'] = {'addThis': '', 'showDots': '1'};
                   $(document).ready(function () {
-                    $().piroBox({
-                      my_speed: 300, //animation speed
-                      bg_alpha: 0.5, //background opacity
-                      slideShow: 'true', // true == slideshow on, false == slideshow off
-                      slideSpeed: 3, //slideshow
-                      close_all: '.piro_close' // add class .piro_overlay(with comma)if you want overlay click close piroBox
-                    });
-                    $('#first_image').fadeIn(3500);
-                    $('#container').fadeIn(3500);
+                    $('#first-gallery-image').fadeIn(3500);
+                    $('#gallery-container').fadeIn(3500);
                     $.getJSON('/assets/issues.json', function (data) {
                       $('#issues').replaceWith('<tr id="issues2"><td colspan="2"><div class="vertical_menu_text_block">' +
                           '<a href="https://ugene.dev/tracker/browse/' + data['issues'][0]['key'] + '">' +
@@ -66,14 +61,14 @@ title: Unipro UGENE - Integrated Bioinformatics Tools
                 <div style="width: 330px;">
                     <a href="/assets/images/3dstruct.png" title="UGENE 3D Protein Structure Viewer. OS: Mac OS X" rel="lightbox[set_1]">
                         <div style="position: relative">
-                            <div id="container" style="z-index: 1; position: absolute; display: none;"></div>
+                            <div id="gallery-container" style="z-index: 1; position: absolute; display: none;"></div>
                             <!-- START ripple-->
                             <script type="text/javascript" src="/assets/js/ripple.js"></script>
                             <script type="text/javascript">
-                              ripple('/assets/images/3dstruct_small.png', document.getElementById('container'));
+                              ripple('/assets/images/3dstruct_small.png', document.getElementById('gallery-container'));
                             </script>
                             <!-- END ripple -->
-                            <img id="first_image" src="/assets/images/3dstruct_small.png" style="display:none; z-index: 0; position: absolute;"/>
+                            <img id="first-gallery-image" src="/assets/images/3dstruct_small.png" style="display:none; z-index: 0; position: absolute;"/>
                         </div>
                     </a>
 
