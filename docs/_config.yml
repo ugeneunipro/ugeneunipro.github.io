@@ -10,6 +10,8 @@ ugene:
   download_link_ugene_latest_win_x86_64: "https://github.com/ugeneunipro/ugene/releases/download/38.1/ugene-38.1-win-x86-64.exe"
   download_link_ugene_latest_win_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/38.1/ugene-38.1-win-x86-64-portable.zip"
   next_release_tracker_link: "https://ugene.dev/tracker/projects/UGENE/issues/?filter=13756"
+  static:
+    cite_link: "https://doi.org/10.1093/bioinformatics/bts091"
 
 exclude:
   - .jekyll-cache/
