@@ -1,0 +1,71 @@
+---
+layout: page_en
+title: Transcription Factor Binding Site Prediction Tool - Unipro UGENE
+---
+
+<div class="learn-page">
+    <h1>
+        Tutorial: UGENE as a Transcription Factor Binding Site Prediction Tool<br/>
+    </h1>
+    <p>
+        <img loading="lazy" alt="Weight matrix dialog" src="/assets/images/learn/22.png"/>
+    </p>
+    <p>
+        Today's topic is the Weight Matrix plugin, a part of UGENE. It allows to perform the transcription factor binding site search. User can create and save
+        position weight and frequency matrices and align them to an opened sequence. To invoke the plugin, we open a sequence, for the sequence in the
+        human_t1.fa FASTA file and then right-click and select &bdquo;Analyse&ldquo;, &bdquo;Search TBFS with matrices&ldquo; to open the transcription
+        factor binding site prediction tool. In the opened dialog box we specify the matrix describing interesting transcriptional factors to search for in
+        the selected sequence, specify the search identity score and the standard transcription factor binding site search parameters such as region and
+        strand.
+    </p>
+    <h3>
+        Transcriptions Factor Binding Site Databases<br/>
+    </h3>
+    <p>
+        There&#39;re several ways to define the matrix. To start with, UGENE package contains local copies of JASPAR and UNIPROBE databases. By pressing &bdquo;Browse&ldquo;
+        we can select a matrix of one of these databases. Also it is possible to search the JASPAR database with the special interface by pressing &bdquo;Search
+        JASPAR database&ldquo;. Here the matrices are divided into categories and we can read detailed information of every matrix represented by the
+        properties. And then we can choose it.
+    </p>
+    <h3>
+        Building Weight Matrix<br/>
+    </h3>
+    <p>
+        The last way to choose a weight matrix is to create a specific one from an existing alignment.
+        We press &bdquo;Build new matrix&ldquo; and select certain alignment as the input. The alignment should contain no gaps.
+        After the alignment is set, the Alignment Logo will appear at the bottom part of the dialog box. It gives a representation of the selected alignment.
+    </p>
+    <h3>
+        Running Recognition<br/>
+    </h3>
+    <p>
+        Now we need to specify the output file in which the new matrix will be saved
+        And specify the build parameters. Statistic type defines the way in which the statistics will be collected: by
+        subsequences of length one for the mononucleic option or of length two for the dinucleic option. The resulting matrix can be of the &bdquo;frequency&ldquo;
+        type or of the &bdquo;weight&ldquo; type. In the latter case we will need to specify the algorithm to transform intermediate frequency matrix into
+        the resulting weight matrix.
+    </p>
+    <p>
+        Let&#39;s press &bdquo;Start&ldquo;. The matrix has been created and saved. Also it has been automatically chosen as the sought-for matrix. Now we can
+        adjust the identity score which stands for the statistical significance of the search. Also the weight algorithm must be set in order to transform the
+        created frequency matrix into the sought-for weight matrix. Let&#39;s select the &bdquo;log-odds&ldquo; algorithm. We will search transcriptional
+        factors in both strands of the whole sequence. Press &bdquo;Search&ldquo;.
+    </p>
+    <p>
+        The task is finished and all the transcription factor search results are represented at the table below, including the identity scores. Transcription
+        factor search results can be saved as annotations, which would contain matrix properties if JASPAR or UNIPROBE matrix was used. Let&#39;s save the
+        annotations. As we can see, the saved annotations has been automatically added to the opened sequence view, and we can close the dialog and browse the
+        results.
+    </p>
+    <h3>
+    </h3>
+    <h3>
+        Additional Materials<br/>
+    </h3>
+    <p>
+        <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Searching+for+TFBS+with+PFM" target="_blank">Documentation page</a>
+    </p>
+    <p>
+        <a href="https://www.youtube.com/watch?v=HgJrOJzCb68" target="_blank">Youtube video</a>
+    </p>
+</div>

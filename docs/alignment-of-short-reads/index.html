@@ -1,0 +1,151 @@
+---
+layout: page_en
+title: Alignment of Short Reads - Unipro UGENE
+---
+
+<div class="learn-page">
+    <h1>Tutorial: Alignment of Short Reads with UGENE<br/></h1>
+    <p>
+        <img src="/assets/images/learn/2.png" loading="lazy"/>
+    </p>
+    <p>
+        In this block we will perform short reads alignment using UGENE. One of the applications of alignment is the gene mapping. We will do genomic mapping of
+        a simulated dataset generated from E.coli reference genome (NC_010473). The dataset consists of 100,000 paired-end reads of size 50 bp.
+    </p>
+    <h3>
+        Starting the Mapping<br/>
+    </h3>
+    <p>
+        UGENE provides GUI for popular alignment tools Bowtie, Bowtie2 and bwa aln (or bwa mem). Additionally a unique tool called UGENE Genome Aligner is
+        available for users. The aligners are accessible from the main menu item Tools-&gt;Align to reference.
+    </p>
+    <p>
+        In the tutorial we will learn how to align single-end reads with Bowtie from UGENE, however the interface for the aligner is general and other tools can
+        be used in a similar manner. For instance bwa aln or bwa mem can be used here.
+    </p>
+    <p>
+        Bowtie is an index-based aligner, thus one has to first build index of the reference sequence before starting the alignment. One can create the index
+        for genomic mapping from UGENE using main menu item Tools-&gt;Align to reference-&gt;Build index.
+    </p>
+    <p>
+        In the appeared dialog we first choose for which program we are building index (Bowtie aligner) Then it is required to set path to the reference genome
+        sequence in FASTA format (ecoli.fa in our case). The path to the index file will be set automatically. Click OK to create the index.
+    </p>
+    <p>
+        In order to start the alignment activate main menu item Tools-&gt;Align to reference-&gt;Align short reads. Next select Bowtie aligner. The index for
+        the gene mapping was already built in the previous step therefore we will select option Prebuilt index in the dialog parameters. The index file can be
+        selected using browse button (&#8230;) next to Reference sequence field. Note, that one of the index files has to be selected, for example ecoli.1.ebwt.
+        Next we set the library option to Paired-end and add short reads to the input data list. The correct mate order (upstream or downstream) has to be set
+        using Order option after the reads are added. To start the alignment press Start button.
+    </p>
+    <p>
+        After the alignment is finished, you will be asked to import the alignment into the UGENE Assembly Viewer.
+    </p>
+    <h3>
+        Visualizing BAM files<br/>
+    </h3>
+    <p>
+        The UGENE Assembly Browser allows to view gene mapping region by zooming into them.
+    </p>
+    <p>
+        The following features are available:
+    </p>
+    <ul>
+        <li>
+            Navigation and zooming
+        </li>
+        <li>
+            Read coloring
+        </li>
+        <li>
+            Extracting alignment groups
+        </li>
+    </ul>
+    <p>
+        It is possible to color reads using different coloring schemes. The default one is Difference. Other possible are Nucleotide, Alignment strand and
+        Paired reads.It is possible to extract a group of reads or consensus to FASTA format using context menu item Export.
+    </p>
+    <p>
+        A screenshot of an alignment can be taken using the Export image button.
+    </p>
+    <h3>
+        Creating pipeline for Next Generation Sequencing data using Workflow Designer<br/>
+    </h3>
+    <p>
+        UGENE Workflow Designer includes a number of useful elements to work with Next Generation Sequencing data.
+    </p>
+    <p>
+        We will go through an example of creating a small pipeline for calling SNPs for the alignment files.
+    </p>
+    <p>
+        The SNP calling will be performed using SAMtools.
+    </p>
+    <p>
+        First we will open the Workflow Designer using menu item Tools-&gt;Workflow Designer
+    </p>
+    <p>
+        Next we will add the following elements to the Workflow:
+    </p>
+    <p>
+        <em>Read Assembly</em> and <em>Read Sequence</em> from Data Readers
+    </p>
+    <p>
+        <em>Write Variations</em> from Data Writers
+    </p>
+    <p>
+        <em>Call variants</em> from NGS: Variant Calling
+    </p>
+    <p>
+        Read Assembly and Read Sequence elements should be connected with corresponding input ports of Call Variants block, while Write Variation element should
+        be connected with its output port. When required the input data ports must be edited.
+    </p>
+    <p>
+        We will use a previously created alignment ecoli.sam as input for Read Assembly &nbsp;and ecoli.fa as reference for Read Sequence elements. Additionally
+        we will set output path for the Write Variations element.
+    </p>
+    <p>
+        Next we will click Run to start the Schema.
+    </p>
+    <p>
+        The resulting SNPs can visualized in the Assembly Editor by adding a SNP track.
+    </p>
+    <h3>
+        RNA-seq analysis with Tuxedo pipeline<br/>
+    </h3>
+    <p>
+        In this block we will perform gene expression and transcript reconstruction analysis from RNA-seq data.
+    </p>
+    <p>
+        UGENE includes widely-used RNA-seq analysis pipeline Tuxedo. The description of the pipeline can be found in
+        <a href="http://www.nature.com/nprot/journal/v7/n3/full/nprot.2012.016.html">the publication</a>.
+    </p>
+    <p>
+        We will use the example data from this publication available from the GEO-accession GSE32038 . The genome and annotations can be downloaded from iGenome
+        collection.
+    </p>
+    <p>
+        To activate the pipeline go to Samples-&gt;NGS and select RNA-seq analysis with Tuxedo.
+    </p>
+    <p>
+        The interactive wizard will guide the setup of the pipeline. We will select &quot;Normal pipeline&quot; and &quot;Paired-end reads&quot;.
+    </p>
+    <p>
+        Next we will set the path to the analysed sequencing reads. In this demonstration we will use only one sample for first and second mates respectively:
+        GSM794483_C1_R1_1.fq.gz and GSM794483_C1_R1_2.fq.gz.
+    </p>
+    <p>
+        We will use Bowtie1 in Tophat settings. The BowtieIndex can be found from the iGenome archive.
+    </p>
+    <p>
+        For Cufflinks we will provide the path to Reference annotation in GTF format.
+    </p>
+    <p>
+        After that we click run to start the workflow. The results workflow can be loaded and view in UGENE.
+    </p>
+    <h3>
+        Additional Materials<br/>
+    </h3>
+    <p>
+        <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/RNA-seq+analysis+with+Tuxedo+tools">Documentation page</a>
+    </p>
+</div>

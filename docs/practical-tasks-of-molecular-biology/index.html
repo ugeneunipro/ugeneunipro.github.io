@@ -1,0 +1,164 @@
+---
+layout: page_en
+title: Practical Tasks of Molecular Biology - Unipro UGENE
+---
+
+<div class="learn-page">
+    <h1>
+        Tutorial: Practical Tasks of Molecular Biology with UGENE<br/>
+    </h1>
+    <p>
+        <img loading="lazy" src="/assets/images/learn/11111.png"/>
+    </p>
+    <p>
+        In this tutorial we will learn practical tasks of molecular biology using UGENE.
+    </p>
+    <h3>
+        Analyzing an unknown virus<br/>
+    </h3>
+    <p>
+        This task is devoted to an analysis of an unknown DNA sequence. As an example we will analyze a virus, but in principle this could be any other DNA
+        sequence.
+    </p>
+    <p>
+        We will go from raw sequencing Sanger reads, then assemble them into a contig and further analyze the virus sequence by BLASTing it against known
+        sequences and creating an phylogenetic tree.
+    </p>
+    <h3>
+        Assembling the virus&nbsp;<br/>
+    </h3>
+    <p>
+        We are starting with forward and reverse Sanger reads. &nbsp;(input data NB_forward.ab1 &nbsp;and NB_reverse.ab1)
+    </p>
+    <p>
+        First we will assemble the reads into a single sequence. Ugene allows to perform assembly of the long sequencing Sanger reads using tool CAP3 assembler.
+    </p>
+    <p>
+        CAP3 assembler can be accessed from menu Tools-&gt;DNA Assembly-&gt;Contig Assembly with CAP3&nbsp;
+    </p>
+    <p>
+        We add both sequences to the assembly and click OK.
+    </p>
+    <p>
+        The resulting assembly will automatically open in Assembly editor.
+    </p>
+    <p>
+        Notes:
+    </p>
+    <ol>
+        <li>
+            There should be an option to open it in MSA editor &#8211; for example open the reads in MSA, an visualize the chromatograms
+        </li>
+        <li>
+            MSA Editor doesn't allow to export consensus&nbsp;
+        </li>
+    </ol>
+    <p>
+        Next we export the consensus sequence with minimum coverage of 2.
+    </p>
+    <h3>
+        Analyzing the sequence<br/>
+    </h3>
+    <p>
+        We further analyze an unknown sequence by running BLAST on it.
+    </p>
+    <p>
+        Use remote BLAST for this purpose. It can be accessed from menu&nbsp;
+    </p>
+    <p>
+        Each result represents a sequence. We can download the sequence and create an alignment out of it.
+    </p>
+    <p>
+        To perform this task select interesting annotations and use context menu item Fetch sequences from annotations by ID
+    </p>
+    <p>
+        We then convert the file to multiple alignment. Using MSA editor we can perform multiple alignment of the sequences.
+    </p>
+    <p>
+        Color scheme based on mismatches allows to easily see possible mutations in the virus.
+    </p>
+    <p>
+        One last step could be building of a phylogenetic tree of the sequence.
+    </p>
+    <p>
+        PHYLIP or Mr Bayes can be used for this purpose.
+    </p>
+    <h3>
+        Preparing primers for a RT PCR reaction&nbsp;<br/>
+    </h3>
+    <p>
+        In this hypothetical task we try to find primers for a particular sequence with UGENE as a primer design program.
+    </p>
+    <p>
+        Let&#39;s assume that we interested in how to design primers for PCR for a mRNA sequence of a well known fusion gene TMPRSS2-ERG which is known to be a
+        marker for several types of prostate cancer.
+    </p>
+    <h3>
+        Searching for the sequence<br/>
+    </h3>
+    <p>
+        If we the sequence is not available, we can try searching it a sequence database, such as NCBI Genbank
+    </p>
+    <p>
+        UGENE allows to search sequences in Genbank directly.
+    </p>
+    <p>
+        We will use NCBI search interface for this task.
+    </p>
+    <p>
+        It can be accessed from main menu File-&gt;Access NCBI Genbank
+    </p>
+    <p>
+        We are setting our query to TMPRSS2/ERG. To further specify the search we set the organism as human.
+    </p>
+    <p>
+        Several results will be available as a table, each raw representing a single result. More details about the sequence are available in the Details field
+        of each raw.
+    </p>
+    <p>
+        As one can see there are several version of the transcript. One can download all of them and examine the the details.
+    </p>
+    <p>
+        However for this tutorial &nbsp;we will select one particular sequence (FJ423744) and download it.&nbsp;
+    </p>
+    <h3>
+        How to design primers for PCR<br/>
+    </h3>
+    <p>
+        UGENE integrates Primer3 &ndash; a popular primer design program.
+    </p>
+    <p>
+        Let&#39;s apply it to design primer marker for our sequence.
+    </p>
+    <p>
+        One can access Primer3 from menu Analysis -&gt; Find primers&#8230;
+    </p>
+    <p>
+        If you used Primer3 earlier from web-interface you will have no problems with using it in UGENE while the interface is very similar. Each option or
+        field has an interactive hint which explains it.
+    </p>
+    <p>
+        To start searching for primers just click Pick Primers.
+    </p>
+    <p>
+        Corresponding primer pairs are shown as annotations. Detailed information about each pair such melting temperature and etc can be found in the
+        annotation features using Annotation Editor.
+    </p>
+    <p>
+        (Screenshot: annotation editor and primer pair properties)
+    </p>
+    <p>
+        One tricky part when designing the fusion sequence is too make sure that the left primer lies in the 5&#39; gene of the fusion, while the right primer
+        lies in the 3&#39; gene of the fusion
+    </p>
+    <p>
+        This can be achieved by excluding the junction region from the primer analysis.</p>
+    <p> &nbsp;
+    </p>
+    <h3>
+        Additional Materials<br/>
+    </h3>
+    <p>
+        <a class="content" href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/In+Silico+PCR">Documentation page</a>
+    </p>
+</div>

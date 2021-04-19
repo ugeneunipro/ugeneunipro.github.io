@@ -1,0 +1,50 @@
+---
+layout: page_en
+title: Scripts in Workflows - Unipro UGENE
+---
+
+<div class="learn-page">
+    <h1>
+        Tutorial: How to Add Scripts To Workflows in UGENE<br/>
+    </h1>
+    <p>
+        <img loading="lazy" alt="Scripts in Workflow" src="/assets/images/learn/31.png"/></p>
+
+    <p> We are about to find out how to use scripts for defining the workflow software processes parameters values.</p>
+    <p> UGENE Workflow Designer allows you to create and run complex computational workflows. The scripting mechanism is aimed to provide additional flexibility
+        for defining the workers (or processes) behavior and the workers parameters values in the workflows.</p>
+    <p> Let&#39;s load a simple sample scheme, the conversion of sequences into Genbank format sequences. It consists of two workers and the dataflow between
+        them. The sequence reader object reads sequences from input files specified with the &bdquo;Input file&ldquo; parameter. I will specify it with these
+        two files of PDB and CLUSTAL formats and select the &bdquo;one iteration&ldquo; mode to process each file identically.
+    </p>
+    <p>
+        Now I will specify the &bdquo;Write Genbank&ldquo; worker output files names. But first let&#39;s set the &bdquo;Scripting mode&ldquo; toolbar item
+        value to &bdquo;Show scripting options&ldquo;. It will allow us to use scripts to define certain UGENE workflow software workers parameters.</p>
+    <p> Now the &bdquo;Write Genbank&ldquo; parameters table is extended with a third column, &bdquo;Scripts&ldquo;. We can see that scripting is available for
+        &bdquo;Output file&ldquo; and &bdquo;Existing file&ldquo; parameters. I click on the pulldown and select &bdquo;user script&ldquo; item. This brings out
+        the Script editor dialog. The variables, that are declared in the upper text area, represent input and output data.&nbsp;</p>
+    <p> For the &bdquo;Output file&ldquo; parameter we have the input file location (URL), the annotations table (if any) and the sequence. The output file
+        location is defined with the URL_OUT variable value.
+    </p>
+    <p>
+        Without using a script, the output files locations are based on the entered path. But with a script one can define the output file locations using the
+        input file location as basis. For instance, let&#39;s open this script.&nbsp;</p>
+    <p> It declares an auxiliary variable fileName containing the input file location represented by a String object. The next line will cut that part from the
+        string that starts with a dot (which will be the file extension if the file path or name contain no dots). Third line will add the &bdquo;underline
+        copied&ldquo; word to the end of the remained string. And the last line will add the new extension to the string and assign this new value to the output
+        file location variable. Let&#39;s see this script working! I press &bdquo;Done&ldquo;, and then I press &bdquo;Run schema&ldquo; to run the &quot;PDB
+        converter&quot;. Our &quot;PDB converter&quot; has finished the conversion of sequences from the PDB format and the ALN format files to Genbank files.
+        As we can see, the whole file path and name of the input file were retained, and the extension were changed. The same is true for the PDB format file as
+        well. That&#39;s how you can use scripting mechanism to define workers parameter&#39;s values in UGENE Workflow Designer.
+    </p>
+    <h3>
+        Additional Materials<br/>
+    </h3>
+    <p>
+        <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/CLI+Options" target="_blank">Documentation page</a>
+    </p>
+    <p>
+        <a href="https://www.youtube.com/watch?v=aHmVpqkGOrA" target="_blank">Youtube video</a>
+    </p>
+</div>
+

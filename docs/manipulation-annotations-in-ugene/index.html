@@ -1,0 +1,57 @@
+---
+layout: page_en
+title: Manipulation Annotations in UGENE - Unipro UGENE
+---
+
+<div class="learn-page">
+    <h1>
+        Tutorial: Manipulation Annotations in UGENE<br/>
+    </h1>
+    <p>
+        <img loading="lazy" alt="manipulating annotations" src="/assets/images/learn/7.png"/>
+    </p>
+    <p>
+        Here we discuss the most popular topics introduced by our users and show the helpful ways of using UGENE, a free cross-platform genome analysis suite.
+    </p>
+    <h3>
+        Working with annotations: associating annotation table with a sequence, adding qualifiers, sorting annotations<br/>
+    </h3>
+    <p>
+        Today we&#39;ll continue working with annotations, add qualifiers to annotations and sort annotations. But first, let&#39;s open a sequence from
+        FASTA-format file and then associate saved annotation table to it. So, we are opening this FASTA-file
+        'human_t1.fa' and the Genbank file containing an annotation table that we have created in the 4th
+    </p>
+    <p>
+        able to add the opened annotations to the sequence. Simply drag annotation table item from current Project view to the Sequence editor area. In the
+        appeared dialog box we can select the sequence to associate annotations with. In our case it&#39;s &bdquo;human_T1&ldquo; sequence. Click OK. Now we
+        have annotation regions at the Panoramic view and the opened document at the Annotation editor.
+    </p>
+    <p>
+        Let&#39;s add a couple of annotations. Press &bdquo;Ctrl+N&ldquo; and specify an annotation of the current &bdquo;misc_feature&ldquo; group, called
+        &bdquo;misc_feature_2&ldquo; and located within these coordinates <em>&lt;2000..20000&gt;.</em> If we press &bdquo;Complement&ldquo; button now, the
+        annotation will annotate the sequence from the complement strand. We press &bdquo;Ctrl+N&ldquo; again and create an annotation of a new &bdquo;new_group&ldquo;,
+        called &bdquo;misc_feature_3&ldquo; and located here <em>&lt;50000..60000&gt;</em>. As we see, annotation groups are divided with color at the
+        panoramic view.
+    </p>
+    <p>
+        Let&#39;s add a set of qualifiers to the annotations. Qualifiers are the pairs of (name, value) strings. They provide general mechanism of supplying
+        information about an annotation in UGENE. Select &bdquo;misc_feature&ldquo; annotation and then simply press
+        'Insert'. Edit qualifier dialog box has appeared, where we can specify the qualifier&#39;s name and its value
+        adding. We repeat that operation for &bdquo;misc_feature_2&ldquo; annotation adding a qualifier named &rdquo;the_qualifier&rdquo; with value &ldquo;2&rdquo;.
+    </p>
+    <p>
+        Now, let&#39;s sort the annotations within their groups by a qualifier value. Right-click at the qualifier and then select &bdquo;Add &#39;the_qualifier&#39;
+        column&ldquo; menu item. The appeared column contains values of the selected qualifier. The values are located opposite the annotations containing
+        qualifiers with these values. If we now press &bdquo;the_qualifier&ldquo; column, the annotations become sorted by these values.
+    </p>
+    <h3>
+        Additional Materials<br/>
+    </h3>
+    <p>
+        <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Manipulating+Annotations">Documentation page</a>
+    </p>
+    <p>
+        <a href="https://www.youtube.com/watch?v=fSjCAtIETfA" target="_blank">Youtube video</a>
+    </p>
+</div>
+

@@ -1,0 +1,60 @@
+---
+layout: page_en
+title: BLAST Search - Unipro UGENE
+---
+
+<div class="learn-page">
+    <h1>
+        Tutorial: How to Perform BLAST Search in UGENE to BLAST Two Sequences or More<br/>
+    </h1>
+    <p>
+        <img loading="lazy" alt="BLAST Search pipeline" src="/assets/images/learn/33.png"/>
+    </p>
+    <p> Performing BLAST search and constructing custom BLAST database is available from UGENE with the External Tool Support plugin. In the
+        Settings&rarr;Preferences&rarr;External Tool Support menu there are two new parameters for selecting the blastall and formatdb executables
+        paths.
+    </p>
+    <h3>
+        Prepare BLAST Database<br/>
+    </h3>
+    <p>
+        Now let&#39;s activate the &bdquo;Tools&rarr;BLAST&rarr;FormatDB&ldquo; program menu item. Here one can select the sequences files to create
+        database with, the type of files, the directory to store the DB and the base name for BLAST files along with the title for database files.
+    </p>
+    <p>
+        Let&#39;s create a DB from all the FASTA files from this directory (which is determined by the filter). It is required to specify that the
+        type of the included files is nucleotide. And here&#39;s the output files path (same as the input one), the files base name (FASTA_DB) and
+        the DB title (fasta_db).
+    </p>
+    <p>
+        Please, press &quot;format&quot; and the task is done. Here&#39;s the five created database files with the common base name. And, of course,
+        we can perform the BLAST algorithm search. Let&#39;s, for instance, open a sequence that had been used to format the DB. And select its
+        region to search in. Now we right-click to bring out the context menu and select &bdquo;Analyse&rarr;Query with BLAST&ldquo;. The required
+        general options are the database path (this one), and the base name of the BLAST DB files, which is &bdquo;FASTA_DB&ldquo; for the created
+        database. Now that these options are specified, the &bdquo;Search&ldquo; button is available.
+    </p>
+    <p>
+        We will also specify the annotations group name. The remained options are common BLAST software search options, such as the search type, the
+        e-value, the maximum hits number and the advance search details parameters. Also it is possible to specify how many CPUs you would like to
+        use for the search. We will use all availalbe cores.
+    </p>
+    <h3>
+        Running BLAST<br/>
+    </h3>
+    <p>
+        Press &bdquo;Start&ldquo; and the &bdquo;Run NCBI BlastAll&ldquo; task is being performed. The task is finished, and we can browse the
+        search results. To use BLAST algorithm in a workflow, use the &bdquo;Local BLAST search&ldquo; worker. The sequence to search in goes to the
+        workers input slot, the search results are the annotations of the output Genbank file. The BLAST database to use is specified with the
+        workers &bdquo;Database name&ldquo; and &bdquo;Database path&ldquo; parameters.
+    </p>
+    <h3>
+        Additional Materials<br/>
+    </h3>
+    <p>
+        <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Remote+BLAST" target="_blank">Documentation page</a>
+    </p>
+    <p>
+        <a href="https://www.youtube.com/watch?v=kYitqAVDz8g" target="_blank">Youtube video</a>
+    </p>
+</div>
+

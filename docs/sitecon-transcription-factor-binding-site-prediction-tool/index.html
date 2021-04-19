@@ -1,0 +1,75 @@
+---
+layout: page_en
+title: SITECON Transcription Factor Binding Site Prediction Tool - Unipro UGENE
+---
+
+<div class="learn-page">
+    <h1>
+        Tutorial: UGENE as a Transcription Factor Binding Site Prediction Tool<br/>
+    </h1>
+    <p>
+        <img loading="lazy" alt="Sitecon" src="/assets/images/learn/24.png"/></p>
+    <p> Today&#39;s topic is SITECON plugin, which is a transcription factor binding site prediction tool. The tool is developed in Institute of Cytology and
+        Genetics SB RAS.
+    </p>
+    <h3>
+        SITECON Description<br/>
+    </h3>
+    <p>
+        The basis of the search is a set of conservative (conformational and physicochemical) properties of transcription factor binding site alignments. These
+        alignments conservative properties are stored in SITECON profiles (also known as SITECON models) &#8211; transcription factor database of SITECON. UGENE
+        package contains pre-built profiles for over 90 sample sites, but our users can also create their own profiles of TBFS alignments.
+    </p>
+    <h3>
+        SITECON Transcription Factor Binding Site Database<br/>
+    </h3>
+    <p>
+        To show how to search for transcription factor binding sites of a DNA sequence, I will open a nucleotide sequence
+        human_t1.fa. The next step is to invoke the plugin: right-click at the opened view and select &bdquo;Analyse&rarr;Search TBFS with SITECON&ldquo;. The
+        opened dialog box contains &bdquo;File with model&ldquo; field. Let&#39;s choose the model from the transcription factor database to search with by
+        pressing &bdquo;Browse&ldquo;. Here&#39;s eukaryotic and prokaryotic profiles groups, which contain pre-built profiles. Let&#39;s choose one of
+        them.
+    </p>
+    <p>
+        When the model is selected, the &bdquo;threshold&ldquo; filter is populated with a set of available thresholds read from the profile. Adjusting the
+        threshold helps to filter low-scoring results. We see the default threshold, and can browse and select others by invoking the drop-down list.
+    </p>
+    <h3>
+        Running Search for&nbsp;Transcription Factor Binding Sites<br/>
+    </h3>
+    <p>
+        The options are standard search options: strands and the sequence region to search in. Press &bdquo;Search&ldquo;.
+    </p>
+    <p>
+        The search results are placed into the dialogs table as table rows and contain PSUM and first and second type errors values. To browse the results as
+        sequence annotations, press &bdquo;Save as annotations&#8230;&ldquo; and specify the annotations table to contain the resulting annotations.
+    </p>
+    <p>
+        To create a specific binding site alignment profile for future SITECON searches, activate &bdquo;Tools&rarr;SITECON&rarr;Build new SITECON model from
+        alignment&ldquo;. In the opened dialog box specify your input alignment file location (the alignment must contain no gaps), and output profile location.
+        After that, window size and weight algorithm may be selected. Also calibration options are available to set.
+    </p>
+    <p>
+        When done with the options, press build. The profile is built and saved, and can be selected as a profile for a TBFS search.
+    </p>
+    <p>
+        That&#39;s how you can search for TBFS with SITECON in UGENE and create specific binding site alignments profiles. Thank you for watching.
+    </p>
+    <h3>
+        Advanced Options<br/>
+    </h3>
+    <p>
+        Window is used to pick out the most meaningful alignment region and is located at the center of the alignment. Must be: windows size &lt;= the alignment
+        length, and recommended to be: windows size &lt;= 50&nbsp;and is size must be not less than the consensus sequence for this particular site and should
+        not exceed transcription factor binding sites alignment length. Optimal is to choose this parameter a bit less than the alignment length, but not more
+        than 50.
+    </p>
+    <h3>
+        Additional Materials<br/>
+    </h3>
+    <p>
+        <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/SITECON" target="_blank">Documentation page</a>
+    </p>
+    <p>
+        <a href="https://www.youtube.com/watch?v=243r5P_JhH4" target="_blank">Youtube video</a></p>
+</div>

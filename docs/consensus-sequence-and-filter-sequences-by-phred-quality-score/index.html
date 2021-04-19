@@ -1,0 +1,55 @@
+---
+layout: page_en
+title: Consensus by phred quality score - Unipro UGENE
+---
+
+<div class="learn-page">
+    <h1>
+        UGENE Mini-Tutorials: Consensus Sequence,&nbsp;Filter Sequences by Phred Quality Score and More<br/>
+    </h1>
+    <h3>
+        Generating&nbsp;DNA&nbsp;Sequence<br/>
+    </h3>
+    <p>
+        If you need to get a set of sequences, for example, for testing your genome analysis algorithm, UGENE will help you with it.</p>
+    <p> Just run UGENE via the command-line interface:</p>
+    <code> ugene &ndash;task=generate-dna &ndash;count= &ndash;length= &ndash;out= </code>
+    <p> In addition, you can set other options of the task, e.g. nucleotide content of sequences or output file format for your genome analysis. Open the help
+        for getting the whole list of options:</p>
+    <code> ugene &ndash;help=generate-dna</code>
+    <p> or find them in the corresponding <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/DNA+Generator">documentation page</a>.
+    </p>
+    <h3>
+        Save Consensus<br/>
+    </h3>
+    <p>
+        How to save a consensus sequence from a multiple sequencing alignment via the command line?</p>
+    <p> UGENE provides a ready-to-use solution for extracting consensus sequences from multiple sequencing alignments via the command line. You just need to run
+        the following command:</p>
+    <code> ugene &ndash;task=extract_consensus_sequence &ndash;in= &ndash;out=</code>
+    <p> This command extracts a consensus sequence and save it into the specified file. You can use the additional parameters of this command. For example, you
+        can choose the output file format (e.g. &ndash;format=genbank) or set the percent threshold of the consensus extracting algorithm (e.g. &#8211;threshhold=90).</p>
+    <p> Here you can find more information about command line <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/CLI+Predefined+Tasks">capabilities
+        of
+        UGENE</a>.
+    </p>
+    <h3>
+        Filter by Phred Quality<br/>
+    </h3>
+    <p>
+        <img loading="lazy" alt="Generating DNA Sequence" src="/assets/images/learn/121.jpg"/>
+    </p>
+    <p> How to filter sequences by phred quality score?</p>
+    <p> If you want to filter a set of sequences by the quality of sequencing, you can use the predefined &ldquo;Quality filter&rdquo; sample of UGENE Workflow
+        Designer.</p>
+    <p> This workflow has the &ldquo;Minimum quality value&rdquo; parameter (threshold). If the quality of one of sequence nucleotides is lower than the
+        threshold then the sequence will be cut off the result file.</p>
+    <p> Follow the steps for running the workflow:</p>
+    <p> 1. Open UGENE Workflow Designer.</p>
+    <p> 2. Choose the &ldquo;Samples&rdquo; tab and double click the &ldquo;Quality filter&rdquo; sample in the &ldquo;Custom elements&rdquo; category.</p>
+    <p> 3. Click the &ldquo;Show wizard&rdquo; toolbar button.</p>
+    <p> 4. Follow the wizard&rsquo;s pages to set up input files and the phred quality score threshold value.</p>
+    <p> 5. Run the workflow.</p>
+    <p> Here you can find the documentation about running <a href="https://doc.ugene.net/wiki/display/UM{site.ugene.doc_version}/Workflow+Samples">
+        workflow sample</a>.</p>
+</div>

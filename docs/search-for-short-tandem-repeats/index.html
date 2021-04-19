@@ -1,0 +1,67 @@
+---
+layout: page_en
+title: Search for Short Tandem Repeats - Unipro UGENE
+---
+
+<div class="learn-page">
+    <h1>
+        Tutorial: UGENE as a Tandem Repeat Finder<br/>
+    </h1>
+    <p>
+        <img loading="lazy" alt="Short Tandem Repeat Finder" src="/assets/images/learn/27.png"/></p>
+    <p> UGENE tandem repeat finder provides a fast and memory efficient way to search for short tandem repeats. You can use it for pedigree determination or for
+        other purposes like finding variable number tandem repeats.
+    </p>
+    <h3>
+        Preparing Data<br/>
+    </h3>
+    <p>
+        I will open a large sequence this time. Namely this hypothetical protein gene of nostoc cyanobacteria of length over 8 million base symbols. When the
+        sequence is loaded, I right click at the sequence view and select &bdquo;Analyse&rarr;Find Tandems&ldquo;.
+    </p>
+    <h3>
+        Setting Parameters<br/>
+    </h3>
+    <p>
+        The opened dialog box contains the short tandem repeat search parameters. Simple tandem repeats preset option allows to set such search parameters
+        values that corresponds to particular short tandem repeat groups such as micro-satellites, mini-satellites or big-period tandems. If needed, the
+        parameters can be set manually. We will use the {&bdquo;micro-satellites&ldquo; | &bdquo;mini-satellites&ldquo;} preset.
+    </p>
+    <p>
+        Min and max period parameters corresponds to the minimum and maximum acceptable repeat length measured in base symbols.
+    </p>
+    <p>
+        The algorithm parameter allows to select the search algorithm. The default and a fast one is optimized suffix array algorithm.
+    </p>
+    <p>
+        Minimum tandem size sets the limit on minimum acceptable length of the tandem, id est the minimum total repeats length of the sought-for tandem.
+    </p>
+    <p>
+        Also it is possible to set the minimum repeats count.
+    </p>
+    <p>
+        The last option, &bdquo;Show overlapped tandems&ldquo;, allows to specify whether or not the plugin should search for the overlapped simple tandem
+        repeats.
+    </p>
+    <h3>
+        Running Short Tandem Repeat Finder<br/>
+    </h3>
+    <p>
+        After the search options are set, we can specify the region to search in. The search results will be stored and displayed as annotations.
+    </p>
+    <p>
+        When done, press &bdquo;Start&ldquo;.
+    </p>
+    <p>
+        The variable number tandem repeats search in the loaded sequence is done. We have found over three thousand results.
+    </p>
+    <h3>
+        Additional Materials<br/>
+    </h3>
+    <p>
+        <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Tandem+Repeats+Finding" target="_blank">Documentation page</a>
+    </p>
+    <p>
+        <a href="https://www.youtube.com/watch?v=w0rQ1sa1ajU" target="_blank">Youtube video</a>
+    </p>
+</div>
