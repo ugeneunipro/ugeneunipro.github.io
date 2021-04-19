@@ -1,3 +1,5 @@
+---
+---
 ;(function () {
   'use strict';
 
@@ -106,14 +108,14 @@
 
   var links = {
     bit32: {
-      windows: '/downloads/installer_windows_x32.exe',
-      linux: '/downloads/installer_linux_x32',
-      macos: '/downloads/ugene_installer_mac_x64.html'
+      windows: '',
+      linux: 'http://archive.ugene.net/downloads/packages/33.0/ugene-33.0-x86-full.tar.gz',
+      macos: '{{site.ugene.download_link_ugene_latest_mac_x86_64_portable}}'
     },
     bit64: {
-      windows: '/downloads/installer_windows_x64.exe',
-      linux: '/downloads/ugene_latest_linux_x11_x86-64_full.html',
-      macos: '/downloads/ugene_installer_mac_x64.html'
+      windows: 'http://archive.ugene.net/downloads/installer_windows_x64.exe',
+      linux: '{{site.ugene.download_link_ugene_latest_linux_x86_64_portable}}',
+      macos: '{{site.ugene.download_link_ugene_latest_mac_x86_64_portable}}'
     },
     all: '/download-all_html',
     release_notes: '/changelist.html'
@@ -126,7 +128,7 @@
     /*************************** <!--:ru--> ***************************/
     download_body_content += '<h2>Скачать UGENE</h2>' +
         '<div class="download_page_main">' +
-        '  <div style="margin-bottom: 24px;">Текущая версия UGENE: <b>38.1</b> (Март, 2021). См. <a href="'
+        '  <div style="margin-bottom: 24px;">Текущая версия UGENE: <b>{{site.ugene.release_version}}</b> ({{site.ugene.release_date_MMM_YYYY_ru}}). См. <a href="'
         + links.release_notes + '">краткое описание новой версии</a>.</div>';
 
     if (uos !== 'UNKNOWN') {
@@ -174,7 +176,7 @@
     /*************************** <!--:en--> ***************************/
     download_body_content += '<h2>Download UGENE</h2>' +
         '<div class="download_page_main">' +
-        '  <div style="margin-bottom: 24px;">Current stable version is <b>38.1</b> (March, 2021). See <a href="'
+        '  <div style="margin-bottom: 24px;">Current stable version is <b>{{ugene.site.release_version}}</b> ({{site.ugene.release_date_MMM_YYYY_en}}). See <a href="'
         + links.release_notes + '">release notes</a>.</div>';
 
     if (uos !== 'UNKNOWN') {
