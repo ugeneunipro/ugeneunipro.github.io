@@ -36,28 +36,7 @@
   var shortOsName = '';
   var comments = {en: '', ru: ''};
 
-  var lang = 'en';
-  if (document.getElementsByTagName('body')[0].lang) {
-    lang = document.getElementsByTagName('body')[0].lang;
-  } else if (document.currentScript
-      && document.currentScript.attributes
-      && document.currentScript.attributes.lang) {
-    lang = document.currentScript.attributes.lang;
-  } else if (document.scripts
-      && document.scripts.length
-      && document.scripts.length > 0) {
-    var scrpt = document.scripts[document.scripts.length - 1];
-    if (scrpt
-        && scrpt.attributes
-        && scrpt.attributes.lang) {
-      lang = scrpt.attributes.lang;
-    }
-  }
-
-  /* testing */
-  /*platform.os.family = 'UNKNOWN';
-  platform.os.architecture = 64;*/
-  /* end testing */
+  const lang = window.location.pathname.startsWith('/ru/') ? 'ru' : 'en';
 
   if (platform.os.family) {
     if (platform.os.family.match(/windows/i)) { /* Windows */
@@ -117,8 +96,6 @@
       linux: '{{site.ugene.download_link_ugene_latest_linux_x86_64_portable}}',
       macos: '{{site.ugene.download_link_ugene_latest_mac_x86_64_portable}}'
     },
-    all: '/download-all_html',
-    release_notes: '/changelist.html'
   };
 
   var download_body_content = '';
@@ -128,8 +105,8 @@
     /*************************** <!--:ru--> ***************************/
     download_body_content += '<h2>Скачать UGENE</h2>' +
         '<div class="download_page_main">' +
-        '  <div style="margin-bottom: 24px;">Текущая версия UGENE: <b>{{site.ugene.release_version}}</b> ({{site.ugene.release_date_MMM_YYYY_ru}}). См. <a href="'
-        + links.release_notes + '">краткое описание новой версии</a>.</div>';
+        '  <div style="margin-bottom: 24px;">Текущая версия UGENE: <b>{{site.ugene.release_version}}</b> ({{site.ugene.release_date_MMM_YYYY_ru}}). См. ' +
+        '<a href="/ru/changelist.html">краткое описание новой версии</a>.</div>';
 
     if (uos !== 'UNKNOWN') {
       download_body_content += '  <div style="margin-bottom: 6px;">Мы определили вашу операционную систему как <span class="emphasize_words">' + fullOsName + '</span>.</div>';
@@ -176,8 +153,8 @@
     /*************************** <!--:en--> ***************************/
     download_body_content += '<h2>Download UGENE</h2>' +
         '<div class="download_page_main">' +
-        '  <div style="margin-bottom: 24px;">Current stable version is <b>{{ugene.site.release_version}}</b> ({{site.ugene.release_date_MMM_YYYY_en}}). See <a href="'
-        + links.release_notes + '">release notes</a>.</div>';
+        '  <div style="margin-bottom: 24px;">Current stable version is <b>{{ugene.site.release_version}}</b> ({{site.ugene.release_date_MMM_YYYY_en}}). See ' +
+        '<a href="/changelist.html">release notes</a>.</div>';
 
     if (uos !== 'UNKNOWN') {
       download_body_content += '  <div style="margin-bottom: 6px;">We detected your operating system as  <span class="emphasize_words">' + fullOsName + '</span>.</div>';
