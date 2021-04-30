@@ -15,9 +15,9 @@ ugene:
   download_link_ugene_latest_sources_zip: "https://github.com/ugeneunipro/ugene/archive/refs/tags/38.1.zip"
   download_link_ugene_latest_win_x86_64: "https://github.com/ugeneunipro/ugene/releases/download/38.1/ugene-38.1-win-x86-64.exe"
   download_link_ugene_latest_win_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/38.1/ugene-38.1-win-x86-64-portable.zip"
-  download_link_ugene_installer_linux: ""
-  download_link_ugene_installer_max: ""
-  download_link_ugene_installer_win: "https://f000.backblazeb2.com/file/uniprougene/release-archive/installer_windows_x32.exe"
+  download_link_ugene_installer_linux: "http://archive.ugene.net/downloads/ugeneInstaller_64bit.tar"
+  download_link_ugene_installer_max: "http://archive.ugene.net/downloads/ugeneInstaller.dmg"
+  download_link_ugene_installer_win: "http://archive.ugene.net/downloads/installer_windows_x32.exe"
   next_release_tracker_link: "https://ugene.dev/tracker/projects/UGENE/issues/?filter=13756"
   static:
     cite_link: "https://doi.org/10.1093/bioinformatics/bts091"
