@@ -1,0 +1,67 @@
+---
+layout: page_en
+title: How to Create Annotations in UGENE - Unipro UGENE
+---
+
+<div class="learn-page">
+    <h1>
+        Tutorial: How to Create Annotations in UGENE<br/>
+    </h1>
+    <p>
+        <img loading="lazy" alt="Create annotations" src="/assets/images/learn/6.png" width="584"/>
+    </p>
+    <p>
+        Here we discuss the most hot topics introduced by our users and show the helpful ways of using UGENE, a free cross-platform genome analysis suite.
+    </p>
+    <h3>
+        How to Add Annotations in UGENE<br/>
+    </h3>
+    <p>
+        Today we&#39;ll work with annotations. Let&#39;s open a usual FASTA-format file, which doesn't contain annotations. For instance, this sample file
+        <em>human_t1.fa</em> contains a human genome cut. To create an annotation for the opened sequence, we can bring up the context menu by right-clicking
+        anywhere at the
+        sequence view area. We can also use global program menu. Activate &bdquo;Actions&ldquo;, &bdquo;Add&ldquo;, &bdquo;New annotation&ldquo; <em>Ctrl+N</em>
+        shortcut as well.
+        The opened dialog box suggests that we save our annotation(s) into a new file, since FASTA file doesn't contain annotation table.
+        So, we specify a name of Genbank file that will contain the new table. Now we can choose names for the new annotation group and the annotation itself.
+        We&#39;re OK with the default &bdquo;auto&ldquo; and &bdquo;misc_feature&ldquo; values. Finally, we need to specify the location of our annotation
+        within the opened sequence. Let&#39;s create a group of annotations by specifying a set of regions: 100..1000, 30002..35000
+    </p>
+    <p>
+        Two highlighted regions have appeared at the panoramic view, representing the added annotations. In the annotation editor area which is placed lower we
+        see the created document file with annotations. The document file has also been opened at the current project view and has the <em>[modified]</em>
+        status, which means that there&#39;re pending changes in it.
+    </p>
+    <p>
+        The created document contains automatically named annotation group &bdquo;misc_feature&ldquo;, which contains the joined annotations themselves. Let&#39;s
+        point the mouse cursor to the annotation arrow. We&#39;ve brought up a popup, where the information of the sequence and its translation is shown.
+    </p>
+    <h3>
+        Exporting Annotations<br/>
+    </h3>
+    <p>
+        When all the changes have been made, we can finally save the Genbank file containing new annotations. Right-click at the document name within project
+        view area, and select &bdquo;Save selected documents&ldquo; menu item. Now the [modified] status is gone, and the pending changes are saved.
+    </p>
+    <p>
+        As an alternative we can use &bdquo;Save all&ldquo; toolbar button to save all pending changes in the project. In this case we will also be prompted to
+        save current project into a file. A project contains both opened documents and associations among them. So, if we save the project, UGENE will remember
+        that the Genbank file we&#39;ve created contains annotations associated with the current FASTA file.
+    </p>
+    <p>
+        Let&#39;s save the project now.
+    </p>
+    <p>
+        That was the way how to create annotations in UGENE.
+    </p>
+    <h3>
+        Additional Materials<br/>
+    </h3>
+    <p>
+        <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Manipulating+Annotations" target="_blank">Documentation page</a>
+    </p>
+    <p>
+        <a href="https://www.youtube.com/watch?v=fSjCAtIETfA" target="_blank">Youtube video</a>
+    </p>
+</div>
+

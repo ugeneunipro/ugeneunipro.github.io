@@ -1,0 +1,56 @@
+---
+layout: page_en
+title: Workflow Designer samples and inverted repeats - Unipro UGENE
+---
+
+<div class="learn-page">
+
+    <h1>
+        UGENE Mini-Tutorials: Workflow Designer Samples and Inverted Repeats and More<br/>
+    </h1>
+    <h3>
+        Workflow Designer samples<br/>
+    </h3>
+    <p>
+        <img loading="lazy" alt="Workflow Designer samples" src="/assets/images/learn/41.jpg"/>
+    </p>
+    <p> UGENE Workflow Designer provides the set of ready-to-use samples. Each sample solves a particular bioinformatics task. The list of the
+        samples is available in the &ldquo;Samples&rdquo; tab of the Workflow Designer window.</p>
+    <p> A mouse click on a sample shows the information block about the sample, its functions, used data, etc.</p>
+    <p> A double click opens a sample. Each sample is equipped with a wizard. Using a wizard, you can easily set up the input data and other
+        parameters of your workflow. Click the magic wand button in the toolbar for running the wizard.</p>
+    <p> You can find the documentation about UGENE Workflow Designer samples
+        <a href="https://doc.ugene.net/wiki/display/WDD17/Workflow+Samples" target="_blank">here</a>.
+    </p>
+    <h3>
+        Search for inverted repeats in a nucleic sequence<br/>
+    </h3>
+    <p>
+        <img loading="lazy" alt="Search for inverted repeats in a nucleic sequence" src="/assets/images/learn/51.jpg"/>
+    </p>
+    <p> Inverted repeats are the type of single tandem repeats located in different strands: one part of a repeat is in the forward strand and
+        the other part is in the reverse-complement strand (inverse sequence). There is the ready-to-use sample in UGENE Workflow Designer for
+        searching such kind of single tandem repeats.</p>
+    <p> Open Workflow Designer and double click the &ldquo;Search for inverted repeats&rdquo; sample in the &ldquo;Scenarios&rdquo; chapter.
+        Click the magic wand button in the toolbar for opening the wizards. The wizard would help you with:</p>
+    <p> 1) Supplying the file with an input nucleic sequence (the inverse sequence is generated automatically).</p>
+    <p> 2) Setting up the repeats search parameters: minimal repeat length, repeats identity, repeats distance, etc.</p>
+    <p> The result of this workflow is two files with the found repeats sequences: a file with the forward parts of repeats and a file with
+        reverse-complement ones.
+    </p>
+    <h3>
+        How to convert a multiple sequence alignments file into a file of a needed format<br/>
+    </h3>
+    <p>
+        If you use the command line interface, you can run different tasks in UGENE using this interface. For example, you can convert multiple
+        alignment files into files of needed formats. The command you are about to run turns UGENE into a fasta format converter.</p>
+    <p> Run UGENE with the following parameters:</p>
+    <code> ugene &#8211;task=convert-msa &#8211;in=input_file_path &#8211;out=result_file_path &#8211;format=format_name</code>
+    <p> Here is the list of possible values of the &ldquo;format_name&rdquo; parameter: clustal (default value), stockholm, msf, mega,
+        phylip-sequential, phylip-interleaved, and fasta (to create a fasta format converter).</p>
+    <p> The following command shows the help message about sequence alignments conversion:</p>
+    <code> ugene &#8211;help=convert-msa</code>
+    <p> The corresponding <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Converting+MSA" target="_blank">documentation page</a>.</p>
+    <p> The list of tasks that could be run via <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/CLI+Predefined+Tasks" target="_blank">the
+        command line interface</a>.</p>
+</div>

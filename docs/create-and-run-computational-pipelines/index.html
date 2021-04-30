@@ -1,0 +1,69 @@
+---
+layout: page_en
+title: Create and Run Computational Pipelines - Unipro UGENE
+---
+
+<div class="learn-page">
+    <h1>
+        Create and Run Computational Pipelines in UGENE<br/>
+    </h1>
+    <p>
+        <img loading="lazy" alt="Workflow" src="/assets/images/learn/10.png"/>
+    </p>
+    <p> Here we discuss the hottest topics introduced by our users and show the helpful ways of using UGENE, a free cross-platform genome analysis suite.
+    </p>
+    <h3>
+        Creating the Pipeline<br/>
+    </h3>
+    <p>
+        In UGENE you can create and run complex computational workflows, with better utilization of available computing resources and with intuitive
+        drag-n-drop interface. For example, we will perform exporting hundred of sequences from PDB (protein data bank) files into new FASTA files (convert
+        to FASTA format pipeline).&nbsp;
+    </p>
+    <p>
+        For this purpose we will use UGENE Workflow Designer &#8211; a bioinformatics workflow management software. To open the workflow management software
+        we activate Tools, Workflow Designer. At the left side two tabs are available: Samples and Objects. Samples contain different default schemes, but
+        we will develop our own schema. Thus we press Objects tab to get access to the objects available to be added to the schema. The objects are
+        processes (routines), which have input and/or output ports, used by objects to transfer data.
+    </p>
+    <h3>
+        Reading PDB and Writing FASTA<br/>
+    </h3>
+    <p>
+        First of all, we need to read sequences from Protein Data Bank files. For this purpose we drag the Sequence reader object to the schema. Select the
+        appeared &ldquo;Sequence reader 1&rdquo; object with mouse. The detailed description of the object has appeared in the Property Editor, which is
+        placed at the top right. The circle to the right of &ldquo;Sequence reader 1&rdquo; is an output port. The object description says that it reads all
+        sequences from unset location. Let&#39;s set the location. We can do it in the Parameters panel from the bottom right. We click on location value,
+        then on appeared browse button and finally specify desired PDBs. Click OK.
+    </p>
+    <p>
+        Workflow designer asks us if want to divide the list of PDB files into separate iterations. Iterations are used to customize settings for every
+        element. We answer No since we would like to process all the elements uniformly.
+    </p>
+    <p>
+        Now we need to write all the outcoming sequences into files. So, we drag &ldquo;Write FASTA&rdquo; object to the schema. The arc to the left of the
+        object is input port. Click on the writer. We see that it writes all supplied sequences to file(s) in FASTA format. Awesome. We also need to specify
+        the location of outgoing files. Click on Location value (the writer is currently selected), click Browse button and specify the output file name.
+        Finally we connect our two objects by dragging the output port to the input port. Thus we have created a dataflow between these two objects which
+        processes Sequences (as mentioned on top of dataflow arrow).
+    </p>
+    <h3>
+        Running the Pipeline<br/>
+    </h3>
+    <p>
+        We are ready to run the schema. To do this we press &ldquo;Run schema&rdquo; button. The work is done and we have a new report. Oops, we&#39;ve got
+        a warning too. The warning means that we didn&#39;t specify additional data which must be used as Fasta Header. It&#39;s OK, since these headers
+        were generated automatically. And, we still have a new report. It says that the schema execution is finished. Let&#39;s open the output location. It
+        has one file, accumulating all the sequences. We can load it.
+    </p>
+    <h3>
+        Additional Materials<br/>
+    </h3>
+    <p>
+        <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Workflow+Designer+Manual" target="_blank">Documentation page</a>
+    </p>
+    <p>
+        <a href="https://www.youtube.com/watch?v=s5zp8DZxNVI" target="_blank">Youtube video</a>
+    </p>
+</div>
+

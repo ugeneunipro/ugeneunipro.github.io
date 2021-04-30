@@ -1,0 +1,77 @@
+---
+layout: page_en
+title: Export Workflow and Run Workflow - Unipro UGENE
+---
+
+<div class="learn-page">
+
+    <h1>
+        UGENE Mini-Tutorials: Export Workflow, Run Workflow and more<br/>
+    </h1>
+    <h3>
+        Translate DNA, Export a workflow, run a workflow in the command line<br/>
+    </h3>
+    <p>
+        <img loading="lazy" alt="Translate DNA, Export a workflow, run a workflow in the command line" src="/assets/images/learn/110.jpg"/>
+    </p>
+    <p> 1. How-to in UGENE: How to translate DNA sequences into amino acid sequences?</p>
+    <p> If you want to translate DNA sequences into amino acid sequence, you can use the pre-defined workflow sample of UGENE Workflow Designer:</p>
+    <p> 1. Open UGENE Workflow Designer (the menu Tools -&gt; Workflow Designer).</p>
+    <p> 2. Open the &ldquo;Samples&rdquo; tab and find the &ldquo;Get amino translations of a sequence&rdquo; in the &ldquo;Scenarios&rdquo; chapter. Double
+        click to load the sample.</p>
+    <p> 3. The opened workflow is almost ready to use. You just need to supply the input data. The input data are the file(s) with the DNA sequence(s). Click
+        the magic wand button on the toolbar to activate the wizard &ndash; the fast and easy way of workflows adjusting.</p>
+    <p> 4. Add input files and choose other settings (or use the default values) when you go through the wizard&rsquo;s pages. Finally click the &ldquo;Run&rdquo;
+        button in the last page.</p>
+    <p> There will be two result files: a file with three forward amino translations and a file with three reverse complement ones.</p>
+    <p> Find the UGENE Workflow Designer documentation <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Workflow+Designer" target="_blank">here</a>.
+    </p>
+    <h3>
+        Export a workflow to your publication<br/>
+    </h3>
+    <p>
+        <img loading="lazy" alt="Export a workflow to your publication" src="/assets/images/learn/23.jpg"/></p>
+    <p> If you have created a workflow with UGENE Workflow Designer you can save the picture of this workflow in a file. You could use this picture as a
+        supplementary illustration of your article or put it into the presentation for your speech.</p>
+    <p> For exporting the picture use the menu item {Actions -&gt; Export workflow as image} or the key combination Ctrl + Shift + S.</p>
+    <p> You can adjust the workflow&rsquo;s look-and-feel:</p>
+    <p> 1. Drag-and-drop the workflow elements on the scene with your mouse.</p>
+    <p> 2. Move the elements&rsquo; ports. Use drag-and-drop with the pressed Alt keyboard-button for that.</p>
+    <p> 3. Change the elements&rsquo; color. If you want to change the color of an element, select the element, click the right mouse button and choose the item
+        {Element properties -&gt; Background color}.</p>
+    <p> The UGENE workflows are self-documenting. You can look through the workflow picture, read the elements descriptions and easily understand what the
+        workflow does for its result.</p>
+    <p> You can even change the description of an element. For example, the &ldquo;Find repeats&rdquo; element name could be changed into &ldquo;Tandem repeats
+        finder&rdquo;. Such qualifications could make a workflow more readable and understandable for your colleagues when you make your speech for them, for a
+        tandem repeats finder in that case.
+    </p>
+    <h3>
+        Run a workflow using the command line interface<br/>
+    </h3>
+    <p>
+        <img loading="lazy" alt="Run a workflow using the command line interface" src="/assets/images/learn/31.jpg"
+        /></p>
+    <p> Any UGENE workflow can be &ldquo;transformed&rdquo; into a separate command line application. For running a saved workflow with the command line use the
+        key &#8211;task=/path/to/workflow:</p>
+    <code> ./ugene &#8211;task=/home/user/my_workflow.uwl</code>
+    <p> UGENE provides a way of specifying parameters for the running workflow (input/output files, algorithm settings, etc). Let&rsquo;s consider the
+        example:</p>
+    <p> 1. Open UGENE Workflow Designer, choose the &ldquo;Samples&rdquo; tab and double click the first sample &ldquo;Align sequences with MUSCLE&rdquo;. The
+        sample does what it says &#8211; it performs muscle sequence alignment.</p>
+    <p> 2. Click the menu {Actions -&gt; Configure parameter aliases} or the corresponding toolbar button.</p>
+    <p> 3. You can switch between the workflow elements in the left part of the appeared dialog and set the command line keys (aliases) in the right one. Let&rsquo;s
+        set aliases for the following parameters (the column &ldquo;Parameter alias&rdquo;):</p>
+    <p> a. The alias of the parameter &ldquo;Input file(s)&rdquo; of &ldquo;Read Alignment&rdquo; will be &ldquo;in&rdquo;.</p>
+    <p> b. &ldquo;Output file&rdquo; of &ldquo;Write Alignment&rdquo; &ndash; out.</p>
+    <p> c. &ldquo;Max iterations&rdquo; of the muscle sequence alignment element &ndash; max-iter.</p>
+    <p> 4. Click OK and save the workflow to a file &ldquo;my_workflow.uwl&rdquo; (e.g. &ldquo;C:/my_workflow.uwl&rdquo;).</p>
+    <p> 5. Now the workflow is ready to use with the command line interface:</p>
+    <code> ugene.exe &#8211;task=C:/my_workflow.uwl &#8211;in=input.aln &#8211;out=output.aln &#8211;max-iter=2</code>
+    <p> Thus, you would have &ldquo;a separate command line application&rdquo; that solves your task.</p>
+    <p> If you forget what command line keys you set for parameters, you can find it with the &#8211;help key:</p>
+    <code> ugene.exe &#8211;help=C:/my_workflow.uwl</code>
+    <p> If you fill in the column &ldquo;Help message&rdquo; (not only the &ldquo;Parameter alias&rdquo; column), those help messages will appear in the &#8211;help
+        output.
+    </p>
+</div>
+

@@ -1,0 +1,73 @@
+---
+layout: page_en
+title: Open Reading Frames - Unipro UGENE
+---
+<div class="learn-page">
+    <h1>
+        Tutorial: Opening Reading Frame Finder in UGENE<br/>
+    </h1>
+    <p>
+        <img loading="lazy" alt="opening reading frame finder" src="/assets/images/learn/15.png"/></p>
+    <p> Here we discuss the hottest topics introduced by our users and show the helpful ways of using UGENE, a free cross-platform genome analysis suite.
+    </p>
+    <p>
+        Today we will continue working with sequence analysis in UGENE and consider searching for open reading frames in a DNA sequence introducing UGENE as an
+        opening reading frame finder. Let&#39;s start with opening a nucleotide sequence, for example this file from UGENE package samples. Now we select a
+        sequence
+        region with mouse. To search for open reading frames, we right-click, bringing up the context menu, select &bdquo;Analyse&ldquo; and then &bdquo;Find
+        open
+        reading frames&ldquo; menu items. It will open the UGENE open reading frame finder.
+    </p>
+    <h3>
+        Open Reading Frames Finder Options<br/>
+    </h3>
+    <p>
+        The dialog box appears. Let&#39;s consider its options. First of all, we can select a strand where to search for open frames, and select the translation
+        code here. The translation code defines, as we see, start codons, alternative start codons, and stop codons. By default UGENE will search for open
+        reading
+        frames that start with one of the &bdquo;Start codons&ldquo;, end with one of the &bdquo;Stop codons&ldquo; and their &bdquo;start codons&ldquo; lie
+        within
+        the search range. Also the result open reading frames will be filtered by length, so search result will include only such open reading frames that have
+        length greater than or equal to the value specified in the corresponding text field.
+    </p>
+    <p>
+        So, we have chosen the translation code. The search range is automatically set to the selected range. It is possible to specify the minimal length the
+        results are filtered by. If the option is unchecked, we will get the results of every length.
+    </p>
+    <p>
+        Further, checking the &bdquo;Must terminate within region&ldquo; option leads to discarding the results whose stop codons lie beyond the search range.
+        By
+        default the option is unchecked.
+    </p>
+    <p>
+        Unchecking the next option, &bdquo;Must start with init codon&ldquo;, allows such open frames that start with any codon different from a stop codon. The
+        option is checked by default, so we will only get the open reading frames starting one of the &bdquo;start codons&ldquo;.
+    </p>
+    <p>
+        The last option in the parameters panel allows such opening reading frames that start with &bdquo;Start codons&ldquo; or &bdquo;Alternative start codons&ldquo;
+        corresponding to the translation table. By default, only the codons that start with &bdquo;Start codons&ldquo;, counts.
+    </p>
+    <h3>
+        Running Search for Open Reading Frames<br/>
+    </h3>
+    <p>
+        We are ready to perform the search. Click the &bdquo;Search&ldquo; button. The search is done and the resulting opening reading frames are represented
+        as
+        this table rows. It possible to look at the results as the annotations. To do this, we can save the results pressing the &bdquo;Save as annotations...&ldquo;
+        button. In the appeared dialog box we can select the existing or create new annotation table in Genbank format, and specify the
+        results group and annotation names.
+        In our case a new Genbank format file will be created and added to the current project view. Press &bdquo;Create&ldquo;.
+    </p>
+    <p>
+        As we can see, the resulting annotations have appeared at the panoramic and annotations editor views as well.
+    </p>
+    <h3>
+        Additional Materials<br/>
+    </h3>
+    <p>
+        <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/ORF+Marker" target="_blank">Documentation page</a>
+    </p>
+    <p>
+        <a href="https://www.youtube.com/watch?v=ArEtX9IAyt4" target="_blank">Youtube video</a>
+    </p>
+</div>

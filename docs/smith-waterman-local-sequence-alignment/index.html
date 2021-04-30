@@ -1,0 +1,61 @@
+---
+layout: page_en
+title: Smith Waterman Local Sequence Alignment - Unipro UGENE
+---
+<h1>
+    Tutorial: Performing Local Sequence Alignment with Smith Waterman Algorithm<br/>
+</h1>
+<p>
+    <img loading="lazy" alt="Smith Waterman algorithm" src="/assets/images/learn/9.png"/>
+</p>
+<p> Here we discuss the most popular topics introduced by our users and show the helpful ways of using UGENE, a free cross-platform genome analysis suite.
+</p>
+<h3>
+    Running Smith Waterman Algorithm<br/>
+</h3>
+<p>
+    We are opening a haemorphilus sequence from this sample file. We are intended to search for a part of this sequence. Say, let&#39;s take this region into
+    account. It&#39;s a terminator. First, we will copy the terminator sequence into clipboard. To do this, we select the terminator annotation by left-click,
+    and then bring up context menu by right-click and select &bdquo;Copy, Copy annotation sequence&ldquo;.
+</p>
+<p>
+    Now we activate Smith-Waterman dialog box by right-clicking and selecting &bdquo;Analyse Smith Waterman&ldquo; context menu items. We paste our sequence
+    into Pattern text edit. There&#39;re several useful parameters we will dwell on. First of all, we could choose algorithm optimization option from classic,
+    SSE2 or CUDA (since I have SSE2 processor and CUDA-compatible video card in my PC). The result will be the same, but the working time could speedup of up to
+    30X with CUDA variant and up to 20X with SSE2 variant. We&#39;ll select CUDA.
+</p>
+<p>
+    Further, we can select or view the scoring matrix. Since we work with DNA, there&#39;is just one standard matrix. Numbers in matrix cells is the score for
+    the combination of two corresponding bases. Also we can specify open and extension gap scores. The results filtering strategy includes &bdquo;report results&ldquo;
+    filtering option. If &bdquo;filter intersections&ldquo; is selected, then the results are filtered by intersections, which could simplify work with the
+    results that have a lots of almost identify regions. But we want to find all the results, so we choose &bdquo;None&ldquo;. Finally, we could specify &bdquo;similarity
+    threshold&ldquo; which is the minimal score of to regions needed to considered them as similar.
+</p>
+<p>
+    The next 3 panels are intended to specify what we search and where. We could search both in a Sequence or in aTranslation, in a complement or direct strand
+    (or both) and specify a region of the sequence we&#39;ll search in.
+</p>
+<p>
+    The results will be presented as annotations, so we need to save them into existing or new file. Also we need to specify the result annotations group name
+    and the annotations name.
+</p>
+<h3>
+    View Output<br/>
+</h3>
+<p>
+    When the search is done, the sequence view of a sequence being searched has new annotations. These are our results. As we see, we have 10 results. Their
+    regions appear and colored with a new color at the panoramic view. Each annotation represents the region of the sequence similar to the sought-for sequence
+    and has one qualifier. The qualifier represents score with which the region passed.
+</p>
+<p>
+    So, we have several regions similar to the sought-for term of the haemorphilus sequence with 60% minimal score.
+</p>
+<h3>
+    Additional Materials<br/>
+</h3>
+<p>
+    <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Smith-Waterman+Search" target="_blank">Documentation page</a>
+</p>
+<p>
+    <a href="https://www.youtube.com/watch?v=M3D0YrGshns" target="_blank">Youtube video</a>
+</p>

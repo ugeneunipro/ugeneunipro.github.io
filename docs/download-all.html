@@ -6,19 +6,29 @@ title: Download UGENE and components - Unipro UGENE
 <div class="download-page">
     <h2>Download UGENE and components</h2>
     <div class="download_page_main">
-        <div style="margin-bottom: 32px;">The current stable version is <b>38.1</b> (March 2021). See <a class="content" href="/changelist.html">release
+        <div style="margin-bottom: 32px;">The current stable version is <b>38.1</b> (March 2021). See <a href="/changelist.html">release
             notes</a>.
         </div>
         <div>
             <h3 class="general_content">Online Installers</h3>
             <p>With the installer you can select which parts of UGENE to install and update them when a new version of UGENE is released.</p>
             <ul class="general_content">
-                <li><a href="http://ugene.net/downloads/ugene_latest_installer_win_x86_64.html">UGENE Online Installer for Windows 64-bit</a></li>
-                <li><a href="http://ugene.net/downloads/ugene_tiny_loader_linux_x64.html">UGENE Online Installer for Linux 64-bit</a></li>
-                <li><a href="http://ugene.net/downloads/ugene_installer_mac_x64.html">UGENE Online Installer for macOS</a></li>
+                <li>
+                    <!--suppress HtmlUnknownTarget -->
+                    <a href="{{site.ugene.download_link_ugene_installer_win}}">UGENE Online Installer for Windows 64-bit</a>
+                </li>
+                <li>
+                    <!--suppress HtmlUnknownTarget -->
+                    <a href="{{site.ugene.download_link_ugene_installer_linux}}">UGENE Online Installer for Linux 64-bit</a>
+                </li>
+                <li>
+                    <!--suppress HtmlUnknownTarget -->
+                    <a href="{{site.ugene.download_link_ugene_installer_mac}}">UGENE Online Installer for macOS</a>
+                </li>
             </ul>
-            <div class="general_content">Follow the <a class="content" href="http://doc.ugene.net/wiki/display/UUOUMF38/Download+and+Installation">installation
-                instructions</a>.
+            <div class="general_content">Follow the <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Download+and+Installation"
+                                                       target="_blank">
+                installation instructions</a>.
             </div>
             <h3 class="general_content">Offline Installers And Portable Packages</h3>
             <div class="general_content">Complete UGENE packages for offline installation with external tools included.</div>
@@ -39,55 +49,48 @@ title: Download UGENE and components - Unipro UGENE
                     <a href="{{site.ugene.download_link_ugene_latest_mac_x86_64_portable}}">UGENE Offline Installer for macOS</a>
                 </li>
             </ul>
-            <h3 id="en_data_analysis_tools" class="general_content">External Tools (third-party)</h3>
-            <div class="general_content">UGENE provides GUI for a lot of popular command-line bioinformatics tools.&nbsp;<br/>
-                Note: some of these tools may require additional packages like Java or Rscript to be installed on your system (see <a class="content"
-                                                                                                                                      href="http://doc.ugene.net/wiki/display/UM38/External+Tools">documentation</a>
-                for details):
-            </div>
-            <ul class="general_content">
-                <li><a href="http://ugene.net/downloads/ext_tools/latest/ext_tools_win_64-bit.zip">External Tools Package for Windows 64-bit</a></li>
-                <li><a href="http://ugene.net/downloads/ext_tools/latest/ext_tools_linux_64-bit.tar.gz">External Tools Package for Linux 64-bit</a></li>
-                <li><a href="http://ugene.net/downloads/ext_tools/latest/ext_tools_mac_64-bit.tar.gz">External Tools Package for macOS</a></li>
-            </ul>
             <h3 id="en_reference_data_ngs" class="general_content">Reference Data for NGS</h3>
             <div class="general_content">To run some NGS data analysis (taxonomy classification or ChIP-Seq) it is required to provide reference data (e.g.
                 RefSeq databases, NCBI taxonomy files, etc.).
             </div>
             <div class="general_content">It is recommended to use the Online Installer to download these data, however, one can also use the download links
-                below and <a class="content" href="http://doc.ugene.net/wiki/display/UUOUMF34/Reference+Data+for+NGS">manually configure the packages</a>. Make
+                below and <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Reference+Data+for+NGS" target="_blank">
+                    manually configure the packages</a>.
+                Make
                 sure
                 there is enough disk space on the target computer.
             </div>
             <h4 class="general_content">Data for NGS metagenomics classification</h4>
             <ul class="general_content">
-                <li><a href="http://ugene.net/downloads/downloadable_data/taxonomy.7z">NCBI taxonomy classification</a></li>
-                <li><a href="http://ugene.net/downloads/downloadable_data/refseq_bacterial.7z">NCBI RefSeq bacterial genomes</a></li>
-                <li><a href="http://ugene.net/downloads/downloadable_data/refseq_viral.7z">NCBI RefSeq viral genomes</a></li>
-                <li><a href="http://ugene.net/downloads/downloadable_data/refseq_human.7z">NCBI RefSeq GRCh38 human genome</a></li>
-                <li><a href="http://ugene.net/downloads/downloadable_data/kraken_minikraken_4gb_database.7z">Kraken DB: MiniKraken 4Gb database</a></li>
-                <li><a href="http://ugene.net/downloads/downloadable_data/clark_bacterial_viral_database.7z">CLARK-l DB: RefSeq bacterial+viral genomes</a></li>
-                <li><a href="http://ugene.net/downloads/downloadable_data/clark_viral_database.7z">CLARK-l DB: RefSeq viral genomes</a></li>
-                <li><a href="http://ugene.net/downloads/downloadable_data/diamond_uniref50_database.7z">DIAMOND DB: UniRef50</a></li>
-                <li><a href="http://ugene.net/downloads/downloadable_data/diamond_uniref90_database.7z">DIAMOND DB: UniRef90</a></li>
-                <li><a href="http://ugene.net/downloads/downloadable_data/metaphlan2_database.7z">MetaPhlAn2 embedded DB: mpa_v20_m200</a></li>
+                <li><a href="http://archive.ugene.net/downloads/downloadable_data/taxonomy.7z">NCBI taxonomy classification</a></li>
+                <li><a href="http://archive.ugene.net/downloads/downloadable_data/refseq_bacterial.7z">NCBI RefSeq bacterial genomes</a></li>
+                <li><a href="http://archive.ugene.net/downloads/downloadable_data/refseq_viral.7z">NCBI RefSeq viral genomes</a></li>
+                <li><a href="http://archive.ugene.net/downloads/downloadable_data/refseq_human.7z">NCBI RefSeq GRCh38 human genome</a></li>
+                <li><a href="http://archive.ugene.net/downloads/downloadable_data/kraken_minikraken_4gb_database.7z">Kraken DB: MiniKraken 4Gb database</a></li>
+                <li><a href="http://archive.ugene.net/downloads/downloadable_data/clark_bacterial_viral_database.7z">CLARK-l DB: RefSeq bacterial+viral
+                    genomes</a></li>
+                <li><a href="http://archive.ugene.net/downloads/downloadable_data/clark_viral_database.7z">CLARK-l DB: RefSeq viral genomes</a></li>
+                <li><a href="http://archive.ugene.net/downloads/downloadable_data/diamond_uniref50_database.7z">DIAMOND DB: UniRef50</a></li>
+                <li><a href="http://archive.ugene.net/downloads/downloadable_data/diamond_uniref90_database.7z">DIAMOND DB: UniRef90</a></li>
+                <li><a href="http://archive.ugene.net/downloads/downloadable_data/metaphlan2_database.7z">MetaPhlAn2 embedded DB: mpa_v20_m200</a></li>
             </ul>
             <h4 class="general_content">Data for ChIP-Seq analysis</h4>
             <ul class="general_content">
-                <li><a href="http://ugene.net/downloads/downloadable_data/cistrome.7z">Human data for Cistrome workflow</a></li>
+                <li><a href="http://archive.ugene.net/downloads/downloadable_data/cistrome.7z">Human data for Cistrome workflow</a></li>
             </ul>
             <h3 class="general_content">Source code</h3>
-            <div class="general_content">UGENE is an open-source software with GNU GPL v2 license. The source code is available <a class="content"
-                                                                                                                                   href="https://github.com/ugeneunipro">on
+            <div class="general_content">UGENE is an open-source software with GNU GPL v2 license. The source code is available <a
+                    href="https://github.com/ugeneunipro" target="_blank">on
                 GitHub</a>.
             </div>
             <h3 class="general_content">Old UGENE Packages</h3>
             <div class="general_content">Before UGENE version 34 the following packages were provided:</div>
             <ul class="general_content">
-                <li><b>Standard Package</b>: UGENE main executables, <a class="content" href="http://doc.ugene.net/wiki/display/UUOUM33/Data+Analysis+Tools">embedded
+                <li><b>Standard Package</b>: UGENE main executables, <a
+                        href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Data+Analysis+Tools" target="_blank">embedded
                     tools</a>, sample data, etc.
                 </li>
-                <li><b>Full Package</b>: the same as in the Standard Package + <a class="content" href="/download-all.html">external tools</a>
+                <li><b>Full Package</b>: the same as in the Standard Package + <a href="/download-all.html#old-external-tools">external tools</a>
                     (including tools for NGS data analysis) &#8211; this package is recommended for offline installation
                 </li>
                 <li><b>NGS Package</b>: the same as in the Full Package + ChIP-Seq data analysis additions (RScript, reference data)</li>
@@ -116,40 +119,41 @@ title: Download UGENE and components - Unipro UGENE
                     <td>Windows 7+ (64-bit)<br/>
                         Offline installer
                     </td>
-                    <td><a class="content" href="http://ugene.net/downloads/packages/33.0/ugene-33.0-win-x86-64.exe">Download v.33</a></td>
-                    <td><a class="content" href="http://ugene.net/downloads/packages/33.0/ugene-33.0-win-x86-64-full.exe">Download v.33</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-33.0-win-x86-64.exe">Download v.33</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-33.0-win-x86-64-full.exe">Download v.33</a></td>
                     <td class="obsolete_data">N/A</td>
                 </tr>
                 <tr>
                     <td>Windows 7+ (64-bit)<br/>
                         Zip archive
                     </td>
-                    <td><a class="content" href="http://ugene.net/downloads/packages/33.0/ugene-33.0-win-x86-64-portable.zip">Download v.33</a></td>
-                    <td><a class="content" href="http://ugene.net/downloads/packages/33.0/ugene-33.0-win-x86-64-portable-full.zip">Download v.33</a></td>
-                    <td><a class="content" href="http://ugene.net/downloads/packages/33.0/ugene-33.0-win-x86-64-portable-NGS.zip">Download v.33</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-33.0-win-x86-64-portable.zip">Download v.33</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-33.0-win-x86-64-portable-full.zip">Download v.33</a></td>
+                    <td><a href="http://archive.ugene.net/downloads/packages/33.0/ugene-33.0-win-x86-64-portable-NGS.zip">Download v.33</a></td>
                 </tr>
                 <tr>
                     <td>Windows 7+ (32-bit)<br/>
                         Offline installer
                     </td>
-                    <td><a class="content" href="http://ugene.net/downloads/packages/33.0/ugene-33.0-win-x86.exe">Download v.33</a></td>
-                    <td><a class="content" href="http://ugene.net/downloads/packages/33.0/ugene-33.0-win-x86-full.exe">Download v.33</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-33.0-win-x86.exe">Download v.33</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-33.0-win-x86-full.exe">Download v.33</a></td>
                     <td class="obsolete_data">N/A</td>
                 </tr>
                 <tr>
                     <td>Windows 7+ (32-bit)<br/>
                         Zip archive
                     </td>
-                    <td><a class="content" href="http://ugene.net/downloads/packages/33.0/ugene-33.0-win-x86-portable.zip">Download v.33</a></td>
-                    <td><a class="content" href="http://ugene.net/downloads/packages/33.0/ugene-33.0-win-x86-portable-full.zip">Download v.33</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-33.0-win-x86-portable.zip">Download v.33</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-33.0-win-x86-portable-full.zip">Download v.33</a></td>
                     <td class="obsolete_data">N/A</td>
                 </tr>
                 <tr>
                     <td>Windows XP/Vista (32-bit)<br/>
                         Zip archive
                     </td>
-                    <td><a class="content" href="http://ugene.net/downloads/ugene_latest_win_xp_x86_zip.html">Download v.1.29</a></td>
-                    <td><a class="content" href="http://ugene.net/downloads/ugene_latest_win_xp_x86_zip_full.html">Download v.1.29</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-1.29.0-win-xp-x86-portable.zip">Download v.1.29</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-1.29.0-win-xp-x86-portable-full.zip">Download v.1.29</a>
+                    </td>
                     <td class="obsolete_data">N/A</td>
                 </tr>
                 </tbody>
@@ -168,22 +172,22 @@ title: Download UGENE and components - Unipro UGENE
                     <td>Linux (64-bit)<br/>
                         TAR.GZ archive
                     </td>
-                    <td><a class="content" href="http://ugene.net/downloads/packages/33.0/ugene-33.0-x86-64.tar.gz">Download v.33</a></td>
-                    <td><a class="content" href="http://ugene.net/downloads/packages/33.0/ugene-33.0-x86-64-full.tar.gz">Download v.33</a></td>
-                    <td><a class="content" href="http://ugene.net/downloads/packages/33.0/ugene-33.0-x86-64-NGS.tar.gz">Download v.33</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-33.0-x86-64.tar.gz">Download v.33</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-33.0-x86-64-full.tar.gz">Download v.33</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-33.0-x86-64-NGS.tar.gz">Download v.33</a></td>
                 </tr>
                 <tr>
                     <td>Linux (32-bit)<br/>
                         TAR.GZ archive
                     </td>
-                    <td><a class="content" href="http://ugene.net/downloads/packages/33.0/ugene-33.0-x86.tar.gz">Download v.33</a></td>
-                    <td><a class="content" href="http://ugene.net/downloads/packages/33.0/ugene-33.0-x86-full.tar.gz">Download v.33</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-33.0-x86.tar.gz">Download v.33</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-33.0-x86-full.tar.gz">Download v.33</a></td>
                     <td class="obsolete_data">N/A</td>
                 </tr>
                 </tbody>
             </table>
             <h4 class="general_content">macOS</h4>
-            <div class="general_content">UGENE delivery type on macOS is a <b>DMG installer</b>.</div>
+            <div class="general_content">UGENE bundle type on macOS is a <b>DMG installer</b>.</div>
             <table class="general_content">
                 <tbody>
                 <tr>
@@ -196,31 +200,31 @@ title: Download UGENE and components - Unipro UGENE
                     <td>macOS 10.7+ (64-bit)<br/>
                         DMG installer
                     </td>
-                    <td><a class="content" href="http://ugene.net/downloads/packages/33.0/ugene-33.0-mac-x86-64.dmg">Download v.33</a></td>
-                    <td><a class="content" href="http://ugene.net/downloads/packages/33.0/ugene-33.0-mac-x86-64-full.dmg">Download v.33</a></td>
-                    <td><a class="content" href="http://ugene.net/downloads/packages/33.0/ugene-33.0-mac-x86-64-NGS.dmg">Download v.33</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-33.0-mac-x86-64.dmg">Download v.33</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-33.0-mac-x86-64-full.dmg">Download v.33</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-33.0-mac-x86-64-NGS.dmg">Download v.33</a></td>
                 </tr>
                 <tr>
                     <td>Mac OS X 10.6 (64-bit)<br/>
                         DMG installer
                     </td>
-                    <td><a class="content" href="http://ugene.net/downloads/ugene_get_latest_mac_x86_64_1.18.html">Download v.1.18.0</a></td>
-                    <td><a class="content" href="http://ugene.net/downloads/ugene_get_latest_mac_x86_64_full_1.18.html">Download v.1.18.0</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-1.18.0-mac-x86-64.dmg">Download v.1.18.0</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-1.18.0-mac-x86-64-full.dmg">Download v.1.18.0</a></td>
                     <td class="obsolete_data">N/A</td>
                 </tr>
                 <tr>
                     <td>Mac OS X 10.5 (32-bit)<br/>
                         DMG installer
                     </td>
-                    <td><a class="content" href="http://ugene.net/downloads/ugene_get_latest_mac_x86.html">Download v.1.18.0</a></td>
-                    <td><a class="content" href="http://ugene.net/downloads/ugene_get_latest_mac_x86_full.html">Download v.1.18.0</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-1.18.0-mac-x86.dmg">Download v.1.18.0</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-1.18.0-mac-x86-full.dmg">Download v.1.18.0</a></td>
                     <td class="obsolete_data">N/A</td>
                 </tr>
                 <tr>
                     <td>Mac OS X 10.4 (Intel)<br/>
                         DMG installer
                     </td>
-                    <td><a class="content" href="http://ugene.net/downloads/ugene_get_latest_mac_10_4.html">Download v.1.10.3</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-1.10.3-mac-10.4-noqt.dmg">Download v.1.10.3</a></td>
                     <td class="obsolete_data">N/A</td>
                     <td class="obsolete_data">N/A</td>
                 </tr>
@@ -228,19 +232,24 @@ title: Download UGENE and components - Unipro UGENE
                     <td>Power Macintosh (PowerPC)<br/>
                         DMG installer
                     </td>
-                    <td><a class="content" href="http://ugene.net/downloads/ugene_get_latest_mac_universal.html">Download v.1.10.3</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-1.10.3-mac-ppc.dmg">Download v.1.10.3</a></td>
                     <td class="obsolete_data">N/A</td>
                     <td class="obsolete_data">N/A</td>
                 </tr>
                 </tbody>
             </table>
-            <h4 class="general_content">External Tools Packages for UGENE v.33</h4>
+            <h4 class="general_content" id="old-external-tools">External Tools Packages for UGENE v.33</h4>
             <ul class="general_content">
-                <li><a href="http://ugene.net/downloads/ext_tools/33.0/ext_tools_win_64-bit.zip">External Tools Package for Windows 64-bit</a></li>
-                <li><a href="http://ugene.net/downloads/ext_tools/33.0/ext_tools_win_32-bit.zip">External Tools Package for Windows 32-bit</a></li>
-                <li><a href="http://ugene.net/downloads/ext_tools/33.0/ext_tools_linux_64-bit.tar.gz">External Tools Package for Linux 64-bit</a></li>
-                <li><a href="http://ugene.net/downloads/ext_tools/33.0/ext_tools_linux_32-bit.tar.gz">External Tools Package for Linux 32-bit</a></li>
-                <li><a href="http://ugene.net/downloads/ext_tools/33.0/ext_tools_mac_64-bit.tar.gz">External Tools Package for macOS</a></li>
+                <li><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ext_tools_win_64-bit.zip">
+                    External Tools Package for Windows 64-bit</a></li>
+                <li><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ext_tools_win_32-bit.zip">
+                    External Tools Package for Windows 32-bit</a></li>
+                <li><a href="http://archive.ugene.net/downloads/ext_tools/33.0/ext_tools_linux_64-bit.tar.gz">
+                    External Tools Package for Linux 64-bit</a></li>
+                <li><a href="http://archive.ugene.net/downloads/ext_tools/33.0/ext_tools_linux_32-bit.tar.gz">
+                    External Tools Package for Linux 32-bit</a></li>
+                <li><a href="http://archive.ugene.net/downloads/ext_tools/33.0/ext_tools_mac_64-bit.tar.gz">
+                    External Tools Package for macOS</a></li>
             </ul>
         </div>
     </div>

@@ -1,0 +1,57 @@
+---
+layout: page_en
+title:  Bookmarks - Unipro UGENE
+---
+
+<div class="learn-page">
+
+    <h1>
+        Tutorials: How to Save View States with Bookmarks in UGENE<br/>
+    </h1>
+    <p>
+        <img loading="lazy" alt="Bookmarks in UGENE" src="/assets/images/learn/26.png"/>
+    </p>
+    <p>
+        In UGENE you can save and restore object views states using the bookmark mechanism
+    </p>
+    <p>
+        An Object view is a graphical representation for structured biological data, or Object, in UGENE. A single object view can visualize one or several
+        objects of different types.
+    </p>
+    <h3>
+        PDB File Example<br/>
+    </h3>
+    <p>
+        Every time you open an object from the current project view, you activate the existing object view or create a new one. For example, let&#39;s open PDB
+        &ndash; format file to our project.
+        It consists of three objects of the annotations table-, the sequence- and the protein 3D structure types. Each object type is
+        represented by the letter in brackets near the object name. The default view is already created and opened at the right part of the program window.
+    </p>
+    <p>
+        If we now double click on the object item, the context menu appears, where we can activate the sequence view, or open a new view which will contain a
+        representation of the object we double-clicked on. The existing &bdquo;1CRN 1CRN chain 1 sequence view&ldquo; is already activated. And it contains a
+        lot of elements and sub-views we could justify. For instance, let&#39;s perform a couple of operations with the 3D structure view. Then we will close
+        the PDB document view by pressing &bdquo;Close&ldquo;. If we open PDB document view again, its state will be reset. Note here, that the context menu
+        does not appear this time, since the initial view was closed, and UGENE had to create a new view with the default parameters.
+    </p>
+    <p>
+        But it could become handy to save a view state. To do that, we right-click at the view item in the Bookmarks panel and select &bdquo;Add bookmark&ldquo;.
+        Two new sub-items have appeared. The current view state is saved in the &bdquo;New bookmark&ldquo; item. Now, let&#39;s make another adjustments to the
+        opened view, with the protein 3D structure, the panoramic view, let&#39;s also trigger the details view and the overview. Now we close the view again.
+        And then double-click at the &bdquo;Auto-saved&ldquo; bookmark item. As we can see, all the view adjustments were automatically saved.
+    </p>
+    <p>
+        By double-clicking at the &bdquo;New bookmark&ldquo; item we will bring up the first bookmarked view. But the most important thing is that if we now
+        save the current project, it will save all the views states from the bookmarks. We save the project, close the project and open the project again. It is
+        possible to unfold the bookmarks now and restore the saved view.
+    </p>
+    <h3>
+        Additional Materials<br/>
+    </h3>
+    <p>
+        <a href="https://doc.unipro.ru/wiki/display/UM{{site.ugene.doc_version}}/Using+Bookmarks" target="_blank">Documentation page</a>
+    </p>
+    <p>
+        <a href="https://www.youtube.com/watch?v=NV_sBaJ3EkI" target="_blank">Youtube video</a>
+    </p>
+</div>

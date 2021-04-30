@@ -39,52 +39,42 @@ title: Unipro UGENE - Интегрированные инструменты би
                 </div>
                 <div style="text-align: center;"></div>
                 <div class="download-button-block">
-                    <a href="/download.html">
+                    <a href="/ru/download.html">
                         <img alt="Загрузить UGENE" src="/assets/images/download_ugene_button.jpg" style="width: 149px; height: 40px;">
                     </a>
                 </div>
             </td>
             <td style="vertical-align: top; width: 380px;">
+                <script type='text/javascript' src='/assets/js/orangebox.min.js'></script>
                 <script type="text/javascript">
+                  window['orangebox_vars'] = {'addThis': '', 'showDots': '1'};
                   $(document).ready(function () {
-                    $().piroBox({
-                      my_speed: 300, //animation speed
-                      bg_alpha: 0.5, //background opacity
-                      slideShow: 'true', // true == slideshow on, false == slideshow off
-                      slideSpeed: 3, //slideshow
-                      close_all: '.piro_close' // add class .piro_overlay(with comma)if you want overlay click close piroBox
-                    });
-                    $('#first_image').fadeIn(3500);
-                    $('#container').fadeIn(3500);
+                    $('#first-gallery-image').fadeIn(3500);
+                    $('#gallery-container').fadeIn(3500);
                     $.getJSON('/assets/issues.json', function (data) {
                       $('#issues').replaceWith('<tr id="issues2"><td colspan="2"><div class="vertical_menu_text_block">' +
-                          '<a href=" https://ugene.dev/tracker/browse/' + data['issues'][0]['key'] + '">' +
+                          '<a href="https://ugene.dev/tracker/browse/' + data['issues'][0]['key'] + '">' +
                           '<b>' + data['issues'][0]['fields']['status']['name'] + ':</b> ' + data['issues'][0]['fields']['summary'] + '<small> [' + data['issues'][0]['key'] + ']</small>' +
                           '</a></div></td></tr>' +
                           '<tr><td colspan="2"><div class="vertical_menu_text_block">' +
-                          '<a href=" https://ugene.dev/tracker/browse/' + data['issues'][1]['key'] + '">' +
+                          '<a href="https://ugene.dev/tracker/browse/' + data['issues'][1]['key'] + '">' +
                           '<b>' + data['issues'][1]['fields']['status']['name'] + ':</b> ' + data['issues'][1]['fields']['summary'] + '<small> [' + data['issues'][1]['key'] + ']</small>' +
                           '</a></div></td></tr>');
                     });
                   });
-
                 </script>
 
                 <div style="width: 330px;">
-
-
-                    <a href="/assets/images/3dstruct.png" title="UGENE 3D Protein Structure Viewer. OS: Mac OS X"
-                       rel="lightbox[set_1]">
-
+                    <a href="/assets/images/3dstruct.png" title="UGENE 3D Protein Structure Viewer. OS: Mac OS X" rel="lightbox[set_1]">
                         <div style="position: relative">
-                            <div id="container" style="z-index: 1; position: absolute; display: none;"></div>
+                            <div id="gallery-container" style="z-index: 1; position: absolute; display: none;"></div>
                             <!-- START ripple-->
                             <script type="text/javascript" src="/assets/js/ripple.js"></script>
                             <script type="text/javascript">
-                              ripple('/assets/images/3dstruct_small.png', document.getElementById('container'));
+                              ripple('/assets/images/3dstruct_small.png', document.getElementById('gallery-container'));
                             </script>
                             <!-- END ripple -->
-                            <img id="first_image" src="/assets/images/3dstruct_small.png"
+                            <img id="first-gallery-image" src="/assets/images/3dstruct_small.png"
                                  style="display:none; z-index: 0; position: absolute;"/>
                         </div>
                     </a>
@@ -186,50 +176,38 @@ title: Unipro UGENE - Интегрированные инструменты би
                     </tr>
 
 
-                    <div class="post-4433 post type-post status-publish format-standard hentry category-podcast" id="post-4433">
-                        <tr>
-                            <td colspan="2">
-                                <div class="vertical_menu_text_block">
-                                    <a href="podcast.html#220321">Ep58: Что нового в UGENE 36, 37 и 38.</a>
+                    <tr>
+                        <td colspan="2">
+                            <div class="vertical_menu_text_block">
+                                <a href="podcast.html#220321">Ep58: Что нового в UGENE 36, 37 и 38.</a>
 
-                                    <br>
+                                <br>
 
-                                </div>
-                            </td>
-                        </tr>
-                    </div>
-
-
-                    <div class="post-4379 post type-post status-publish format-standard hentry category-podcast" id="post-4379">
-                        <tr>
-                            <td colspan="2">
-                                <div class="vertical_menu_text_block">
-                                    <a href="podcast.html#161220">Ep57: Что нового в UGENE 33, 34 и 35, часть 2.</a>
-
-                                    <br>
-
-                                </div>
-                            </td>
-                        </tr>
-                    </div>
+                            </div>
+                        </td>
+                    </tr>
 
 
                     <tr>
                         <td colspan="2">
+                            <div class="vertical_menu_text_block">
+                                <a href="podcast.html#161220">Ep57: Что нового в UGENE 33, 34 и 35, часть 2.</a>
 
+                                <br>
 
+                            </div>
                         </td>
-
                     </tr>
+
 
                     <!--    BOARD    -->
                     <tr>
                         <td class="vertical_menu_image ">
-                            <a href="http://ugene.unipro.ru/forum"><img src="/assets/images/board.png" alt="Discussion Board" border=0></a>
+                            <a href="http://forum.ugene.net/forum"><img src="/assets/images/board.png" alt="Discussion Board" border=0></a>
                         </td>
                         <td>
                             <div class="vertical_menu_block">
-                                <a href="http://ugene.unipro.ru/forum" style="color: #5b5209;text-decoration: none;"><span
+                                <a href="http://forum.ugene.net/forum" style="color: #5b5209;text-decoration: none;"><span
                                         class="vertical_menu_header_font">Форум</span></a>
                             </div>
                         </td>
@@ -238,14 +216,14 @@ title: Unipro UGENE - Интегрированные инструменты би
 
                     <tr>
                         <td colspan="2">
-                            <div class="vertical_menu_text_block"><a href="http://ugene.unipro.ru/forum/YaBB.pl?board=feature"><b>&gt;Feature Requests: </b></a><a
-                                    href="http://ugene.unipro.ru/forum/YaBB.pl?num=1436221012">Donate a little bit</a></div>
+                            <div class="vertical_menu_text_block"><a href="http://forum.ugene.net/forum/YaBB.pl?board=feature"><b>&gt;Feature Requests: </b></a><a
+                                    href="http://forum.ugene.net/forum/YaBB.pl?num=1436221012">Donate a little bit</a></div>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <div class="vertical_menu_text_block"><a href="http://ugene.unipro.ru/forum/YaBB.pl?board=feature"><b>&gt;Feature Requests: </b></a><a
-                                    href="http://ugene.unipro.ru/forum/YaBB.pl?num=1435921091">Re: DNA-Star file conversion</a></div>
+                            <div class="vertical_menu_text_block"><a href="http://forum.ugene.net/forum/YaBB.pl?board=feature"><b>&gt;Feature Requests: </b></a><a
+                                    href="http://forum.ugene.net/forum/YaBB.pl?num=1435921091">Re: DNA-Star file conversion</a></div>
                         </td>
                     </tr>
                     <!-- board list end ---> <!-- don`t remove this comment -->
@@ -253,11 +231,11 @@ title: Unipro UGENE - Интегрированные инструменты би
                     <!--    BUGS    -->
                     <tr>
                         <td class="vertical_menu_image ">
-                            <a href="http://ugene.dev/tracker"><img src="/assets/images/bugs.png" alt="Issues" border=0></a>
+                            <a href="https://ugene.dev/tracker"><img src="/assets/images/bugs.png" alt="Issues" border=0></a>
                         </td>
                         <td>
                             <div class="vertical_menu_block">
-                                <a href="http://ugene.dev/tracker" style="color: #1c414f;text-decoration: none;"><span
+                                <a href="https://ugene.dev/tracker" style="color: #1c414f;text-decoration: none;"><span
                                         class="vertical_menu_header_font">Задачи</span></a>
                             </div>
                         </td>
@@ -286,7 +264,7 @@ title: Unipro UGENE - Интегрированные инструменты би
                                                     <img border=0 height=40 src="/assets/images/GitHub.png"
                                                          style="filter: grayscale(100%);"/>
                                                 </a>
-                                                <div>
+                                            </div>
                                         </td>
                                     </tr>
                                 </table>
@@ -309,19 +287,18 @@ title: Unipro UGENE - Интегрированные инструменты би
                     <div class="ann_first_line">
                         <div class="ann_content" style="line-height: 18px;">
                             <p>
-                                Okonechnikov K,&nbsp;Golosova O,&nbsp;Fursov M,&nbsp;the UGENE team.&nbsp;<span style="color:#255060;"><b><a
-                                    href="http://bioinformatics.oxfordjournals.org/content/28/8/1166" target="_blank">Unipro UGENE: a unified bioinformatics toolkit</a></b>. <i><a
-                                    href="http://bioinformatics.oxfordjournals.org/"><span style="color:#255060;">Bioinformatics</span></a></i>&nbsp;</span>2012&nbsp;28:&nbsp;1166-1167.
-                                doi:10.1093/bioinformatics/bts091
+                                Okonechnikov K,&nbsp;Golosova O,&nbsp;Fursov M,&nbsp;the UGENE team.&nbsp;<span style="color:#255060;">
+                                <b>
+                                    <!--suppress HtmlUnknownTarget -->
+                                    <a href="{{site.ugene.static.cite_link}}" target="_blank">Unipro UGENE: a unified bioinformatics toolkit</a>
+                                </b>.
+                                <i><a href="http://bioinformatics.oxfordjournals.org/"><span style="color:#255060;">Bioinformatics</span></a></i>&nbsp</span>
+                                2012&nbsp;28:&nbsp;1166-1167. doi:10.1093/bioinformatics/bts091
                             </p>
 
-                            <p>
-                                <span style="color:#255060;"><i><o:p></o:p></i> </span>
-                            </p>
+                            <p></p>
 
-                            <p>
-                                &nbsp;
-                            </p>
+                            <p></p>
 
                             <p>
                                 Golosova&nbsp;O, Henderson&nbsp;R, Vaskin&nbsp;Y, Gabrielian&nbsp;A, Grekhov&nbsp;G, Nagarajan&nbsp;V, Oler&nbsp;AJ, Qui&ntilde;ones&nbsp;M,
@@ -347,12 +324,6 @@ title: Unipro UGENE - Интегрированные инструменты би
                         <table align="center" cellpadding="0" cellspacing="0px" class="social-icons" valign="top">
                             <tbody>
                             <tr>
-                                <td align="center" colspan="8">
-                                    <a class="content" href="mailto:ugene-news-subscribe@unipro.ru?Subject=Подписаться на рассылку UGENE">Подписаться на
-                                        рассылку</a>
-                                </td>
-                            </tr>
-                            <tr>
                                 <td>
                                     <p>
                                         <a href="http://vk.com/uniprougene" target="blank" title="Follow us on VKontakte"><img
@@ -362,19 +333,19 @@ title: Unipro UGENE - Интегрированные инструменты би
                                 <td>
                                     <p>
                                         <a href="https://www.facebook.com/groups/ugene/" target="blank" title="Follow us on Facebook"><img
-                                                src="/assets/images//fb.jpg"/></a>
+                                                src="/assets/images/fb.jpg"/></a>
                                     </p>
                                 </td>
                                 <td>
                                     <p>
-                                        <a href="https://www.youtube/uniprougene" target="blank" title="Follow us on Twitter"><img
-                                                src="/assets/images//tw.png"/></a>
+                                        <a href="https://twitter.com/uniprougene" target="blank" title="Follow us on Twitter"><img
+                                                src="/assets/images/tw.png"/></a>
                                     </p>
                                 </td>
                                 <td>
                                     <p>
                                         <a href="https://www.linkedin.com/profile/view?id=200543736&amp;trk=nav_responsive_tab_profile" target="blank"
-                                           title="Follow us on LinkedIn"><img src="/assets/images//ld.png"/></a>
+                                           title="Follow us on LinkedIn"><img src="/assets/images/ld.png"/></a>
                                     </p>
                                 </td>
                                 <td>
@@ -399,13 +370,13 @@ title: Unipro UGENE - Интегрированные инструменты би
             <td style="vertical-align: top;">
                 <div>
                     <div class="block-header">
-                        <span class="short_text" id="result_box" lang="ru"><span class="hps">Поддержка и услуги</span></span>
+                        <span class="short_text" id="result_box"><span class="hps">Поддержка и услуги</span></span>
                     </div>
 
                     <div>
                         <div class="sup_content">
                             <p>
-                                Не стесняйтесь обращаться к нам, если вам нужна <a class="content" href="ru/support.html">техническая поддержка</a>.
+                                Не стесняйтесь обращаться к нам, если вам нужна <a href="/ru/support.html">техническая поддержка</a>.
                             </p>
 
                             <div class="sup_header">
@@ -414,17 +385,17 @@ title: Unipro UGENE - Интегрированные инструменты би
 
                             <ul>
                                 <li>
-                                    Просмотр <a class="content" href="/ru/podcast.html">обучающих видео</a>
+                                    Просмотр <a href="/ru/podcast.html">обучающих видео</a>
                                 </li>
                                 <li>
-                                    Обсуждение UGENE на <a class="content" href="http://ugene.unipro.ru/forum/">общественном форуме</a>
+                                    Обсуждение UGENE на <a href="http://forum.ugene.net/forum/">общественном форуме</a>
                                 </li>
                                 <li>
-                                    Сообщайте о дефектах в <a class="content" href="https://ugene.dev/tracker/secure/Dashboard.jspa">баг-трекинговой
+                                    Сообщайте о дефектах в <a href="https://ugene.dev/tracker/secure/Dashboard.jspa">баг-трекинговой
                                     системе</a>
                                 </li>
                                 <li>
-                                    <script>hide_email_from_robots('Напишите нам ');</script>&mdash; любая обратная связь важна
+                                    <a href="mailto:ugene@unipro.ru">Напишите нам</a> &mdash; любая обратная связь важна
                                 </li>
                             </ul>
 
@@ -447,7 +418,7 @@ title: Unipro UGENE - Интегрированные инструменты би
                             </ul>
 
                             <div style="margin-left: 20px; margin-top: 10px;">
-                                <script>hide_email_from_robots3('Напишите нам');</script>&nbsp; чтобы получить больше информации.
+                                <a href="mailto:ugene@unipro.ru">Напишите нам</a>, чтобы получить больше информации.
                             </div>
                         </div>
                     </div>

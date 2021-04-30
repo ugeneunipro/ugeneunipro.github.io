@@ -1,0 +1,72 @@
+---
+layout: page_en
+title: DNA reverse complement and find repeats - Unipro UGENE
+---
+
+<div class="learn-page">
+    <h1>
+        UGENE Mini-Tutorials: DNA Reverse Complement,&nbsp;Find Repeats and More<br/>
+    </h1>
+    <h3>
+        How to get a DNA reverse complement sequence<br/>
+    </h3>
+    <p>
+        <img loading="lazy" src="/assets/images/learn/71.jpg"/>
+    </p>
+    <p> UGENE Workflow Designer is a very effective and convenient system for running calculations with whole datasets, not only with a single sequence or
+        alignment. For example, you can use it for getting DNA reverse complement sequences for a set of input sequences. You can do it with the command line
+        interface of your operating system or with the UGENE Workflow Designer interface.</p>
+    <p> I. Command line interface:</p>
+    <code> ugene &ndash;task=revcompl &ndash;in= &ndash;out= </code>
+    <p>
+        The default output file format is FASTA, but you can change it with the parameter &ndash;format (e.g. &ndash;format=genbank).
+    </p>
+    <p> In addition, the parameter &ndash;type lets you choose the type of result: reverse complement dna sequence, just reverse ones, or just complement ones.
+        Open the help for the whole list of opportunities:</p>
+    <code> ugene &ndash;help=revcompl</code>
+    <p> II. UGENE Workflow Designer:</p>
+    <p> a. Open the file &ldquo;data/cmdline/revcompl.uwl&rdquo; from the UGENE installation directory.</p>
+    <p> b. Click the &ldquo;Read Sequence&rdquo; element and choose the input files.</p>
+    <p> c. Click the &ldquo;Write Sequence&rdquo; element and choose the output file name.</p>
+    <p> d. Run the workflow.</p>
+    <p> Here is the documentation page about running <a
+            href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Reverse-Complement+Converting+Sequences" target="_blank">this
+        task</a>.
+    <h3>
+        How to find repeats for a set of sequences<br/>
+    </h3>
+    <p>
+        <img loading="lazy" alt="How to find repeats for a set of sequences" src="/assets/images/learn/82.jpg"/></p>
+    <p> If you need to find repeats in each sequence of a set of sequences, you can use UGENE Workflow Designer to automate your work:</p>
+    <p> 1. Open the file &ldquo;data/cmdline/find-repeats.uwl&rdquo; from the UGENE installation directory.</p>
+    <p> 2. Click the &ldquo;Read Sequence&rdquo; element and choose files with the input sequences.</p>
+    <p> 3. Click the &ldquo;Find Repeats&rdquo; element and set the options of the repeats search algorithm.</p>
+    <p> 4. Click the &ldquo;Write Sequence&rdquo; element and choose the output file name.</p>
+    <p> 5. Run the workflow.</p>
+    <p> The output file will contain all input sequences annotated by the found repeats regions.</p>
+    <p> The same thing can be done with the command line interface:</p>
+    <code> ugene &ndash;task=find-repeats &ndash;in= &ndash;out= </code>
+    <p>
+        Open the help for the whole list of options:&nbsp;
+    </p>
+    <code> ugene &#8211;help=find-repeats</code>
+    <p> or find them in the corresponding <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Finding+Repeats" target="_blank">documentation
+        page</a>.</p>
+    <h3>
+        How to create a multi sequence alignment from a set of sequences in a Multi-FASTA file<br/>
+    </h3>
+    <p>
+        <img loading="lazy" alt="How to create a multi sequence alignment from a set of sequences in a Multi-FASTA file" src="/assets/images/learn/91.jpg"/>
+    </p>
+    <p> If you want to create a multi sequence alignment from a set of sequences stored in a Multi-FASTA file, you can use UGENE Workflow Designer and the
+        embedded MUSCLE algorithm:</p>
+    <p> 1. Open UGENE Workflow Designer.</p>
+    <p> 2. Click the &ldquo;Samples&rdquo; tab and choose &laquo;Align sequences with MUSCLE&raquo;.</p>
+    <p> 3. Click the magic wand button for opening the workflow wizard.</p>
+    <p> 4. Add a file with input sequences. For example, it can be in the Multi-FASTA format &#8211; a fasta sequence alignment file.</p>
+    <p> 5. Click &ldquo;Next&rdquo; and &ldquo;Run&rdquo; buttons.</p>
+    <p> After the workflow is finished, you will get the result file &ldquo;muscle_alignment.aln&rdquo; with the multiple sequence alignment with sequences from
+        the original fasta sequence alignment.</p>
+    <p> This feature is also available from the UGENE command line interface:</p>
+    <code> ugene &ndash;task=align &ndash;in= &ndash;out=</code>
+</div>

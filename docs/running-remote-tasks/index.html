@@ -1,0 +1,52 @@
+---
+layout: page_en
+title: Running Remote Tasks - Unipro UGENE
+---
+
+<div class="learn-page">
+    <h1>
+        Tutorial: Running Remote Tasks in UGENE<br/>
+    </h1>
+    <p>
+        <img loading="lazy" alt="remote tasks" src="/assets/images/learn/8.png"/>
+    </p>
+    <p> Here we discuss the most popular topics introduced by our users and show the helpful ways of using UGENE, a free cross-platform genome analysis suite.
+    </p>
+    <p>
+        Distributed computing is a good thing. It helps to run large tasks times faster. In UGENE, you can run remote tasks and perform distributed computing of
+        the appropriate tasks. Back in the podcast we&#39;ve mentioned possibility of remote MUSCLE run. Let&#39;s make it.
+    </p>
+    <p>
+        Open a CLUSTAL file, containing an alignment. We can choose this file <i>"COI.aln"</i> from UGENE sample files. Click anywhere at
+        the alignment editor view and activate &bdquo;Align&ldquo;, &bdquo;Align with MUSCLE&ldquo;. We&#39;re interested in pressing &bdquo;Remote run…&ldquo;
+        button now.
+    </p>
+    <p>
+        The appeared dialog box suggests us to specify the remote machines to run our task on. We have options to add specific remote machine ID by pressing
+        &bdquo;Add&ldquo;, scan local network for UGENE-running machines or use UGENE public machines. I have a few machines from my network that run UGENE
+        here, so let&#39;s scan the network.
+        In the appeared dialog box we can choose a protocol to scan machines with and see the machines available by that protocol. We choose machines
+        by checking their radio buttons. When done, press &bdquo;Add selected&ldquo;.
+    </p>
+    <p>
+        The selected machine is represented with a table row. We can unfold it by pressing the &bdquo;+&ldquo;-icon from the first table column to look at the
+        available remote tasks. The machine supports Muscle3, and that&#39;s what we need. Let&#39;s choose it by checking its radio button and finally run the
+        align.
+    </p>
+    <p>
+        The status line indicates that our task is running. When it&#39;s done, a report becomes available that&#39;s represented at the right part of the
+        status line. Double click opens it. We see, that the &bdquo;Muscle align on remote machine&ldquo; task is finished at 100%. The alignment is done.
+    </p>
+    <p>
+        Please comment our videos and post requests to our <a href="https://forum.ugene.net/forum/" target="_blank">forum</a>.
+    </p>
+    <h3>
+        Additional Materials<br/>
+    </h3>
+    <p>
+        <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Remote+BLAST" target="_blank">Documentation page</a>
+    </p>
+    <p>
+        <a href="https://www.youtube.com/watch?v=FmSsKqpT9bE" target="_blank">Youtube video</a>
+    </p>
+</div>

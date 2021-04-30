@@ -1,0 +1,60 @@
+---
+layout: page_en
+title: NCBI BLAST Search - Unipro UGENE
+---
+
+<div class="learn-page">
+
+    <h1>
+        Tutorial: NCBI BLAST Search Feature of UGENE Workflow Designer.<br/>
+    </h1>
+    <p>
+        <img loading="lazy" alt="BLAST Search pipeline" src="/assets/images/learn/33.png"/></p>
+    <p> BLAST search against NCBI probably one of the most popular features in bioinformatics. There are many services, including NCBI itself for BLAST search.
+        This tutorial presents the UGENE version of BLAST search. If you have multiple sequences to do a BLAST search probably you do not want to check them one
+        by one. If you want to do a BLAST search for multiple sequences in a batch this tutorial might help you.&nbsp;
+    </p>
+    <h3>
+        UGENE Concepts<br/>
+    </h3>
+    <p>
+        There are a few UGENE concepts them you need to understand to do UGENE BLAST smoothly. If you are familiar with them, just skip this section.&nbsp;</p>
+    <p> 1. UGENE BLAST results are represented as annotations on a sequence. So what you will get as a result of your BLAST search is an original sequence with
+        similar BLAST regions that are saved a annotations. There is a way to see the original BLAST parameters and sequences and download the sequence using
+        the qualifiers of an annotation.</p>
+    <p> 2. UGENE Workflow Designer allows you to do batch processing. You create a computational scheme that applies the same task to multiple datasets. If you
+        create a scheme with a BLAST element it will apply the BLAST search to as many input sequences as you specify. The description of such a scheme is
+        below.
+    </p>
+    <h3>
+        Remote BLAST in Workflow Designer<br/>
+    </h3>
+    <p>
+        UGENE Workflow Designer provides the ready-to-use sample for running NCBI BLAST search. Open Workflow Designer and find the &ldquo;Remote BLASTing&rdquo;
+        sample. This sample has a wizard that makes adjusting of the workflow more easy and comfortable. We will describe the wizard windows further.
+    </p>
+    <p>
+        You can add several nucleotide sequences as an input of the workflow and each sequence will be processed separately.
+    </p>
+    <p>
+        Remote NCBI BLAST search has a set of parameters available in the second page of the wizard. For example, you can change the maximum number of results
+        for all input sequences or switch off the &ldquo;Megablast&rdquo; option for making the search process more thorough. Note when you run the scheme, the
+        remote BLAST element will make a call to NCBI service for each sequence. So you need an Internet connection for that workflow.
+    </p>
+    <p>
+        The result file names will be generated automatically.
+    </p>
+    <p>
+        For each input sequence UGENE creates a directory with two files: a file with the original sequence annotated with found BLAST results; and a file with
+        the target BLAST alignments. The names of the directories are the same as the names of the files with the input sequences.
+    </p>
+    <p>
+        Click a file link to open the file with UGENE. You can see the resulting sequences with BLAST annotations now.
+    </p>
+    <h3>
+        Additional Materials<br/>
+    </h3>
+    <p>
+        <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/BLAST" target="_blank">Documentation page</a>
+    </p>
+</div>

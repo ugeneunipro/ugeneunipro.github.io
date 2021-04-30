@@ -1,0 +1,51 @@
+---
+layout: page_en
+title: Profile-to-Profile MUSCLE Alignment - Unipro UGENE
+---
+
+<div class="learn-page">
+    <h1>
+        Tutorial:&nbsp;Performing profile-to-profile and profile-to-sequence MUSCLE alignments<br/>
+    </h1>
+    <p>
+        <img loading="lazy" alt="profile-to-profile muscle" src="/assets/images/learn/18.png"/>
+    </p>
+    <p> Our users can use powerful MUSCLE alignment tool in order to create Multiple Sequence Alignment. But it is also possible to align two
+        existing alignments in UGENE, which is also called &bdquo;profile-profile alignment&ldquo;. The operation could be useful for alignments
+        of related sequences and will only insert gap columns into the profiles, thus saving the source alignments. Today we will consider this
+        use case, and one more.
+    </p>
+    <p>
+        For now, let&#39;s open a MUSCLE alignment. We will copy this document to apply another feature to it later, by right-clicking on the
+        document object item and selecting the &bdquo;Save a copy&ldquo; menu item.
+    </p>
+    <p>
+        To align two profiles, we right-click and activate the context menu, and then select &bdquo;Analyse&ldquo;, &bdquo;Align profile to
+        profile with MUSCLE&ldquo; to use MUSCLE sequence alignment tool. In the opened dialog box we select a profile to align. The alignment
+        is done, and we see that there are two gap columns inserted into the first profile, and two gap columns inserted into the second one.
+        Therefore the profiles columns kept intact and the alignments haven&#39;t been changed. And there&#39;s another option besides aligning
+        two profiles: it&#39;s aligning a set of unaligned sequences to an existing profile. In this mode every sequence from input file is
+        aligned to the active profile separately and is merged to the result alignment only after all sequences are processed. The sequence
+        processing order doesn't affect the resulting profile since all the sequences are treated separately. This feature is new for MUSCLE
+        sequence aligner users and is available for UGENE users
+    </p>
+    <p>
+        Let&#39;s activate the saved copy view. We bring up the context menu and select &bdquo;Analyse&ldquo;, &bdquo;Align sequences to profile
+        with MUSCLE&ldquo;. In the opened dialog box we can select a set of sequences to align or a profile to use as a set of sequences for the
+        sequence aligner. In the latter case all the gap characters from the profile will be ignored. Let&#39;s select the same profile we used
+        earlier as a set of sequences. To explore the CLUSTALW-format files we select the corresponding files type. The alignment is done.
+        Again, the source profile is only filled with gap columns and is saved. But the selected alignment was realigned since its every
+        sequence was treated separately. We can switch between the views and thus see the difference between the &bdquo;profile-profile&ldquo;
+        alignment and the &bdquo;sequence-to-profile&ldquo; alignment.
+    </p>
+    <h3>
+        Additional Materials<br/>
+    </h3>
+    <p>
+        <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/MUSCLE+Aligning" target="_blank">Documentation page</a>
+    </p>
+    <p>
+        <a href="https://www.youtube.com/watch?v=AYECTzDuibg" target="_blank">Youtube video</a>
+    </p>
+</div>
+

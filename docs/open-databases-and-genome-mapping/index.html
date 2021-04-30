@@ -1,0 +1,71 @@
+---
+layout: page_en
+title: Open Databases and Genome Mapping - Unipro UGENE
+---
+
+<div class="learn-page">
+    <h1>
+        UGENE Mini-Tutorials: Open Databases, Genome Mapping and More<br/>
+    </h1>
+    <h3>
+        Separate a set of primer sequences<br/>
+    </h3>
+    <p>
+        <img loading="lazy" alt="Separate a set of primer sequences" src="/assets/images/learn/132.jpg"
+        /></p>
+    <p> How to separate a set of primer sequences into compatible groups?</p>
+    <p> If you want to do a set of PCR reactions for amplifying of several sequences (e.g. for extracting of a set of genes), you can save your time and money
+        doing several PCR reactions in one experiment. However, some pairs of primers could be incompatible forming dimers. UGENE Workflow Designer can help you
+        with separating the primers into compatible groups.</p>
+    <p> Open Workflow Designer and use the predefined sample &ldquo;Group primer pairs&rdquo;. The input data of this workflow is a file with primer pairs (e.g.
+        in the Multi-FASTA format): direct primer of pair 1, reverse primer of pair 1, direct primer of pair 2&hellip;</p>
+    <p> The result of the workflow is the report file &ndash; a table with the groups of primer sequences. Each couple of primers in a group does not form a
+        dimer.
+    </p>
+    <h3>
+        Download data from open databases<br/>
+    </h3>
+    <p>
+        <br/>
+        How to download data from open databases via the command-line interface?</p>
+    <p> The UGENE command-line interface provides a set of ready-to-use solutions for different bioinformatics tasks. One of the tasks is getting data from the
+        open databases like NCBI GenBank, PDB, Swiss-Prot, etc.</p>
+    <p> If you want to download data, run the following command:</p>
+    <code> ugene -task=fetch-sequence -db=database-id=&lt;;-separated list of identifiers&gt;</code>
+    <p> The available databases are NCBI GenBank (DNA), NCBI GenBank (Protein), PDB, Swiss-Prot, UniProt.</p>
+    <p> For instance, run this command for downloading two nucleic sequences NC_001363 and D11266 from the NCBI GenBank database:</p>
+    <p> ugene &#8211;task=fetch-sequence &#8211;db=genbank &#8211;id=NC_001363;D11266</p>
+    <p> After that the data will be downloaded and saved in the current directory. For saving the data in a directory you want, use the parameter
+        -save-dir=path.
+    </p>
+    <p> Here you can find the documentation about <a
+            href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Fetching+Sequences+from+Remote+Database" target="_blank">this solution</a>.
+    </p>
+    <h3>
+        Genome mapping<br/>
+    </h3>
+    <p>
+        <img loading="lazy" alt="Download data from open databases" src="/assets/images/learn/151.jpg"/>
+    </p>
+    <p> How to get a good genome mapping (alignment) from raw NGS data?</p>
+    <p> At first glance, elementary analysis of sequencing data (short-reads genome mapping) is simple. But if you just map short-reads to a reference sequence
+        using one of the mapping tools (e.g. Bowtie or BWA), it wouldn't be enough. If you want to get an alignment of good quality, you have to
+        preprocess the short-reads, filtering them and trimming their low-quality ends, and filter the mapped and unmapped short-reads.</p>
+    <p> UGENE Workflow Designer provides a ready-to-use NGS pipeline for managing the whole cycle of raw Illumina sequencing data processing. This workflow
+        includes:</p>
+    <p> 1. Filtering of short-reads by the CASAVA header.</p>
+    <p> 2. Trimming of the low-quality ends of the short-reads.</p>
+    <p> 3. Mapping of the short-reads to a reference sequence using BWA-MEM.</p>
+    <p> 4. Filtering of the mapped short-reads using SAMtools.</p>
+    <p> For running the workflow:</p>
+    <p> 1. Open Workflow Designer and double click the &ldquo;Raw DNA-seq processing&rdquo; sample in the &ldquo;NGS&rdquo; category of the &ldquo;Samples&rdquo;
+        tab.</p>
+    <p> 2. If your data are paired short-reads, choose the &ldquo;Paired tags&rdquo; item. Otherwise, choose &ldquo;Single tags&rdquo;. Then click the &ldquo;Setup&rdquo;
+        button.</p>
+    <p> 3. Now you see the workflow wizard. Following the wizard&rsquo;s pages, you can set up the workflow parameters: input files with short-reads and a
+        reference sequence, filtration thresholds, results filtration ways, etc.</p>
+    <p> Finally, you will get the NGS pipeline that is ready for analysis of your data. The result of the workflow is a set of files produced in each step of
+        the process. The last file is the target good mapping.</p>
+    <p> Here you can find the corresponding documentation about <a
+            href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Raw+DNA-Seq+Processing" target="_blank">this workflow</a>.</p>
+</div>
