@@ -27,7 +27,11 @@ layout: page_en
   checkRedirectByPathPrefix('tracker', 'ugene.dev');
 
   if (!isRedirected) {
-    document.getElementById('block-404').style.visibility = 'visible';
+    if (window.location.pathname === '/download-all_html') {
+      window.location = 'https://ugene.net/download-all.html#full-packages';
+    } else {
+      document.getElementById('block-404').style.visibility = 'visible';
+    }
   }
 
 </script>
