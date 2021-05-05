@@ -92,7 +92,7 @@
       macos: '{{site.ugene.download_link_ugene_latest_mac_x86_64_portable}}'
     },
     bit64: {
-      windows: 'http://archive.ugene.net/downloads/installer_windows_x64.exe',
+      windows: '{{site.ugene.download_link_ugene_latest_win_x86_64_portable}}',
       linux: '{{site.ugene.download_link_ugene_latest_linux_x86_64_portable}}',
       macos: '{{site.ugene.download_link_ugene_latest_mac_x86_64_portable}}'
     },
