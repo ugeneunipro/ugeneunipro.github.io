@@ -53,11 +53,11 @@ title: Unipro UGENE - Интегрированные инструменты би
                     $('#gallery-container').fadeIn(3500);
                     $.getJSON('/assets/issues.json', function (data) {
                       $('#issues').replaceWith('<tr id="issues2"><td colspan="2"><div class="vertical_menu_text_block">' +
-                          '<a href="https://ugene.dev/tracker/browse/' + data['issues'][0]['key'] + '">' +
+                          '<a href="https://ugene.dev/tracker/browse/' + data['issues'][0]['key'] + '" target="blank">' +
                           '<b>' + data['issues'][0]['fields']['status']['name'] + ':</b> ' + data['issues'][0]['fields']['summary'] + '<small> [' + data['issues'][0]['key'] + ']</small>' +
                           '</a></div></td></tr>' +
                           '<tr><td colspan="2"><div class="vertical_menu_text_block">' +
-                          '<a href="https://ugene.dev/tracker/browse/' + data['issues'][1]['key'] + '">' +
+                          '<a href="https://ugene.dev/tracker/browse/' + data['issues'][1]['key'] + '" target="blank">' +
                           '<b>' + data['issues'][1]['fields']['status']['name'] + ':</b> ' + data['issues'][1]['fields']['summary'] + '<small> [' + data['issues'][1]['key'] + ']</small>' +
                           '</a></div></td></tr>');
                     });
@@ -203,11 +203,11 @@ title: Unipro UGENE - Интегрированные инструменты би
                     <!--    BOARD    -->
                     <tr>
                         <td class="vertical_menu_image ">
-                            <a href="https://forum.ugene.net/forum/"><img src="/assets/images/board.png" alt="Discussion Board" border=0></a>
+                            <a href="https://forum.ugene.net/forum/" target="blank"><img src="/assets/images/board.png" alt="Discussion Board" border=0></a>
                         </td>
                         <td>
                             <div class="vertical_menu_block">
-                                <a href="https://forum.ugene.net/forum/" style="color: #5b5209;text-decoration: none;"><span
+                                <a href="https://forum.ugene.net/forum/" target="blank" style="color: #5b5209;text-decoration: none;"><span
                                         class="vertical_menu_header_font">Форум</span></a>
                             </div>
                         </td>
@@ -233,11 +233,11 @@ title: Unipro UGENE - Интегрированные инструменты би
                     <!--    BUGS    -->
                     <tr>
                         <td class="vertical_menu_image ">
-                            <a href="https://ugene.dev/tracker"><img src="/assets/images/bugs.png" alt="Issues" border=0></a>
+                            <a href="https://ugene.dev/tracker" target="blank"><img src="/assets/images/bugs.png" alt="Issues" border=0></a>
                         </td>
                         <td>
                             <div class="vertical_menu_block">
-                                <a href="https://ugene.dev/tracker" style="color: #1c414f;text-decoration: none;"><span
+                                <a href="https://ugene.dev/tracker" target="blank" style="color: #1c414f;text-decoration: none;"><span
                                         class="vertical_menu_header_font">Задачи</span></a>
                             </div>
                         </td>
@@ -262,7 +262,7 @@ title: Unipro UGENE - Интегрированные инструменты би
                                                 </a>
                                             </div>
                                             <div style="margin-top: 10px;">
-                                                <a href="https://github.com/ugeneunipro/ugene" alt="GitHub Logo" title="UGENE on GitHub">
+                                                <a href="https://github.com/ugeneunipro/ugene" target="blank" alt="GitHub Logo" title="UGENE on GitHub">
                                                     <img border=0 height=40 src="/assets/images/GitHub.png"
                                                          style="filter: grayscale(100%);"/>
                                                 </a>
@@ -294,7 +294,7 @@ title: Unipro UGENE - Интегрированные инструменты би
                                     <!--suppress HtmlUnknownTarget -->
                                     <a href="{{site.ugene.static.cite_link}}" target="_blank">Unipro UGENE: a unified bioinformatics toolkit</a>
                                 </b>.
-                                <i><a href="http://bioinformatics.oxfordjournals.org/"><span style="color:#255060;">Bioinformatics</span></a></i>&nbsp</span>
+                                <i><a href="http://bioinformatics.oxfordjournals.org/" target="blank"><span style="color:#255060;">Bioinformatics</span></a></i>&nbsp</span>
                                 2012&nbsp;28:&nbsp;1166-1167. doi:10.1093/bioinformatics/bts091
                             </p>
 
@@ -306,13 +306,13 @@ title: Unipro UGENE - Интегрированные инструменты би
                                 Golosova&nbsp;O, Henderson&nbsp;R, Vaskin&nbsp;Y, Gabrielian&nbsp;A, Grekhov&nbsp;G, Nagarajan&nbsp;V, Oler&nbsp;AJ, Qui&ntilde;ones&nbsp;M,
                                 Hurt&nbsp;D, Fursov&nbsp;M, Huyen&nbsp;Y. <span style="color:#255060;"><a href="https://peerj.com/articles/644/"
                                                                                                           target="_blank"><b>Unipro UGENE NGS pipelines and components for variant calling, RNA-seq and ChIP-seq data analyses</b></a></span>.
-                                <i><a href="https://peerj.com"><span style="color:#255060;">PeerJ</span></a>&nbsp;2014&nbsp;</i>2:e644. doi:10.7717/peerj.644
+                                <i><a href="https://peerj.com" target="blank"><span style="color:#255060;">PeerJ</span></a>&nbsp;2014&nbsp;</i>2:e644. doi:10.7717/peerj.644
                             </p>
                             <p>&nbsp;</p>
                             <p>Rose&nbsp;R, Golosova&nbsp;O, Sukhomlinov&nbsp;D, Tiunov&nbsp;A, Prosperi&nbsp;M. <span style="color:#255060;"><a
                                     href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty901/5144668?guestAccessKey=f3c08511-c32d-43ad-b9cf-daeb772b1c0e"
                                     target="_blank"><b>Flexible design of multiple metagenomics classification pipelines with UGENE</b></a></span>. <i><a
-                                    href="https://academic.oup.com/bioinformatics"><span style="color:#255060;">Bioinformatics</span></a></i>, bty901,
+                                    href="https://academic.oup.com/bioinformatics" target="blank"><span style="color:#255060;">Bioinformatics</span></a></i>, bty901,
                                 2018/10/25. doi:10.1093/bioinformatics/bty901
                             </p>
                         </div>
@@ -390,7 +390,7 @@ title: Unipro UGENE - Интегрированные инструменты би
                                     Просмотр <a href="/ru/podcast.html">обучающих видео</a>
                                 </li>
                                 <li>
-                                    Обсуждение UGENE на <a href="https://forum.ugene.net/forum/">общественном форуме</a>
+                                    Обсуждение UGENE на <a href="https://forum.ugene.net/forum/" target="blank">общественном форуме</a>
                                 </li>
                                 <li>
                                     Сообщайте о дефектах в <a href="https://ugene.dev/tracker/secure/Dashboard.jspa" target="_blank">баг-трекинговой
