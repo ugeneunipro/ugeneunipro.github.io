@@ -29,6 +29,8 @@ layout: page_en
   if (!isRedirected) {
     if (window.location.pathname === '/download-all_html') {
       window.location = window.location.protocol + '//ugene.net/download-all.html#full-packages';
+    } else if (window.location.pathname === '/ru/download-all_html') {
+      window.location = window.location.protocol + '//ugene.net/ru/download-all.html#full-packages';
     } else {
       document.getElementById('block-404').style.visibility = 'visible';
     }
