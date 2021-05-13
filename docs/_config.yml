@@ -8,8 +8,8 @@ plugins:
 # UGENE variables
 ugene:
   release_version: "38.1"
-  release_date_MMM_YYYY_ru: "Март, {{current_year}}"
-  release_date_MMM_YYYY_en: "March, {{current_year}}"
+  release_date_MMM_YYYY_ru: "Март,2021"
+  release_date_MMM_YYYY_en: "March, 2021"
   doc_version: "38"
   # Download links
   download_link_ugene_latest_linux_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/38.1/ugene-38.1-linux-x86-64.tar.gz"
