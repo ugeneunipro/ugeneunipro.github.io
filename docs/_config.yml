@@ -7,7 +7,7 @@ plugins:
 
 # UGENE variables
 ugene:
-  release_version: "39"
+  release_version: "39.0"
   release_date_MMM_YYYY_ru: "Июнь, 2021"
   release_date_MMM_YYYY_en: "June, 2021"
   doc_version: ""
