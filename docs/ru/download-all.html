@@ -6,38 +6,16 @@ title: Скачать UGENE и компоненты - Unipro UGENE
 <div class="download-page">
     <h2>Скачать UGENE и компоненты</h2>
     <div class="download_page_main">
-        <div style="margin-bottom: 32px;">Текущая версия UGENE: <b>38.1</b> (Март, 2021). См. <a href="/ru/changelist.html">краткое
+        <div style="margin-bottom: 32px;">Текущая версия UGENE: <b>{{site.ugene.release_version}}</b> ({{site.ugene.release_date_MMM_YYYY_ru}}). См. <a href="/ru/changelist.html">краткое
             описание новой версии</a>.
         </div>
         <div>
-            <h3 class="general_content">Онлайн-инсталляция</h3>
+            <h3 class="general_content" id="full-packages">Пакеты UGENE</h3>
             <div class="general_content">Выберите пакет для вашей операционной системы:</div>
             <ul class="general_content">
                 <li>
                     <!--suppress HtmlUnknownTarget -->
-                    <a href={{site.ugene.download_link_ugene_installer_win}}">UGENE онлайн-инсталлятор для Windows 64-бит</a>
-                </li>
-                <li>
-                    <!--suppress HtmlUnknownTarget -->
-                    <a href="{{site.ugene.download_link_ugene_installer_linux}}">UGENE онлайн-инсталлятор для Linux 64-бит</a>
-                </li>
-                <li>
-                    <!--suppress HtmlUnknownTarget -->
-                    <a href="{{site.ugene.download_link_ugene_installer_mac}}">UGENE онлайн-инсталлятор для macOS</a>
-                </li>
-            </ul>
-            <div class="general_content">См. также
-                <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Download+and+Installation" target="_blank">
-                    инструкцию по установке пакетов
-                </a> (на английском языке).
-            </div>
-            <h3 class="general_content">Офлайн-инсталляция UGENE</h3>
-            <div class="general_content">Данные пакеты подходят для офлайн-установки UGENE.</div>
-            <div class="general_content">Выберите пакет для вашей операционной системы:</div>
-            <ul class="general_content">
-                <li>
-                    <!--suppress HtmlUnknownTarget -->
-                    <a href="{{site.ugene.download_link_ugene_latest_win_x86_64}}">UGENE офлайн-инсталлятор для Windows 64-бит</a>
+                    <a href="{{site.ugene.download_link_ugene_latest_win_x86_64}}">UGENE инсталлятор для Windows 64-бит</a>
                 </li>
                 <li>
                     <!--suppress HtmlUnknownTarget -->
@@ -49,7 +27,7 @@ title: Скачать UGENE и компоненты - Unipro UGENE
                 </li>
                 <li>
                     <!--suppress HtmlUnknownTarget -->
-                    <a href="{{site.ugene.download_link_ugene_latest_mac_x86_64_portable}}">UGENE офлайн-инсталлятор для macOS</a>
+                    <a href="{{site.ugene.download_link_ugene_latest_mac_x86_64_portable}}">UGENE инсталлятор для macOS</a>
                 </li>
             </ul>
             <h3 id="en_reference_data_ngs" class="general_content">Референсные данные для NGS</h3>
@@ -85,7 +63,7 @@ title: Скачать UGENE и компоненты - Unipro UGENE
             </ul>
             <h3 class="general_content">Исходный код</h3>
             <div class="general_content">UGENE является свободным программным обеспечением, распространяемым с лицензией GNU GPL v2. Исходный код доступен
-                <a href="https://github.com/ugeneunipro">на GitHub</a>.
+                <a href="https://github.com/ugeneunipro" target="_blank">на GitHub</a>.
             </div>
             <h3 class="general_content">Старые пакеты UGENE</h3>
             <div class="general_content">До версии UGENE 34 выпускались следующие типы пакетов:</div>
@@ -118,7 +96,7 @@ title: Скачать UGENE и компоненты - Unipro UGENE
                 </tr>
                 <tr>
                     <td>Windows 7+ (64-бит)<br/>Оффлайн-инсталлятор</td>
-                    <td><a href="http://ugene.net/downloads/packages/33.0/ugene-33.0-win-x86-64-full.exe">Скачать вер.33</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-33.0-win-x86-64-full.exe">Скачать вер.33</a></td>
                     <td class="obsolete_data">Отсутствует</td>
                 </tr>
                 <tr>
@@ -133,7 +111,7 @@ title: Скачать UGENE и компоненты - Unipro UGENE
                 </tr>
                 <tr>
                     <td>Windows 7+ (32-бит)<br/>Zip-архив</td>
-                    <td><a href="http://ugene.net/downloads/packages/33.0/ugene-33.0-win-x86-portable-full.zip">Скачать вер.33</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-33.0-win-x86-portable-full.zip">Скачать вер.33</a></td>
                     <td class="obsolete_data">Отсутствует</td>
                 </tr>
                 <tr>
@@ -155,12 +133,12 @@ title: Скачать UGENE и компоненты - Unipro UGENE
                 </tr>
                 <tr>
                     <td>Linux (64-bit)<br/>TAR.GZ-архив</td>
-                    <td><a href="http://ugene.net/downloads/packages/33.0/ugene-33.0-x86-64-full.tar.gz">Скачать вер.33</a></td>
-                    <td><a href="http://ugene.net/downloads/packages/33.0/ugene-33.0-x86-64-NGS.tar.gz">Скачать вер.33</a></td>
+                    <td><a href="http://archive.ugene.net/downloads/packages/33.0/ugene-33.0-x86-64-full.tar.gz">Скачать вер.33</a></td>
+                    <td><a href="http://archive.ugene.net/downloads/packages/33.0/ugene-33.0-x86-64-NGS.tar.gz">Скачать вер.33</a></td>
                 </tr>
                 <tr>
                     <td>Linux (32-bit)<br/>TAR.GZ-архив</td>
-                    <td><a href="http://ugene.net/downloads/packages/33.0/ugene-33.0-x86-full.tar.gz">Скачать вер.33</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-33.0-x86-full.tar.gz">Скачать вер.33</a></td>
                     <td class="obsolete_data">Отсутствует</td>
                 </tr>
                 </tbody>
@@ -176,8 +154,8 @@ title: Скачать UGENE и компоненты - Unipro UGENE
                 </tr>
                 <tr>
                     <td>macOS 10.7+ (64-бит)<br/>DMG-архив</td>
-                    <td><a href="http://ugene.net/downloads/packages/33.0/ugene-33.0-mac-x86-64-full.dmg">Скачать вер.33</a></td>
-                    <td><a href="http://ugene.net/downloads/packages/33.0/ugene-33.0-mac-x86-64-NGS.dmg">Скачать вер.33</a></td>
+                    <td><a href="https://f000.backblazeb2.com/file/uniprougene/release-archive/ugene-33.0-mac-x86-64-full.dmg">Скачать вер.33</a></td>
+                    <td><a href="http://archive.ugene.net/downloads/packages/33.0/ugene-33.0-mac-x86-64-NGS.dmg">Скачать вер.33</a></td>
                 </tr>
                 <tr>
                     <td>Mac OS X 10.6 (64-бит)<br/>DMG-архив</td>
