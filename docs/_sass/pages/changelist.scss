@@ -8,6 +8,28 @@
 
   .release_notes_version_descr {
     margin-top: 5px;
+
+    .change-list-block {
+      margin-left: 15px;
+      margin-bottom: 20px;
+
+      h4 {
+        font-weight: normal;
+        color: slategray;
+        font-size: 16px;
+        padding-top: 5px;
+        margin: 0;
+      }
+
+      ul {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        li {
+          margin-bottom: 8px;
+        }
+      }
+    }
   }
 
   .features_descr_text {
