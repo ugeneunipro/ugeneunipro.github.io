@@ -7,17 +7,17 @@ plugins:
 
 # UGENE variables
 ugene:
-  release_version: "39.0"
-  release_date_MMM_YYYY_ru: "Июнь, 2021"
-  release_date_MMM_YYYY_en: "June, 2021"
+  release_version: "40.0"
+  release_date_MMM_YYYY_ru: "Сентябрь, 2021"
+  release_date_MMM_YYYY_en: "September, 2021"
   doc_version: ""
   # Download links
-  download_link_ugene_latest_linux_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/39.0/ugene-39.0-linux-x86-64.tar.gz"
-  download_link_ugene_latest_mac_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/39.0/ugene-39.0-mac-x86-64.dmg"
-  download_link_ugene_latest_sources_gz: "https://github.com/ugeneunipro/ugene/archive/refs/tags/39.0.tar.gz"
-  download_link_ugene_latest_sources_zip: "https://github.com/ugeneunipro/ugene/archive/refs/tags/39.0.zip"
-  download_link_ugene_latest_win_x86_64: "https://github.com/ugeneunipro/ugene/releases/download/39.0/ugene-39.0-win-x86-64.exe"
-  download_link_ugene_latest_win_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/39.0/ugene-39.0-win-x86-64-portable.zip"
+  download_link_ugene_latest_linux_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/40.0/ugene-40.0-linux-x86-64.tar.gz"
+  download_link_ugene_latest_mac_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/40.0/ugene-40.0-mac-x86-64.dmg"
+  download_link_ugene_latest_sources_gz: "https://github.com/ugeneunipro/ugene/archive/refs/tags/40.0.tar.gz"
+  download_link_ugene_latest_sources_zip: "https://github.com/ugeneunipro/ugene/archive/refs/tags/40.0.zip"
+  download_link_ugene_latest_win_x86_64: "https://github.com/ugeneunipro/ugene/releases/download/40.0/ugene-40.0-win-x86-64.exe"
+  download_link_ugene_latest_win_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/40.0/ugene-40.0-win-x86-64-portable.zip"
   next_release_tracker_link: "https://ugene.dev/tracker/projects/UGENE/issues/?filter=13756"
   static:
     cite_link: "https://doi.org/10.1093/bioinformatics/bts091"

@@ -5,23 +5,57 @@ title: История изменений - Unipro UGENE
 
 <div class="changelist-page">
     <h2>История изменений</h2>
+    <p><!----------40.0-ru----------></p>
+    <div class="release_notes_version_header">Версия 40</div>
+    <div class="release_notes_version_descr">
+        <div class="change-list-block">
+            <h4>Редактор выравниваний</h4>
+            <ul>
+                <li>Добавлена поддержка раздельного выделения последовательностей с CTRL.</li>
+                <li>Поддержаны все варианты алгоритмов инструмента PhyML.</li>
+                <li>Реализована возможность перемещения последовательностей в другой документ.</li>
+                <li>Работа с группами: показан размер и добавлена сортировка по размеру групп.</li>
+            </ul>
+
+            <h4>Редактор выравниваний по Сэнгеру</h4>
+            <ul>
+                <li>Добавлена возможность просматривать альтернативные мутации.</li>
+                <li>Исправлены ошибки вертикального скроллинга.</li>
+            </ul>
+
+            <h4>Редактор последовательностей</h4>
+            <ul>
+                <li>Улучшена скорость работы и точность графиков.</li>
+                <li>Улучшена работа режима авто-аннотирования.</li>
+                <li>Исправлены ошибки при работе с файлами более 2Гб.</li>
+            </ul>
+
+            <h4>Разное</h4>
+            <ul>
+                <li>Улучшена реализация алгоритма Smith-Waterman для CUDA.</li>
+                <li>Добавлена поддержка Unicode для Newick, Plain text, Diff, VCF, SNP форматов.</li>
+                <li>Утилита генерации случайной последовательности теперь работает в разы быстрее.</li>
+            </ul>
+        </div>
+    </div>
     <p><!----------39.0-ru----------></p>
     <div class="release_notes_version_header">Версия 39</div>
     <div class="release_notes_version_descr">
         <p>Новая версия содержит следующие улучшения:</p>
         <ul>
             <li><b>Филогенетические деревья: независимая настройка цвета и шрифта для различных частей дерева:</b>&nbsp;
-                <p><img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" src="/assets/images/release_notes/39-subtree.png"></p></li>
+                <p><img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;" src="/assets/images/release_notes/39-subtree.png"></p></li>
             <li><b>Опция "Добавить последовательность в выравнивание" получила поддержку выбора алгоритма: ClustalO, MAFFT, Muscle или UGENE:</b>
-                <p><img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" src="/assets/images/release_notes/39-align-to-alignment.png"></p></li>
+                <p><img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;"
+                        src="/assets/images/release_notes/39-align-to-alignment.png"></p></li>
             <li><b>Выравнивания с RAW (неопределённым) алфавитом могут быть "исправлены": сконвертированы в DNA, RNA или Amino алфавит:</b>
-                <p><img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" src="/assets/images/release_notes/39-alphabet.png"></p></li>
+                <p><img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;" src="/assets/images/release_notes/39-alphabet.png"></p></li>
             <li><b>Редактор последовательностей получил новую опцию: показ статистики кодонов и аминокислот в выделенном участке:</b>
-                <p><img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" src="/assets/images/release_notes/39-codons.png"></p></li>
+                <p><img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;" src="/assets/images/release_notes/39-codons.png"></p></li>
             <li><b> Другие изменения:</b>
                 <ul>
-                    <li>Улучшена поддержка Unicode для FASTA, MSF и CLUSTALW форматов.</u>.</li>
-                    <li>UGENE теперь говорит и на турецком. Используйте меню Настройки/Установки для того чтобы сменить язык.</u></li>
+                    <li>Улучшена поддержка Unicode для FASTA, MSF и CLUSTALW форматов.</li>
+                    <li>UGENE теперь говорит и на турецком. Используйте меню Настройки/Установки для того чтобы сменить язык.</li>
                 </ul>
             </li>
         </ul>
@@ -34,18 +68,18 @@ title: История изменений - Unipro UGENE
             <li><b>Экспорт аминокислотного представления:</b>&nbsp;<br/>
                 Диалог «Экспорт выравнивания в амино трансляции» был улучшен. Теперь вы можете выбрать, хотите ли вы экспортировать гэпы или нет и если хотите,
                 то в качестве какого символа &#8212; «X» или «-». Также появилась возможность выбрать рамку трансляции.
-                <p><img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Sorting sequences"
+                <p><img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Sorting sequences"
                         src="/assets/images/release_notes/38-export-amino-transl.png"></p>
                 <p>&nbsp;</li>
             <li><b>Функции сортировки:</b><br/>
                 Теперь доступна функция «Сортировка по числу ведущих гэпов». Помимо этого, все функции сортировки теперь работают не только для всего
                 выравнивания, но и для выделенных последовательностей.<br/>
-                <img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
+                <img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
                      src="/assets/images/release_notes/38-leading-sort.png"></li>
             <li><b>Функция «Вырезать»:</b><br/>
                 Появилась возможность вырезать выделенную часть выравнивания. Вы можете найти соответствующий пункт контекстного меню или воспользоваться
                 сочетанием горячих клавиш «Ctrl+X».<br/>
-                <img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
+                <img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
                      src="/assets/images/release_notes/38-cut.png"></li>
             <li><b> Другие изменения:</b>
                 <ul>
@@ -56,7 +90,8 @@ title: История изменений - Unipro UGENE
             </li>
         </ul>
         <p>С полным списком изменений можно ознакомиться&nbsp;<a
-                href="https://ugene.dev/tracker/issues/?jql=project%20%3D%20UGENE%20AND%20fixVersion%20%3D%2038%20AND%20resolution%20in%20(Fixed%2C%20%22Won't%20Fix%22%2C%20Duplicate%2C%20Incomplete%2C%20%22Cannot%20Reproduce%22)" target="_blank">здесь</a>
+                href="https://ugene.dev/tracker/issues/?jql=project%20%3D%20UGENE%20AND%20fixVersion%20%3D%2038%20AND%20resolution%20in%20(Fixed%2C%20%22Won't%20Fix%22%2C%20Duplicate%2C%20Incomplete%2C%20%22Cannot%20Reproduce%22)"
+                target="_blank">здесь</a>
         </p>
     </div>
     <p><!----------37.0-ru----------></p>
@@ -66,17 +101,17 @@ title: История изменений - Unipro UGENE
         <ul>
             <li><b>Алфавитный порядок Внешних Инструментов:</b>&nbsp;<br/>
                 Обратите внимание на то, что на вкладке «Внешние инструменты» в «Настройках» список стал упорядоченным по-алфавиту.
-                <p><img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Sorting sequences"
+                <p><img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Sorting sequences"
                         src="/assets/images/release_notes/37-et-order.png"></p>
                 <p>&nbsp;</li>
             <li><b>Улучшен механизм копирования/вставки и именования в&nbsp;<u>редакторе выравниваний</u>:</b><br/>
                 Копирование и вставка последовательностей теперь сохраняет имя копируемой последовательности, а так же правит его для соблюдения уникальности
                 имени. Помимо этого, появилось возможнасть вставлять последовательность в конкретное место в выравнивании (рядом с текущим выделением).<br/>
-                <img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
+                <img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
                      src="/assets/images/release_notes/37-copy-paste.png"></li>
             <li><b>Улучшен механизм именования в окне Закладок:</b><br/>
                 Написание имен файлов и принадлежащих им объектов сделано удобнее в окне «Закладки»<br/>
-                <img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
+                <img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
                      src="/assets/images/release_notes/37-bookmarks.png"></li>
             <li><b> Другие изменения:</b>
                 <ul>
@@ -87,7 +122,8 @@ title: История изменений - Unipro UGENE
             </li>
         </ul>
         <p>С полным списком изменений можно ознакомиться&nbsp;<a
-                href="https://ugene.dev/tracker/issues/?jql=project%20%3D%20UGENE%20AND%20fixVersion%20%3D%2037%20AND%20resolution%20in%20(Fixed%2C%20%22Won't%20Fix%22%2C%20Duplicate%2C%20Incomplete%2C%20%22Cannot%20Reproduce%22)" target="_blank">здесь</a>.
+                href="https://ugene.dev/tracker/issues/?jql=project%20%3D%20UGENE%20AND%20fixVersion%20%3D%2037%20AND%20resolution%20in%20(Fixed%2C%20%22Won't%20Fix%22%2C%20Duplicate%2C%20Incomplete%2C%20%22Cannot%20Reproduce%22)"
+                target="_blank">здесь</a>.
         </p>
     </div>
     <p><!----------36.0-ru----------></p>
@@ -97,14 +133,14 @@ title: История изменений - Unipro UGENE
         <ul>
             <li><b>Добавление ярлыка запуска UGENE на рабочий стол:</b>&nbsp;<br/>
                 Обратите внимание на появившуюся кнопку «Добавить ярлык на рабочий стол» в меню «Помощь».
-                <p><img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Sorting sequences"
+                <p><img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Sorting sequences"
                         src="/assets/images/release_notes/36-shortcut.png"></p>
                 <p>&nbsp;</li>
             <li><b>Улучшено копирование аннотаций в&nbsp;<u>редакторе выравниваний</u>:</b><br/>
                 Копирование&nbsp;последовательностей выделенных аннотированных теперь привязано к направлению последовательности, на которой данная аннотация
                 расположена. Если выделено несколько аннотаций, расположенных как на прямой, так и на комплементарной последовательности, то при нажатии кнопки
                 копирования, будут скопированы последовательности с соответсвующих направлений.<br/>
-                <img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
+                <img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
                      src="/assets/images/release_notes/36-copy-annotations.png"></li>
             <li><b> Другие изменения:</b>
                 <ul>
@@ -114,7 +150,8 @@ title: История изменений - Unipro UGENE
             </li>
         </ul>
         <p>С полным списком изменений можно ознакомиться&nbsp;<a
-                href="https://ugene.dev/tracker/issues/?jql=project%20%3D%20UGENE%20AND%20fixVersion%20%3D%2036%20AND%20resolution%20in%20(Fixed%2C%20%22Won't%20Fix%22%2C%20Duplicate%2C%20Incomplete%2C%20%22Cannot%20Reproduce%22)" target="_blank">здесь</a>.
+                href="https://ugene.dev/tracker/issues/?jql=project%20%3D%20UGENE%20AND%20fixVersion%20%3D%2036%20AND%20resolution%20in%20(Fixed%2C%20%22Won't%20Fix%22%2C%20Duplicate%2C%20Incomplete%2C%20%22Cannot%20Reproduce%22)"
+                target="_blank">здесь</a>.
         </p>
     </div>
     <div class="release_notes_version_header">Версия 35</div>
@@ -210,7 +247,8 @@ title: История изменений - Unipro UGENE
             </li>
             <li>
                 <b>Статистика по последовательности:</b> исправлен подсчёт статистики для нуклеотидной последовательности или её выделенного участка, добавлена
-                информация по двухцепочечным молекулам, см. <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Information+about+Sequence" target="_blank">документацию</a>
+                информация по двухцепочечным молекулам, см. <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Information+about+Sequence"
+                                                               target="_blank">документацию</a>
                 (на английском языке).<br/>
                 <img src="/assets/images/release_notes/34-statistics-about-nucleotide-sequence.png"
                      style="margin-top: 10px; margin-bottom: 10px; width: 600px" title="Statistics about a nucleotide sequence"></li>
@@ -242,9 +280,11 @@ title: История изменений - Unipro UGENE
         <ul>
             <li><b>Импорт вашего инструмента в интегрированные внешние инструменты UGENE:</b> список <a
                     href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Data+Analysis+Tools" target="_blank">внешних
-                инструментов</a> доступен в <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/UGENE+Application+Settings" target="_blank">настройках
+                инструментов</a> доступен в <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/UGENE+Application+Settings"
+                                               target="_blank">настройках
                 приложения</a>.
-                Для импорта вашего инструмента см. <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Custom+External+Tools" target="_blank">документацию</a>.
+                Для импорта вашего инструмента см. <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Custom+External+Tools"
+                                                      target="_blank">документацию</a>.
             </li>
             <li><b>Обновлен диалог-помощник для конфигурации запуска инструмента:</b> для использования инструмента в дизайнере вычислительных схем UGENE
                 создайте соответствующий элемент вычислительной схемы, задающий входные/выходные данные, параметры, команду запуска инструмента. Чтобы открыть
@@ -309,7 +349,8 @@ title: История изменений - Unipro UGENE
                 обрезать концы прочтений по качеству, обрезать прочтения по длине и др.<img
                         src="/assets/images/release_notes/1.31_trimmomatic_steps.png"
                         style="margin-top: 10px; margin-bottom: 10px; border: 1px solid #bbbbbb;" title="Настройка Trimmomatic">Инструмент встроен в виде <a
-                        href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Improve+Reads+with+Trimmomatic+Element" target="_blank">элемента вычислительных схем</a> и
+                        href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Improve+Reads+with+Trimmomatic+Element" target="_blank">элемента
+                    вычислительных схем</a> и
                 включен в несколько примеров схем (см. ниже, например).Для использования Trtimmomatic требуется установить <a
                         href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">Java
                     Runtime Environment</a> и сконфигурировать путь до &#171;java&#187; в настройках UGENE.
@@ -335,7 +376,8 @@ title: История изменений - Unipro UGENE
                 онлайн-инсталлятор UGENE:<img src="/assets/images/release_notes/1.31_wizard.png"
                                               style="margin-top: 10px; margin-bottom: 10px; border: 1px solid #bbbbbb;" title="Компоненты в онлай-инсталляторе">Примеры
                 вычислительных схем доступны из главного меню &#171;Tools &gt; NGS data analysis &gt; Metagenomics classification&#187;. В частности, следующая
-                <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Parallel+NGS+Reads+Classification" target="_blank">вычислительная схема</a> включает в себя
+                <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Parallel+NGS+Reads+Classification" target="_blank">вычислительная
+                    схема</a> включает в себя
                 элементы Kraken, CLARK и DIAMOND. Еще один элемент WEVOTE объединяет результаты, полученные от этих инструментов.<img
                         src="/assets/images/release_notes/1.31_parallel_classification_workflow.png" style="margin-top: 10px; margin-bottom: 10px;"
                         title="Паралелльная вычислительная схема в UGENE 1.31">Помимо классификации, для каждого инструмента встроен элемент, позволяющий
@@ -397,9 +439,12 @@ title: История изменений - Unipro UGENE
         <p>Подробнее про указанные функции можно прочитать в следующих главах документации (на английском языке):</p>
         <ul>
             <li><a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Editing+Sequence" target="_blank">Editing Sequence</a></li>
-            <li><a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Translating+Nucleotide+Sequence" target="_blank">Translating Nucleotide Sequence</a></li>
-            <li><a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Selecting+Sequence+Region" target="_blank">Selecting Sequence Region</a></li>
-            <li><a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Selecting+Alignment+Region" target="_blank">Selecting Alignment Region</a></li>
+            <li><a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Translating+Nucleotide+Sequence" target="_blank">Translating Nucleotide
+                Sequence</a></li>
+            <li><a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Selecting+Sequence+Region" target="_blank">Selecting Sequence
+                Region</a></li>
+            <li><a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Selecting+Alignment+Region" target="_blank">Selecting Alignment
+                Region</a></li>
         </ul>
         <p>См. также полный <a
                 href="https://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.29%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">список
@@ -444,7 +489,7 @@ title: История изменений - Unipro UGENE
                     <li>экспорт результатов;</li>
                 </ul>
             </li>
-            <p><img src="/assets/images/release_notes/1.27_ru_sanger_reads_editor.png" title="Редактор данных секвенирования по Сэнгеру."></p>
+            <img src="/assets/images/release_notes/1.27_ru_sanger_reads_editor.png" title="Редактор данных секвенирования по Сэнгеру.">
             <li>исправление ошибок, мелкие улучшения.</li>
         </ul>
         <p>См. также полный <a
