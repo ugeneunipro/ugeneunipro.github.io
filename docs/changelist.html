@@ -5,22 +5,58 @@ title: Release Notes - Unipro UGENE
 
 <div class="changelist-page">
     <h2>Release Notes</h2>
+
+    <p><!----------40.0-en----------></p>
+    <div class="release_notes_version_header" id="r40">Version 40</div>
+    <div class="release_notes_version_descr">
+        <div class="change-list-block">
+            <h4>Alignment Editor</h4>
+            <ul>
+                <li>Multi-row selection support.</li>
+                <li>The "Build Tree" dialog now has all PhyML algorithms listed.</li>
+                <li>A new option to move selected sequences from one document to another.</li>
+                <li>The grouping mode: sorting by the size of a group and showing group sizes in the name list.</li>
+            </ul>
+
+            <h4>Sanger Editor</h4>
+            <ul>
+                <li>A new visualization mode: show alternative mutations.</li>
+                <li>Several vertical scrolling bugs have been fixed.</li>
+            </ul>
+
+            <h4>Sequence Viewer</h4>
+            <ul>
+                <li>Speed, memory usage and precision of sequence graphs have been improved.</li>
+                <li>Stability problems of auto-annotation routines have been fixed.</li>
+                <li>Bugs, which appears while working with sequences larger when 2Gb, have been fixed.</li>
+            </ul>
+
+            <h4>Other improvements</h4>
+            <ul>
+                <li>The "Smith-Waterman" algorithm support for CUDA has been improved.</li>
+                <li>The Unicode support has been added for Newick, Plain text, Diff, VCF, SNP file formats.</li>
+                <li>The "Random Sequence Generator" memory footprint and generation speed have been improved.</li>
+            </ul>
+        </div>
+    </div>
+
     <p><!----------39.0-en----------></p>
     <div class="release_notes_version_header" id="r39">Version 39</div>
     <div class="release_notes_version_descr">
         <p>The new version includes the following new features and improvements:</p>
         <ul>
             <li><b>Phylogenetic tree viewer now allows setting custom colors and fonts for subtree branches and labels:</b>
-                <p><img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" src="/assets/images/release_notes/39-subtree.png"></p></li>
+                <p><img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;" src="/assets/images/release_notes/39-subtree.png"></p></li>
 
             <li><b>The "Align to alignment" option got support for algorithm selection: ClustalO, MAFFT, Muscle, or UGENE.:</b>
-                <p><img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" src="/assets/images/release_notes/39-align-to-alignment.png"></p></li>
+                <p><img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;"
+                        src="/assets/images/release_notes/39-align-to-alignment.png"></p></li>
 
             <li><b>Alignments with the RAW (undefined) alphabet can be converted to the DNA, RNA, or Amino alphabets:</b>
-                <p><img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" src="/assets/images/release_notes/39-alphabet.png"></p></li>
+                <p><img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;" src="/assets/images/release_notes/39-alphabet.png"></p></li>
 
             <li><b>Sequence Viewer got a new option to show codons or protein statistics for selected regions:</b>
-                <p><img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" src="/assets/images/release_notes/39-codons.png"></p></li>
+                <p><img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;" src="/assets/images/release_notes/39-codons.png"></p></li>
 
             <li><b> Other changes:</b>
                 <ul>
@@ -40,17 +76,17 @@ title: Release Notes - Unipro UGENE
             <li><b>Export amino acid representation:</b>&nbsp;<br/>
                 The «Export Amino Acid Translation» dialog has been improved. Now it&#8217;s possible to choose whether you need to export gaps or not and if
                 yes it&#8217;s possible to export them as «X» or «-» symbols. Also, it&#8217;s possible to choose the translation frame.
-                <p><img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Sorting sequences"
+                <p><img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Sorting sequences"
                         src="/assets/images/release_notes/38-export-amino-transl.png"></p>
                 <p>&nbsp;</li>
             <li><b>Sorting features:</b>&nbsp;<br/>
                 «Sort by leading gaps» is available now! Also, all sorting functions work not only for the whole alignment, but for selected reads too.<br/>
-                <img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
+                <img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
                      src="/assets/images/release_notes/38-leading-sort.png"></li>
             <li><b>The «Cut» function:</b><br/>
                 Now it&#8217;s possible to cut the selected part of the alignment. Find the corresponding item in the context menu or use the following
                 shortcut: «Ctrl+X».<br/>
-                <img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
+                <img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
                      src="/assets/images/release_notes/38-cut.png"></li>
             <li><b> Other changes:</b>
                 <ul>
@@ -61,7 +97,8 @@ title: Release Notes - Unipro UGENE
             </li>
         </ul>
         <p>You may see the full list of improvements&nbsp;<a
-                href="https://ugene.dev/tracker/issues/?jql=project%20%3D%20UGENE%20AND%20fixVersion%20%3D%2038%20AND%20resolution%20in%20(Fixed%2C%20%22Won't%20Fix%22%2C%20Duplicate%2C%20Incomplete%2C%20%22Cannot%20Reproduce%22)" target="_blank">here</a>.
+                href="https://ugene.dev/tracker/issues/?jql=project%20%3D%20UGENE%20AND%20fixVersion%20%3D%2038%20AND%20resolution%20in%20(Fixed%2C%20%22Won't%20Fix%22%2C%20Duplicate%2C%20Incomplete%2C%20%22Cannot%20Reproduce%22)"
+                target="_blank">here</a>.
         </p>
     </div>
     <p><!----------37.0-en----------></p>
@@ -71,17 +108,17 @@ title: Release Notes - Unipro UGENE
         <ul>
             <li><b>Alphabetical order of External Tools:</b>&nbsp;<br/>
                 Pay attention that the list of the «External Tools» in the «Application Settings» dialog has become sorted alphabetically.
-                <p><img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Sorting sequences"
+                <p><img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Sorting sequences"
                         src="/assets/images/release_notes/37-et-order.png"></p>
                 <p>&nbsp;</li>
             <li><b>The copy/paste and naming mechanism in the Alignment Editor has been improved:</b><br/>
                 The copy/paste function saves the name of the copied sequence now and also roll this name to make it unique. Besides, the possibility to insert
                 sequence to a certain place (near the current selection) has appeared.<br/>
-                <img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
+                <img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
                      src="/assets/images/release_notes/37-copy-paste.png"></li>
             <li><b>Naming in the «Bookmarks» tab has been improved:</b><br/>
                 File and object names writing has become more convenient in the «Bookmarks» window.<br/>
-                <img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
+                <img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
                      src="/assets/images/release_notes/37-bookmarks.png"></li>
             <li><b> Other changes:</b>
                 <ul>
@@ -92,7 +129,8 @@ title: Release Notes - Unipro UGENE
             </li>
         </ul>
         <p>You may see the full list of improvements&nbsp;<a
-                href="https://ugene.dev/tracker/issues/?jql=project%20%3D%20UGENE%20AND%20fixVersion%20%3D%2037%20AND%20resolution%20in%20(Fixed%2C%20%22Won't%20Fix%22%2C%20Duplicate%2C%20Incomplete%2C%20%22Cannot%20Reproduce%22)" target="_blank">here</a>.
+                href="https://ugene.dev/tracker/issues/?jql=project%20%3D%20UGENE%20AND%20fixVersion%20%3D%2037%20AND%20resolution%20in%20(Fixed%2C%20%22Won't%20Fix%22%2C%20Duplicate%2C%20Incomplete%2C%20%22Cannot%20Reproduce%22)"
+                target="_blank">here</a>.
         </p>
     </div>
     <p><!----------36.0-en----------></p>
@@ -102,14 +140,14 @@ title: Release Notes - Unipro UGENE
         <ul>
             <li><b>Adding the UGENE launch shortcut on the Desktop:</b>&nbsp;<br/>
                 Pay attention to the appeared «Create desktop shortcut» button in the «Help» menu.
-                <p><img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Sorting sequences"
+                <p><img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Sorting sequences"
                         src="/assets/images/release_notes/36-shortcut.png"></p>
                 <p>&nbsp;</li>
             <li><b>The «Copy annotations» function is improved in the <u>sequence view</u>:</b><br/>
                 Copying of selected annotated sequences is tied to the strand of the sequence the current annotation is located on. If there are several
                 annotations on both direct and complementary strands are selected, clicking the&nbsp;«Copy» button causes the copying of sequences from the
                 corresponding strands.<br/>
-                <img style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
+                <img loading="lazy" style="margin-top: 10px; margin-bottom: 10px; width: 800px;" title="Search in an alignment"
                      src="/assets/images/release_notes/36-copy-annotations.png"></li>
             <li><b> Other improvements:</b>
                 <ul>
@@ -119,7 +157,8 @@ title: Release Notes - Unipro UGENE
             </li>
         </ul>
         <p>The full list of changes can be found&nbsp;<a
-                href="https://ugene.dev/tracker/issues/?jql=project%20%3D%20UGENE%20AND%20fixVersion%20%3D%2036%20AND%20resolution%20in%20(Fixed%2C%20%22Won't%20Fix%22%2C%20Duplicate%2C%20Incomplete%2C%20%22Cannot%20Reproduce%22)" target="_blank">here</a>.
+                href="https://ugene.dev/tracker/issues/?jql=project%20%3D%20UGENE%20AND%20fixVersion%20%3D%2036%20AND%20resolution%20in%20(Fixed%2C%20%22Won't%20Fix%22%2C%20Duplicate%2C%20Incomplete%2C%20%22Cannot%20Reproduce%22)"
+                target="_blank">here</a>.
         </p>
     </div>
     <div class="release_notes_version_header">Version 35</div>
@@ -186,7 +225,8 @@ title: Release Notes - Unipro UGENE
                 other sequences in the alignment.
             </li>
             <li>
-                <b>Advanced search options:</b> <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Searching+in+Alignment" target="_blank">a bunch of
+                <b>Advanced search options:</b> <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Searching+in+Alignment"
+                                                   target="_blank">a bunch of
                 features</a>
                 for searching in an alignment was added: search of several patterns at once, usage of different algorithms besides the exact pattern match,
                 search in particular columns. Similarly to the Sequence View, the options are now located on the options panel tab.<br/>
@@ -245,9 +285,11 @@ title: Release Notes - Unipro UGENE
         <ul>
             <li><b>Import of your tool into UGENE external tools:</b> the list of <a
                     href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Data+Analysis+Tools" target="_blank">external
-                tools</a> is available in the UGENE <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/UGENE+Application+Settings" target="_blank">Application
+                tools</a> is available in the UGENE <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/UGENE+Application+Settings"
+                                                       target="_blank">Application
                 Settings</a> dialog. Here for each tool you can provide a path to the tool executable file. Since UGENE version 33 you can also specify your own
-                tools. See <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Custom+External+Tools" target="_blank">documentation</a> for details.
+                tools. See <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Custom+External+Tools" target="_blank">documentation</a> for
+                details.
             </li>
             <li><b>Enhanced wizard for creating a workflow element for the tool:</b> to use a custom tool in the UGENE Workflow Designer graphical interface,
                 create a workflow element that specifies the tool input/output, parameters, and the command. To start the wizard click <img
@@ -263,7 +305,8 @@ title: Release Notes - Unipro UGENE
                                                                                title="Result on the WD dashboard"></li>
         </ul>
         <p style="margin-top:30px;">Another improvement in UGENE version 33 is a new color scheme &#8220;Percentage Identity (colored)&#8221; in the Alignment
-            Editor, see description in the <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Coloring+Schemes" target="_blank">documentation</a>.</p>
+            Editor, see description in the <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Coloring+Schemes" target="_blank">documentation</a>.
+        </p>
         <p><img src="/assets/images/release_notes/33_percentage_identity_colored.png"
                 style="margin-top: 10px; margin-bottom: 10px; margin-left: 40px; width: 500px"
                 title="'Percentage Identity (colored)' color scheme in the Alignment Editor"></p>
@@ -337,12 +380,14 @@ title: Release Notes - Unipro UGENE
                                                                                    style="margin-top: 10px; margin-bottom: 10px; border: 1px solid #bbbbbb;"
                                                                                    title="Components in the Online Installer">Several sample workflows with the
                 tools are available from &#8220;Tools &gt; NGS data analysis &gt; Metagenomics classification&#8221; item in the main menu. In particular, the
-                following <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Parallel+NGS+Reads+Classification" target="_blank">workflow</a> executes Kraken,
+                following <a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Parallel+NGS+Reads+Classification"
+                             target="_blank">workflow</a> executes Kraken,
                 CLARK,
                 and DIAMOND tools in parallel. After that, the results are merged by WEVOTE.<img
                         src="/assets/images/release_notes/1.31_parallel_classification_workflow.png" style="margin-top: 10px; margin-bottom: 10px;"
                         title="Parallel classification workflow in UGENE 1.31">Besides classification, building of a custom database is supported for each tool
-                (see, for example, &#8220;<a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Build+Kraken+Database" target="_blank">Build Kraken Database</a>&#8221;
+                (see, for example, &#8220;<a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Build+Kraken+Database" target="_blank">Build
+                    Kraken Database</a>&#8221;
                 workflow element).Note that the computer should be powerful enough to run the workflows (at least 8Gb of RAM is required). The whole package
                 requires about 230-240 Gb of disk space (see details <a
                         href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Configure+Data+for+Metagenomics+Classification" target="_blank">here</a>).
@@ -402,9 +447,12 @@ title: Release Notes - Unipro UGENE
         <p>See also the following documentation chapters:</p>
         <ul>
             <li><a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Editing+Sequence" target="_blank">Editing Sequence</a></li>
-            <li><a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Translating+Nucleotide+Sequence" target="_blank">Translating Nucleotide Sequence</a></li>
-            <li><a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Selecting+Sequence+Region" target="_blank">Selecting Sequence Region</a></li>
-            <li><a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Selecting+Alignment+Region" target="_blank">Selecting Alignment Region</a></li>
+            <li><a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Translating+Nucleotide+Sequence" target="_blank">Translating Nucleotide
+                Sequence</a></li>
+            <li><a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Selecting+Sequence+Region" target="_blank">Selecting Sequence
+                Region</a></li>
+            <li><a href="https://doc.ugene.net/wiki/display/UM{{site.ugene.doc_version}}/Selecting+Alignment+Region" target="_blank">Selecting Alignment
+                Region</a></li>
         </ul>
         <p>Check the <a
                 href="https://ugene.dev/tracker/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+UGENE+AND+fixVersion+%3D+%221.29%22+AND+resolution+in+%28Fixed%2C+%22Won%27t+Fix%22%2C+Duplicate%2C+Incomplete%2C+%22Cannot+Reproduce%22%29">issues
