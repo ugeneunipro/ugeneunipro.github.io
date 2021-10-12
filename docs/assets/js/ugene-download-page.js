@@ -153,7 +153,7 @@
     /*************************** <!--:en--> ***************************/
     download_body_content += '<h2>Download UGENE</h2>' +
         '<div class="download_page_main">' +
-        '  <div style="margin-bottom: 24px;">Current stable version is <b>{{ugene.site.release_version}}</b> ({{site.ugene.release_date_MMM_YYYY_en}}). See ' +
+        '  <div style="margin-bottom: 24px;">Current stable version is <b>{{site.ugene.release_version}}</b> ({{site.ugene.release_date_MMM_YYYY_en}}). See ' +
         '<a href="/changelist.html">release notes</a>.</div>';
 
     if (uos !== 'UNKNOWN') {
