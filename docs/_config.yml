@@ -1,23 +1,23 @@
 baseurl: ""
 
-current_year: 2021
+current_year: 2022
 
 plugins:
   - jekyll-sitemap
 
 # UGENE variables
 ugene:
-  release_version: "41.0"
-  release_date_MMM_YYYY_ru: "Декабрь, 2021"
-  release_date_MMM_YYYY_en: "December, 2021"
+  release_version: "42.0"
+  release_date_MMM_YYYY_ru: "Март, 2022"
+  release_date_MMM_YYYY_en: "March, 2022"
   doc_version: ""
   # Download links
-  download_link_ugene_latest_linux_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/41.0/ugene-41.0-linux-x86-64.tar.gz"
-  download_link_ugene_latest_mac_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/41.0/ugene-41.0-mac-x86-64.dmg"
-  download_link_ugene_latest_sources_gz: "https://github.com/ugeneunipro/ugene/archive/refs/tags/41.0.tar.gz"
-  download_link_ugene_latest_sources_zip: "https://github.com/ugeneunipro/ugene/archive/refs/tags/41.0.zip"
-  download_link_ugene_latest_win_x86_64: "https://github.com/ugeneunipro/ugene/releases/download/41.0/ugene-41.0-win-x86-64.exe"
-  download_link_ugene_latest_win_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/41.0/ugene-41.0-win-x86-64-portable.zip"
+  download_link_ugene_latest_linux_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/42.0/ugene-42.0-linux-x86-64.tar.gz"
+  download_link_ugene_latest_mac_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/42.0/ugene-42.0-mac-x86-64.dmg"
+  download_link_ugene_latest_sources_gz: "https://github.com/ugeneunipro/ugene/archive/refs/tags/42.0.tar.gz"
+  download_link_ugene_latest_sources_zip: "https://github.com/ugeneunipro/ugene/archive/refs/tags/42.0.zip"
+  download_link_ugene_latest_win_x86_64: "https://github.com/ugeneunipro/ugene/releases/download/42.0/ugene-42.0-win-x86-64.exe"
+  download_link_ugene_latest_win_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/42.0/ugene-42.0-win-x86-64-portable.zip"
   next_release_tracker_link: "https://ugene.dev/tracker/browse/UGENE-7490?jql=project%20%3D%20UGENE%20AND%20status%20in%20(Resolved%2C%20Closed%2C%20Tested)%20and%20resolution%20in%20(Done%2C%20Fixed)%20%20%20AND%20Sprint%20in%20(260%2C%20261%2C%20262%2C%20263%2C264%2C265)%20ORDER%20BY%20id%20DESC"
   static:
     cite_link: "https://doi.org/10.1093/bioinformatics/bts091"
