@@ -9,6 +9,7 @@ plugins:
 ugene:
   release_version: "42.0"
   release_date_MMM_YYYY_ru: "Март, 2022"
+  release_date_MMM_YYYY_tr: "Mart, 2022"
   release_date_MMM_YYYY_en: "March, 2022"
   doc_version: ""
   # Download links

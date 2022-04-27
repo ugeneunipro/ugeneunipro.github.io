@@ -1,0 +1,35 @@
+<div class="footer-block">
+
+    <!--  Language switch.  -->
+    <div class="language-block">
+        <a class="language-switch-link" href="/" title="Switch to language to English">
+            <img src="/assets/images/flags/gb.png" alt="UK flag"> English
+        </a>
+        <script>
+          $('.language-switch-link').attr('href', location.pathname.replace('/tr/', '/'));
+        </script>
+    </div>
+
+    <!-- Copyright.   -->
+    <div class="copyright-block">
+        <a href="http://unipro.ru" target="_blank"> Unipro, Rusya, 2008–{{site.current_year}}</a>
+    </div>
+
+    <!--  Google analytics.  -->
+    <!--suppress ES6ConvertVarToLetConst -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-7212598-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' === document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+</div>
