@@ -88,7 +88,7 @@
   var links = {
     bit32: {
       windows: '',
-      linux: 'http://archive.ugene.net/downloads/packages/33.0/ugene-33.0-x86-full.tar.gz',
+      linux: 'https://archive.ugene.net/downloads/packages/33.0/ugene-33.0-x86-full.tar.gz',
       macos: '{{site.ugene.download_link_ugene_latest_mac_x86_64_portable}}'
     },
     bit64: {
