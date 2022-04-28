@@ -34,9 +34,10 @@
   var ubit = 999;
   var fullOsName = '';
   var shortOsName = '';
-  var comments = {en: '', ru: ''};
+  var comments = {en: '', ru: '', tr: ''};
 
-  const lang = window.location.pathname.startsWith('/ru/') ? 'ru' : 'en';
+  const lang = window.location.pathname.startsWith('/ru/') ? 'ru' :
+               window.location.pathname.startsWith('/tr/') ? 'tr' : 'en';
 
   if (platform.os.family) {
     if (platform.os.family.match(/windows/i)) { /* Windows */
@@ -45,6 +46,7 @@
       fullOsName = shortOsName;
       comments['en'] = 'Windows 7 and higher is required';
       comments['ru'] = 'требуется версия Windows 7 или выше';
+      comments['tr'] = 'Windows 7 veya üstü gerekli';
     } else if (platform.os.family.match(/linux/i)  /* Linux, "Ubuntu", "Debian", "Fedora", "Red Hat", "SuSE" */
         || platform.os.family.match(/Ubuntu/i)
         || platform.os.family.match(/Debian/i)
@@ -56,18 +58,21 @@
       fullOsName = shortOsName;
       comments['en'] = '';
       comments['ru'] = '';
+      comments['tr'] = '';
     } else if (platform.os.family.match(/os x/i)) { /* OS X */
       uos = 'macos';
       shortOsName = 'macOS';
       fullOsName = shortOsName;
       comments['en'] = 'version 10.7 or higher is required';
       comments['ru'] = 'требуется версия 10.7 или выше';
+      comments['tr'] = '10.7 veya üstü gerekli';
     } else {
       uos = 'UNKNOWN';
       shortOsName = 'UNKNOWN';
       fullOsName = shortOsName;
       comments['en'] = '';
       comments['ru'] = '';
+      comments['tr'] = '';
     }
 
     if (platform.os.architecture === 64) {
@@ -145,6 +150,54 @@
           '    <a style="text-decoration: none;color: inherit;" href="' + links['bit' + ubit][uos]
           + '"><div class="downloads_button_main">Скачать UGENE для ' + shortOsName + '</div></a>' +
           '    <div class="downloads_button_comment">' + comments['ru'] + '</div>' +
+          '  </div>' +
+          '</div>' +
+          '';
+    }
+  } else if (lang === 'tr') {
+    /*************************** <!--:tr--> ***************************/
+    download_body_content += '<h2>UGENE\'yi indirin</h2>' +
+        '<div class="download_page_main">' +
+        '  <div style="margin-bottom: 24px;">UGENE\'nin mevcut kararlı sürümü: <b>{{site.ugene.release_version}}</b> ({{site.ugene.release_date_MMM_YYYY_tr}}). ' +
+        '<a href="/changelist.html">Sürüm notlarına</a> bakın.</div>';
+
+    if (uos !== 'UNKNOWN') {
+      download_body_content += '  <div style="margin-bottom: 6px;">İşletim sisteminizi şu şekilde tespit ettik: <span class="emphasize_words">' + fullOsName + '</span>.</div>';
+    }
+
+    if (ubit !== 32 && ubit !== 64 && uos === 'linux') {
+      download_body_content += 'İşletim sisteminiz için bir paket seçin:';
+      download_body_content += '<ul class="general_content">\n' +
+          '<li><a href="' + links['bit64']['linux'] + '"><span>Linux 64-bit için UGENE</span></a></li>\n' +
+          '<li><a href="' + links['bit32']['linux'] + '"><span>Linux 32-bit için UGENE</span></a></li>\n' +
+          '</ul>';
+    } else if (uos !== 'UNKNOWN') {
+      if (ubit !== 32 && ubit !== 64) {
+        ubit = 64;
+      }
+      download_body_content +=
+          '  <div style="margin-bottom: 24px;">Önerilen indirme, <a href="' + links['bit' + ubit][uos] + '">' + shortOsName + ' için UGENE\'dir</a>.</div>';
+    } else if (uos === 'UNKNOWN') {
+      download_body_content += 'İşletim sisteminiz için bir paket seçin:';
+      download_body_content += '<ul class="general_content">\n' +
+          '<li><a href="' + links['bit64']['windows'] + '"><span>Windows için UGENE</span></a></li>\n' +
+          '<li><a href="' + links['bit64']['macos'] + '"><span>macOS için UGENE</span></a></li>\n' +
+          '<li><a href="' + links['bit64']['linux'] + '"><span>Linux 64-bit için UGENE</span></a></li>\n' +
+          '<li><a href="' + links['bit32']['linux'] + '"><span>Linux 32-bit için UGENE</span></a></li>\n' +
+          '</ul>';
+    }
+
+    download_body_content +=
+        '  <div style="margin-bottom:42px;">Başka bir pakete mi ihtiyacınız var? <a href="/tr/download-all.html">Tüm seçenekleri görüntüleyin</a>.</div>' +
+        '';
+
+    if (ubit !== 32 && ubit !== 64 && uos === 'linux') {
+    } else if (uos !== 'UNKNOWN') {
+      download_body_content +=
+          '  <div class="downloads_button">' +
+          '    <a style="text-decoration: none;color: inherit;" href="' + links['bit' + ubit][uos]
+          + '"><div class="downloads_button_main">' + shortOsName + ' için UGENE\'yi indirin</div></a>' +
+          '    <div class="downloads_button_comment">' + comments['tr'] + '</div>' +
           '  </div>' +
           '</div>' +
           '';
