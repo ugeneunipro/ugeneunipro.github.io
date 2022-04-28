@@ -33,6 +33,13 @@ layout: page_en
       window.location = window.location.protocol + '//ugene.net/ru/download-all.html#full-packages';
     } else {
       document.getElementById('block-404').style.visibility = 'visible';
+
+      // Redirect from ru/tr page to home page.
+      if (window.location.pathname.startsWith('/ru/')) {
+        window.location = window.location.origin + '/ru/';
+      } else if (window.location.pathname.startsWith('/tr/')) {
+        window.location = window.location.origin + '/tr/';
+      }
     }
   }
 
