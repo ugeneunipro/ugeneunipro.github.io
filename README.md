@@ -6,5 +6,10 @@
 # To test locally
 
 ```
+cd docs
+bundle install
+```
+
+```
 ./run-dev-server.sh
 ```
