@@ -6,11 +6,11 @@
   "issues": [
     {
       "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
-      "id": "26260",
-      "self": "https://ugene.dev/tracker/rest/api/2/issue/26260",
-      "key": "UGENE-7148",
+      "id": "28487",
+      "self": "https://ugene.dev/tracker/rest/api/2/issue/28487",
+      "key": "UGENE-7737",
       "fields": {
-        "summary": "\"Recent files\" list has been cleaned after update",
+        "summary": "The test_0680 hangs on Linux if current dir is not ugeneui's install dir",
         "status": {
           "self": "https://ugene.dev/tracker/rest/api/2/status/1",
           "description": "The issue is open and ready for the assignee to start work on it.",
@@ -29,11 +29,11 @@
     },
     {
       "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
-      "id": "26036",
-      "self": "https://ugene.dev/tracker/rest/api/2/issue/26036",
-      "key": "UGENE-7137",
+      "id": "28481",
+      "self": "https://ugene.dev/tracker/rest/api/2/issue/28481",
+      "key": "UGENE-7735",
       "fields": {
-        "summary": "Remove compiler warnings suppression from build",
+        "summary": "[Wa] Subalignment moves unpredictably",
         "status": {
           "self": "https://ugene.dev/tracker/rest/api/2/status/1",
           "description": "The issue is open and ready for the assignee to start work on it.",
