@@ -7,18 +7,18 @@ plugins:
 
 # UGENE variables
 ugene:
-  release_version: "45.0"
-  release_date_MMM_YYYY_ru: "Ноябрь, 2022"
-  release_date_MMM_YYYY_tr: "Kasım, 2022"
-  release_date_MMM_YYYY_en: "November, 2022"
+  release_version: "45.1"
+  release_date_MMM_YYYY_ru: "Декабрь, 2022"
+  release_date_MMM_YYYY_tr: "Aralık, 2022"
+  release_date_MMM_YYYY_en: "December, 2022"
   doc_version: ""
   # Download links
-  download_link_ugene_latest_linux_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/45.0/ugene-45.0-linux-x86-64.tar.gz"
-  download_link_ugene_latest_mac_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/45.0/ugene-45.0-mac-x86-64.dmg"
-  download_link_ugene_latest_sources_gz: "https://github.com/ugeneunipro/ugene/archive/refs/tags/45.0.tar.gz"
-  download_link_ugene_latest_sources_zip: "https://github.com/ugeneunipro/ugene/archive/refs/tags/45.0.zip"
-  download_link_ugene_latest_win_x86_64: "https://github.com/ugeneunipro/ugene/releases/download/45.0/ugene-45.0-win-x86-64.exe"
-  download_link_ugene_latest_win_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/45.0/ugene-45.0-win-x86-64.zip"
+  download_link_ugene_latest_linux_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/45.1/ugene-45.1-linux-x86-64.tar.gz"
+  download_link_ugene_latest_mac_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/45.1/ugene-45.1-mac-x86-64.dmg"
+  download_link_ugene_latest_sources_gz: "https://github.com/ugeneunipro/ugene/archive/refs/tags/45.1.tar.gz"
+  download_link_ugene_latest_sources_zip: "https://github.com/ugeneunipro/ugene/archive/refs/tags/45.1.zip"
+  download_link_ugene_latest_win_x86_64: "https://github.com/ugeneunipro/ugene/releases/download/45.1/ugene-45.1-win-x86-64.exe"
+  download_link_ugene_latest_win_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/45.1/ugene-45.1-win-x86-64.zip"
   next_release_tracker_link: "https://ugene.dev/tracker/issues/?filter=14952"
   static:
     cite_link: "https://doi.org/10.1093/bioinformatics/bts091"
