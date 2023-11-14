@@ -66,6 +66,16 @@
           background: #f5d8aa;
         }
       }
+
+      &.donate-menu-item-2 {
+        &:hover {
+          background: transparent;
+        }
+
+        a:hover {
+          background: #d3fcaa;
+        }
+      }
     }
 
     a {
@@ -84,6 +94,9 @@
         line-height: 30px;
         text-decoration: none;
         background-color: #fbefdd;
+        &.donate-2 {
+          background-color: #eaffd5;
+        }
       }
     }
 
