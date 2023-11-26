@@ -7,18 +7,18 @@ plugins:
 
 # UGENE variables
 ugene:
-  release_version: "49.0"
+  release_version: "49.1"
   release_date_MMM_YYYY_ru: "Ноябрь, 2023"
   release_date_MMM_YYYY_tr: "November, 2023"
   release_date_MMM_YYYY_en: "November, 2023"
   doc_version: ""
   # Download links
-  download_link_ugene_latest_linux_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/49.0/ugene-49.0-linux-x86-64.tar.gz"
-  download_link_ugene_latest_mac_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/49.0/ugene-49.0-mac-x86-64.dmg"
-  download_link_ugene_latest_sources_gz: "https://github.com/ugeneunipro/ugene/archive/refs/tags/49.0.tar.gz"
-  download_link_ugene_latest_sources_zip: "https://github.com/ugeneunipro/ugene/archive/refs/tags/49.0.zip"
-  download_link_ugene_latest_win_x86_64: "https://github.com/ugeneunipro/ugene/releases/download/49.0/ugene-49.0-win-x86-64.exe"
-  download_link_ugene_latest_win_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/49.0/ugene-49.0-win-x86-64.zip"
+  download_link_ugene_latest_linux_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/49.1/ugene-49.1-linux-x86-64.tar.gz"
+  download_link_ugene_latest_mac_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/49.1/ugene-49.1-mac-x86-64.dmg"
+  download_link_ugene_latest_sources_gz: "https://github.com/ugeneunipro/ugene/archive/refs/tags/49.1.tar.gz"
+  download_link_ugene_latest_sources_zip: "https://github.com/ugeneunipro/ugene/archive/refs/tags/49.1.zip"
+  download_link_ugene_latest_win_x86_64: "https://github.com/ugeneunipro/ugene/releases/download/49.1/ugene-49.1-win-x86-64.exe"
+  download_link_ugene_latest_win_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/49.1/ugene-49.1-win-x86-64.zip"
   next_release_tracker_link: "https://ugene.dev/tracker/issues/?filter=14952"
   static:
     cite_link: "https://doi.org/10.1093/bioinformatics/bts091"
