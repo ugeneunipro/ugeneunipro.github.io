@@ -1,4 +1,4 @@
 #!/bin/sh
 
-cd docs
+cd docs || exit 1
 bundle exec jekyll serve
