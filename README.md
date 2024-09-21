@@ -3,6 +3,14 @@
 * Development branch: master
 * Publishing branch: gh-pages
 
+# Prerequisites
+```bash
+sudo apt update
+sudo apt install ruby-full
+sudo gem install bundler
+
+```
+
 # To test locally
 
 ```
