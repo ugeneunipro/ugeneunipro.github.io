@@ -7,18 +7,18 @@ plugins:
 
 # UGENE variables
 ugene:
-  release_version: "51.0"
-  release_date_MMM_YYYY_ru: "Сентябрь, 2024"
-  release_date_MMM_YYYY_tr: "September, 2024"
-  release_date_MMM_YYYY_en: "September, 2024"
+  release_version: "52.0"
+  release_date_MMM_YYYY_ru: "Январь, 2025"
+  release_date_MMM_YYYY_tr: "January, 2025"
+  release_date_MMM_YYYY_en: "January, 2025"
   doc_version: ""
   # Download links
-  download_link_ugene_latest_linux_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/51.0/ugene-51.0-linux-x86-64.tar.gz"
-  download_link_ugene_latest_mac_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/51.0/ugene-51.0-mac-x86-64.dmg"
-  download_link_ugene_latest_sources_gz: "https://github.com/ugeneunipro/ugene/archive/refs/tags/51.0.tar.gz"
-  download_link_ugene_latest_sources_zip: "https://github.com/ugeneunipro/ugene/archive/refs/tags/51.0.zip"
-  download_link_ugene_latest_win_x86_64: "https://github.com/ugeneunipro/ugene/releases/download/51.0/ugene-51.0-win-x86-64.exe"
-  download_link_ugene_latest_win_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/51.0/ugene-51.0-win-x86-64.zip"
+  download_link_ugene_latest_linux_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/52.0/ugene-52.0-linux-x86-64.tar.gz"
+  download_link_ugene_latest_mac_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/52.0/ugene-52.0-mac-x86-64.dmg"
+  download_link_ugene_latest_sources_gz: "https://github.com/ugeneunipro/ugene/archive/refs/tags/52.0.tar.gz"
+  download_link_ugene_latest_sources_zip: "https://github.com/ugeneunipro/ugene/archive/refs/tags/52.0.zip"
+  download_link_ugene_latest_win_x86_64: "https://github.com/ugeneunipro/ugene/releases/download/52.0/ugene-52.0-win-x86-64.exe"
+  download_link_ugene_latest_win_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/52.0/ugene-52.0-win-x86-64.zip"
   next_release_tracker_link: "https://ugene.dev/tracker/issues/?filter=14952"
   static:
     cite_link: "https://doi.org/10.1093/bioinformatics/bts091"
