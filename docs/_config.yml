@@ -11,7 +11,6 @@ ugene:
   release_date_MMM_YYYY_ru: "Май, 2025"
   release_date_MMM_YYYY_tr: "May, 2025"
   release_date_MMM_YYYY_en: "May, 2025"
-  doc_version: ""
   # Download links
   download_link_ugene_latest_linux_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/52.1/ugene-52.1-linux-x86-64.tar.gz"
   download_link_ugene_latest_mac_x86_64_portable: "https://github.com/ugeneunipro/ugene/releases/download/52.1/ugene-52.1-mac-x86-64.dmg"
